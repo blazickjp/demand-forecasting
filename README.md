@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Demand Forecasting App
+
+Demand Forecasting App is a powerful, user-friendly platform designed to help small businesses in the retail industry make data-driven decisions. By leveraging advanced predictive algorithms and machine learning, our app provides highly accurate demand forecasts, empowering you to optimize inventory management, reduce costs, and increase profits.
+
+## Features
+
+- Accurate demand forecasting using state-of-the-art machine learning algorithms
+- User-friendly interface for easy data upload and forecast generation
+- Tailored forecasts specific to your business needs
+- Supports .csv file format for historical demand data upload
+- Optimizes inventory management, reduces costs, and increases profits
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+1. Clone the repository
+```
+git clone https://github.com/blazickjp/demand-forecasting.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```
+npm install
+```
+3. Start the development server
+```
+npm run dev
+```
+4. Open your browser and navigate to http://localhost:3000
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Usage
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Log in using the provided username and password
+2. Upload your historical demand data as a .csv file
+3. Generate tailored forecasts for your business
+4. Use the forecasts to make informed decisions about inventory management, pricing, and promotions
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Contributing
 
-## Learn More
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-To learn more about Next.js, take a look at the following resources:
+Please make sure to update tests as appropriate.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[MIT](https://choosealicense.com/licenses/mit/)
