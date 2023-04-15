@@ -22,16 +22,16 @@ const Navbar = () => {
           </Typography>
         </Link>
         <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
-          <Link href="#about" passHref>
+          <Link href="/about" passHref>
             <NavLink>About</NavLink>
           </Link>
-          <Link href="#features" passHref>
+          <Link href="/features" passHref>
             <NavLink>Features</NavLink>
           </Link>
           <Link href="#pricing" passHref>
             <NavLink>Pricing</NavLink>
           </Link>
-          <Link href="#login" passHref>
+          <Link href="/login" passHref>
             <NavLink>Login</NavLink>
           </Link>
         </Box>

@@ -7,14 +7,15 @@ const Footer = () => {
       component="footer"
       sx={{
         backgroundColor: 'rgba(211, 211, 211)',
-        width: '100%',
-        position: 'fixed',
-        bottom: 0,
         borderTop: '1px solid rgba(0, 0, 0, 0.12)',
-        zIndex: 1000 // Add zIndex to bring the footer to the front
+        zIndex: 1000, // Add zIndex to bring the footer to the front
+        position: 'relative',
+        width: '100%',
+        bottom: 0,
+        boxShadow: '0px 100px 0px rgba(211, 211, 211)',
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" maxHeight="100%">
         <Box py={2} textAlign="center">
           <p>
             &copy; {(new Date()).getFullYear()} Demand Forecasting App. All rights reserved.
