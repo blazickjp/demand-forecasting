@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { signInWithPopup } from 'firebase/auth';
 import { auth } from '../firebaseClient';
@@ -17,10 +17,23 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+
 
 export default function Login() {
   const { user, loading } = useAuth();
   const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleEmailLogin = async (e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      console.error('Error during login:', error);
+    }
+  };
 
   useEffect(() => {
     if (!loading && user) {
@@ -57,6 +70,8 @@ export default function Login() {
                 variant="outlined"
                 fullWidth
                 margin="normal"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <TextField
                 label="Password"
@@ -64,6 +79,8 @@ export default function Login() {
                 variant="outlined"
                 fullWidth
                 margin="normal"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </Box>
             <Button
@@ -72,6 +89,7 @@ export default function Login() {
               variant="contained"
               color="primary"
               sx={{ mb: 2 }}
+              onClick={handleEmailLogin}
             >
               Sign in
             </Button>

@@ -1,14 +1,11 @@
 // pages/index.js
 import Head from 'next/head';
 import { useState } from 'react';
-import FileUploadForm from '../components/FileUploadForm';
-import Login from '../components/Login';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Container, Typography, Box, Grid, Button } from "@mui/material";
 import Image from 'next/image';
 import Link from 'next/link';
-import { layoutStyles, contentStyles } from "../components/styles";
 
 
 export default function Home() {
