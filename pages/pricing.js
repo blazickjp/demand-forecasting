@@ -20,7 +20,7 @@ const StyledButton = styled(Button)({
 
 export default function PricingPage() {
     return (
-        <Box minHeight="100vh" display="flex" flexDirection="column" my={8}>
+        <Box minHeight="85vh" display="flex" flexDirection="column" my={8}>
             <Head>
                 <title>Pricing - Demand Forecasting App</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -35,7 +35,7 @@ export default function PricingPage() {
                         <Typography variant="h5" component="p" align="center" gutterBottom>
                             We believe in empowering all businesses with cutting-edge technology. That's why our app is absolutely free!
                         </Typography>
-                        <Box my={4}>
+                        <Box my={16}>
                             <Grid container spacing={4} justifyContent="center">
                                 <Grid item xs={12} sm={6} md={4}>
                                     <StyledPaper>

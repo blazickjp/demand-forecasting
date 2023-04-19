@@ -14,26 +14,12 @@ export default function LoginPage() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main>
-          <Box maxWidth="lg" mx="auto">
-            <Box display="flex" justifyContent="center" marginBottom={10}>
-              <Navbar />
-            </Box>
-            <Box
-              sx={{
-                minHeight: '100vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                width: '100%',
-                overflow: 'hidden',
-              }}
-            >
-              <Login />
-            </Box>
+          <Box maxWidth="lg" mx="auto" mt={55} mb={20}>
+            <Login />
           </Box>
         </main>
         <Footer />
-      </Box>
-    </Container>
+      </Box >
+    </Container >
   );
 }

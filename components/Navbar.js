@@ -11,7 +11,6 @@ import { auth } from '../firebaseClient';
 const NavLink = styled(Button)`
   color: white;
   font-weight: 600;
-  margin: 0 0.5rem;
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
