@@ -22,7 +22,7 @@ export default function PricingPage() {
     return (
         <Box minHeight="85vh" display="flex" flexDirection="column" my={8}>
             <Head>
-                <title>Pricing - Demand Forecasting App</title>
+                <title>Pricing - DiY.AI</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />

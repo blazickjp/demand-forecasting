@@ -10,10 +10,7 @@ export default function AboutPage() {
   return (
     <Box minHeight="100vh" display="flex" flexDirection="column" my={8}>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet" />
-        <title>About - Demand Forecasting App</title>
+        <title>About - DiY.AI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
@@ -33,14 +30,14 @@ export default function AboutPage() {
                     Our Mission
                   </Typography>
                   <Typography variant="body1">
-                    Our mission at Demand Forecasting App is to empower businesses of all sizes, especially small businesses, to make data-driven decisions through precise and reliable demand forecasting. By democratizing advanced AI and predictive algorithms, we level the playing field and make cutting-edge technology accessible to a wider range of businesses. We provide actionable insights for optimizing inventory management, reducing costs, and increasing profits, all through a user-friendly platform. Our dedicated team is passionate about helping clients achieve their goals and stay ahead of the competition in a rapidly evolving market landscape.                  </Typography>
+                    Our mission at DiY.AI is to empower businesses of all sizes, especially small businesses, to make data-driven decisions through precise and reliable demand forecasting. By democratizing advanced AI and predictive algorithms, we level the playing field and make cutting-edge technology accessible to a wider range of businesses. We provide actionable insights for optimizing inventory management, reducing costs, and increasing profits, all through a user-friendly platform. Our dedicated team is passionate about helping clients achieve their goals and stay ahead of the competition in a rapidly evolving market landscape.                  </Typography>
                 </Grid>
                 <Grid item xs={12} md={6} sx={{ pl: { md: 4 } }}>
                   <Typography variant="h4" component="h2" gutterBottom>
                     Our Team
                   </Typography>
                   <Typography variant="body1">
-                    At Demand Forecasting App, our team's <strong>passion</strong> and <strong>expertise</strong> fuel our drive to excel:
+                    At DiY.AI, our team's <strong>passion</strong> and <strong>expertise</strong> fuel our drive to excel:
 
                     <ul>
                       <li><em>Data scientists</em> boasting over <strong>20 years</strong> of combined experience</li>
@@ -63,7 +60,7 @@ export default function AboutPage() {
                     Our Values
                   </Typography>
                   <Typography variant="body1">
-                    At Demand Forecasting App, our core values guide every decision we make and shape our commitment to delivering exceptional solutions for our clients:
+                    At DiY.AI, our core values guide every decision we make and shape our commitment to delivering exceptional solutions for our clients:
                     <ul>
                       <li><strong>Customer-centric</strong>: We prioritize our customers' needs, ensuring their success drives our own.</li>
                       <li><strong>Innovation</strong>: We embrace cutting-edge technology and continuously strive to improve our offerings.</li>

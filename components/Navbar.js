@@ -33,7 +33,7 @@ const Navbar = () => {
             variant="h6"
             sx={{ color: 'white', cursor: 'pointer', fontWeight: 'bold' }}
           >
-            Demand Forecasting App
+            DiY.AI
           </Typography>
         </Link>
         <Box

@@ -1,6 +1,6 @@
-# Demand Forecasting App
+# DiY.AI
 
-Demand Forecasting App is a powerful, user-friendly platform designed to help small businesses in the retail industry make data-driven decisions. By leveraging advanced predictive algorithms and machine learning, our app provides highly accurate demand forecasts, empowering you to optimize inventory management, reduce costs, and increase profits.
+DiY.AI is a powerful, user-friendly platform designed to help small businesses in the retail industry make data-driven decisions. By leveraging advanced predictive algorithms and machine learning, our app provides highly accurate demand forecasts, empowering you to optimize inventory management, reduce costs, and increase profits.
 
 ## Features
 

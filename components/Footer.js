@@ -18,7 +18,7 @@ const Footer = () => {
       <Container maxWidth="lg" maxHeight="100%">
         <Box py={2} textAlign="center">
           <p>
-            &copy; {(new Date()).getFullYear()} Demand Forecasting App. All rights reserved.
+            &copy; {(new Date()).getFullYear()} DiY.AI. All rights reserved.
           </p>
         </Box>
       </Container>

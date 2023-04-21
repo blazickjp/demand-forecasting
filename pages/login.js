@@ -10,7 +10,7 @@ export default function LoginPage() {
     <Container maxWidth={false} disableGutters>
       <Box my={4}>
         <Head>
-          <title>Login - Demand Forecasting App</title>
+          <title>Login - DiY.AI</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main>

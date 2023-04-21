@@ -19,7 +19,7 @@ export default function Home() {
     <Container maxWidth={false} disableGutters>
       <Box marginTop={15}>
         <Head>
-          <title>Demand Forecasting App</title>
+          <title>DiY.AI</title>
           <link rel="icon" href="/favicon.ico" />
           <style>{`
             html {

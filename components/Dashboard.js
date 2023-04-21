@@ -1,88 +1,76 @@
 import React from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import {
-    AppBar,
-    Toolbar,
-    Typography,
-    IconButton,
-    Drawer,
-    List,
-    ListItem,
-    ListItemText,
-    Divider,
-    Box
-} from '@mui/material';
-import { styled } from '@mui/system';
-import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import useAuth from '../hooks/useAuth';
-import { signOut } from 'firebase/auth';
+import { Box, Container, Typography, Grid } from '@mui/material';
+import withAuthNavBar from './withAuthNavBar';
 
-
-
-const Dashboard = () => {
-    const { user, auth } = useAuth();
-    const router = useRouter();
-    const [open, setOpen] = React.useState(false);
-
-    const handleLogout = async () => {
-        await signOut(auth);
-        router.push('/');
-    };
-
-    const toggleDrawer = () => {
-        setOpen(!open);
-    };
-
-    const drawerItems = [
-        { text: 'Item 1', href: '/dashboard/item1' },
-        { text: 'Item 2', href: '/dashboard/item2' },
-        // Add more items as needed
-    ];
-
+const Dashboard = ({ mainContentMargin }) => {
     return (
-        <div>
-            <AppBar position="fixed">
-                <Toolbar>
-                    <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer}>
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                        Dashboard
+        <Box
+            marginLeft={`${mainContentMargin}px`}
+            paddingLeft={5}
+            transition="margin 225ms cubic-bezier(0, 0, 0.2, 1)"
+        >
+            <Container maxWidth="md">
+                <Box mt={4}>
+                    <Typography variant="h5" component="h2" gutterBottom>
+                        Welcome to DiY.AI: Revolutionizing Small Business with AI and Machine Learning
                     </Typography>
-                    <IconButton color="inherit" onClick={handleLogout}>
-                        <AccountCircle />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>
-            <Drawer anchor="left" open={open} onClose={toggleDrawer}>
-                <List>
-                    {drawerItems.map((item) => (
-                        <Link href={item.href} key={item.text} passHref>
-                            <ListItem button component="a">
-                                <ListItemText primary={item.text} />
-                            </ListItem>
-                        </Link>
-                    ))}
-                </List>
-                <Divider />
-            </Drawer>
-            <main>
-                <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                    <Toolbar />
-                    {/* Add the welcome message below */}
-                    {user && (
-                        <Typography variant="h4" component="h1" gutterBottom>
-                            Welcome, {user.displayName}!
-                        </Typography>
-                    )}
-                    {/* ... rest of the JSX ... */}
                 </Box>
-                {/* Add your main content here */}
-            </main>
-        </div>
+
+                <Box mt={4}>
+                    <Typography variant="body1" component="p" gutterBottom>
+                        At DiY.AI, our mission is to empower small businesses around the world with the power of artificial intelligence and machine learning. With our forecasting and optimization solutions, small businesses with less than 200 employees can now compete and thrive in the market like never before.
+                    </Typography>
+                </Box>
+
+                {/* Image: DiY.AI logo or a visual representing small businesses */}
+                {/* <Box mt={4}>
+          <img src="your-image-source" alt="DiY.AI logo or a visual representing small businesses" />
+        </Box> */}
+
+                <Box mt={4}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                        Forecasting and Optimization for Small Businesses
+                    </Typography>
+                    <Typography variant="body1" component="p" gutterBottom>
+                        Our forecasting and optimization tools harness the power of AI and machine learning to help you make data-driven decisions for your business. From sales and inventory forecasting to optimizing your supply chain, DiY.AI can help your small business achieve its full potential.
+                    </Typography>
+                </Box>
+
+                {/* Image: A visual representing forecasting and optimization */}
+                {/* <Box mt={4}>
+          <img src="your-image-source" alt="A visual representing forecasting and optimization" />
+        </Box> */}
+
+                <Box mt={4}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                        Expanding to All Facets of AI and Machine Learning
+                    </Typography>
+                    <Typography variant="body1" component="p" gutterBottom>
+                        At DiY.AI, we're continually working to expand our offerings and provide more tools and services to help small businesses succeed. Our vision is to become a one-stop-shop for AI and machine learning solutions, tailored specifically to the unique needs of small businesses.
+                    </Typography>
+                </Box>
+
+                {/* Image: A visual representing the expansion of AI and machine learning */}
+                {/* <Box mt={4}>
+          <img src="your-image-source" alt="A visual representing the expansion of AI and machine learning" />
+        </Box> */}
+
+                <Box mt={4}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                        Supporting Brick and Mortar Businesses
+                    </Typography>
+                    <Typography variant="body1" component="p" gutterBottom>
+                        Our tools are designed with brick and mortar businesses in mind. By helping you optimize your operations and make data-driven decisions, we aim to level the playing field and ensure that your business can compete and succeed in today's ever-changing landscape.
+                    </Typography>
+                </Box>
+
+                {/* Image: A visual representing brick and mortar businesses */}
+                {/* <Box mt={4}>
+          <img src="your-image-source" alt="A visual representing brick and mortar businesses" />
+        </Box> */}
+            </Container>
+        </Box>
     );
 };
 
-export default Dashboard;
+export default withAuthNavBar(Dashboard);
