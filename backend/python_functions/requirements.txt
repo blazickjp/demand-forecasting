@@ -1,2 +1,6 @@
-# requirements.txt
+# # requirements.txt
 Flask==2.1.1
+Flask-Cors==3.0.10
+langchain==0.0.147
+deeplake==3.2.22
+openai==0.27.2
