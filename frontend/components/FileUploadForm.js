@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {
   Button,
   CircularProgress,
@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import Papa from 'papaparse';
 import PropTypes from 'prop-types';
-import FileUpload from 'react-material-file-upload';
+import { useDropzone } from 'react-dropzone';
 
 const FileUploadForm = ({ onFileUpload }) => {
   const [file, setFile] = useState(null);
@@ -21,12 +21,14 @@ const FileUploadForm = ({ onFileUpload }) => {
     console.log(file);
   }, [file]);
 
+  const onDrop = useCallback((acceptedFiles) => {
+    setFile(acceptedFiles);
+  }, []);
+  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-
-    const formData = new FormData();
-    formData.append('file', file);
 
     setLoading(false);
     const reader = new FileReader();
@@ -54,7 +56,14 @@ const FileUploadForm = ({ onFileUpload }) => {
     <form onSubmit={handleSubmit}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <FileUpload value={file} onChange={setFile} multiple={false} accept=".csv" />
+          <div {...getRootProps()}>
+            <input {...getInputProps()} />
+            {isDragActive ? (
+              <p>Drop the file here ...</p>
+            ) : (
+              <p>Drag 'n' drop a file here, or click to select a file</p>
+            )}
+          </div>
         </Grid>
         <Grid item xs={12}>
           <Tooltip title="Check this if your CSV file has a header row with column names.">
@@ -82,7 +91,7 @@ const FileUploadForm = ({ onFileUpload }) => {
         </Grid>
       </Grid>
       {forecast && <pre>{JSON.stringify(forecast, null, 2)}</pre>}
-    </form >
+    </form>
   );
 };
 

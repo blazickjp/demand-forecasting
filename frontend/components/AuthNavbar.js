@@ -6,6 +6,7 @@ import { signOut } from 'firebase/auth';
 import MenuIcon from '@mui/icons-material/Menu';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import ScheduleIcon from '@mui/icons-material/Schedule';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import React, { forwardRef } from 'react';
 import {
     AppBar,
@@ -80,6 +81,11 @@ const AuthNavbar = ({ onDrawerToggle }) => {
                 // { text: 'How-To', href: '/dashboard/schedule-optimization/how-to' },
                 { text: 'Run Optimization', href: '/dashboard/schedule-optimization/run' },
             ],
+        },
+        {
+            text: 'Questions',
+            href: '/qa',
+            icon: <QuestionAnswerIcon />,
         },
         // Add more items as needed
     ];
