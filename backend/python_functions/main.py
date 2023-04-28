@@ -134,7 +134,7 @@ def llm_answer(request_data: LlmAnswerRequest):
         user_db = ElasticVectorSearch(
             elasticsearch_url=f"{HOST}:{PORT}",
             index_name=dataset,
-            embedding_function=embeddings,
+            embedding=embeddings,
         )
 
         memory = ConversationBufferMemory(
