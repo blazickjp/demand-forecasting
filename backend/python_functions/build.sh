@@ -2,30 +2,27 @@
 
 # Set your variables
 PROJECT_ID=$PROJECT_ID
-IMAGE_NAME="llm_backend"
-SERVICE_NAME="llm-backend"
 REGION="us-east1"
 
-echo $DEEPLAKE_ACCOUNT_NAME
-echo $DEEPLAKE_TOKEN
+# Load secrets
+DEEPLAKE_ACCOUNT_NAME=$(gcloud secrets versions access latest --secret="deeplake-account-name" --project="$PROJECT_ID")
+DEEPLAKE_TOKEN=$(gcloud secrets versions access latest --secret="deeplake-token" --project="$PROJECT_ID")
+OPENAI_API_KEY=$(gcloud secrets versions access latest --secret="openai-api-key" --project="$PROJECT_ID")
 
-# Build the Docker image
-docker build -t "$IMAGE_NAME" . \
-  --build-arg DEEPLAKE_ACCOUNT_NAME=$DEEPLAKE_ACCOUNT_NAME \
-  --build-arg DEEPLAKE_TOKEN=$DEEPLAKE_TOKEN \
-  --build-arg OPENAI_API_KEY=$OPENAI_API_KEY
+# Create a temporary app.yaml file with environment variables
+cat > app_temp.yaml << EOL
+runtime: python39
+service: llm-backend
+entrypoint: gunicorn -w 1 -k uvicorn.workers.UvicornWorker main:app
+instance_class: F1
+env_variables:
+  DEEPLAKE_ACCOUNT_NAME: "$DEEPLAKE_ACCOUNT_NAME"
+  DEEPLAKE_TOKEN: "$DEEPLAKE_TOKEN"
+  OPENAI_API_KEY: "$OPENAI_API_KEY"
+EOL
 
-# Tag the Docker image for Google Container Registry (GCR)
-docker tag "$IMAGE_NAME" "gcr.io/$PROJECT_ID/$IMAGE_NAME"
+# Deploy to App Engine
+gcloud app deploy app_temp.yaml --project="$PROJECT_ID" --quiet
 
-# Push the Docker image to GCR
-docker push "gcr.io/$PROJECT_ID/$IMAGE_NAME"
-
-# Deploy to Cloud Run
-gcloud run deploy "$SERVICE_NAME" \
-  --image "gcr.io/$PROJECT_ID/$IMAGE_NAME" \
-  --platform managed \
-  --region "$REGION" \
-  --min-instances "1" \
-  --memory 1Gi \
-  --allow-unauthenticated
+# Remove the temporary app.yaml file
+rm app_temp.yaml

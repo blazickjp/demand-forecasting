@@ -1,20 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
     Box,
     Container,
     Typography,
-    TextField,
     Button,
     CircularProgress,
-    FormControl,
-    InputLabel,
-    Select,
-    MenuItem,
     TextareaAutosize,
+    Select, // Add this import
+    MenuItem, // Add this import
 } from '@mui/material';
 import withAuthNavBar from '../components/withAuthNavBar';
 import { useRouter } from 'next/router';
 import useAuth from '../hooks/useAuth';
+import { styled } from '@mui/system';
+
+
+const Question = styled('div')({
+    backgroundColor: '#f0f0f0',
+    borderRadius: '8px',
+    padding: '8px',
+    margin: '8px 0',
+});
+
+const Answer = styled('div')({
+    backgroundColor: '#e0e0e0',
+    borderRadius: '8px',
+    padding: '8px',
+    margin: '8px 0',
+});
+
+const ConversationContainer = styled('div')({
+    maxHeight: '300px',
+    overflowY: 'scroll',
+    marginBottom: '16px',
+});
+
+// import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+
+// Use dynamic import to load the libraries
+const importKatexAndShowdown = async () => {
+    const [katexModule, showdownModule] = await Promise.all([
+        import('katex'),
+        import('showdown'),
+    ]);
+
+    return { katex: katexModule.default, showdown: showdownModule.default };
+};
+
+
 
 const QAPage = ({ mainContentMargin }) => {
     const [question, setQuestion] = useState('');
@@ -25,6 +60,51 @@ const QAPage = ({ mainContentMargin }) => {
     const router = useRouter();
     const [dataset, setDataset] = useState('bayesian_data_analysis');
     const [errorMessage, setErrorMessage] = useState(null);
+    const answerRef = useRef(null);
+    const [conversationHistory, setConversationHistory] = useState([]);
+    const userFirstName = user?.displayName?.split(' ')[0] || 'Human';
+
+
+
+    useEffect(() => {
+        if (answer && answerRef.current) {
+            renderMarkdownWithLatex(answer, answerRef.current);
+            // Prism.highlightAllUnder(answerRef.current);
+        }
+    }, [answer]);
+
+    // Add this function inside the QAPage component
+    const addToConversationHistory = (question, answer) => {
+        setConversationHistory((prevHistory) => {
+            const newHistory = [
+                ...prevHistory,
+                { type: 'question', content: question },
+                { type: 'answer', content: answer },
+            ];
+            // Keep only the most recent 10 questions and answers (20 items)
+            return newHistory.slice(-20);
+        });
+    };
+
+    // Add this function inside the QAPage component
+    const handleClearCache = async (type) => {
+        try {
+            // console.log(JSON.stringify({ cache_type: type, user_id: user.uid }))
+            const response = await fetch('http://localhost:8888/clear_cache', {
+                // const response = await fetch('https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/clear_cache', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ cache_type: type, user_id: user.uid }),
+            });
+
+            console.log(response);
+        } catch (error) {
+            console.error('Error clearing cache:', error.message);
+        }
+    };
+
 
     // Redirect to the login page if the user is not authenticated
     React.useEffect(() => {
@@ -32,6 +112,29 @@ const QAPage = ({ mainContentMargin }) => {
             router.push('/login');
         }
     }, [authLoading, user, router]);
+
+    async function renderMarkdownWithLatex(markdownText, targetElement) {
+        // Load the required libraries
+        const { katex, showdown } = await importKatexAndShowdown();
+
+        // Create a Showdown converter
+        const converter = new showdown.Converter();
+
+        // Convert Markdown to HTML
+        const html = converter.makeHtml(markdownText);
+
+        // Set the innerHTML of the target element
+        targetElement.innerHTML = html;
+
+        // Find all elements with the class 'katex'
+        const katexElements = targetElement.querySelectorAll('.katex');
+
+        // Render LaTeX using KaTeX
+        katexElements.forEach((elem) => {
+            const latex = elem.textContent || elem.innerText;
+            katex.render(latex, elem);
+        });
+    }
 
     const handleQuestionChange = (e) => {
         setQuestion(e.target.value);
@@ -47,10 +150,10 @@ const QAPage = ({ mainContentMargin }) => {
     const handleSubmit = async () => {
         setLoading(true);
         setErrorMessage(null); // Reset error message before making a new request
-        console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
+        // console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
         try {
             const response = await fetch(
-                // 'https://llm-backend-6gnrxcf25a-ue.a.run.app/llm_answer',
+                // 'https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/llm_answer',
                 'http://localhost:8888/llm_answer',
                 {
                     method: 'POST',
@@ -63,12 +166,20 @@ const QAPage = ({ mainContentMargin }) => {
 
             if (!response.ok) {
                 const errorData = await response.json();
-                throw new Error(errorData.error || `Request failed with status ${response.status}`);
+                throw new Error(errorData.error || `Request failed with status ${response.status}, ${response.body}`);
             }
 
             const result = await response.json();
             console.log(result);
             setAnswer(result.answer);
+            setConversationHistory((prev) => [
+                ...prev,
+                { type: 'question', content: `${userFirstName}: ${question}` },
+                { type: 'answer', content: `MindSproutAI: ${result.answer}` },
+            ]);
+
+            // Clear the input field
+            // setQuestion('');
         } catch (error) {
             setErrorMessage(error.message);
             console.error('Error:', error.message);
@@ -85,35 +196,36 @@ const QAPage = ({ mainContentMargin }) => {
                         Q&A
                     </Typography>
                 </Box>
-                <Box mt={4}>
-                    <Typography variant="h5" component="h2" gutterBottom>
-                        Study Aid
-                    </Typography>
-                    <Typography variant="body1" component="p" gutterBottom>
-                        Welcome to the Study Aid! This application is designed to help you better understand the concepts
-                        presented in various study materials. By using the powerful GPT-3.5 AI model, you can ask questions related
-                        to the material covered in the selected dataset and receive accurate and detailed answers.
-                    </Typography>
-                    <Typography variant="body1" component="p">
-                        Simply choose a dataset from the dropdown menu, type your question in the provided input field, and the AI
-                        will search the preloaded database to give you an answer based on the text. You can also upload a PDF file if you'd
-                        like to reference additional content (NOT YET IMPLEMENTED). This study aid aims to enhance your learning experience
-                        and deepen your understanding of the concepts in the selected dataset.
-                    </Typography>
+                <Box sx={{ minWidth: 120, mx: 1, my: 1 }}>
+                    <Select
+                        value={dataset}
+                        onChange={handleDatasetChange}
+                        displayEmpty
+                        inputProps={{ 'aria-label': 'Select a dataset' }}
+                    >
+                        {/* <MenuItem value="bayesian_data_analysis">Bayesian Data Analysis</MenuItem>\ */}
+                        <MenuItem value="kaplan_cfa_level_2_book_1">Kaplan CFA Book 1</MenuItem>
+                        {/* <MenuItem value="NCLEX">Nursing Exam NCLEX</MenuItem> */}
+
+                        {/* Add more MenuItem components for other datasets here */}
+                    </Select>
                 </Box>
-                <Box mt={4}>
-                    <FormControl fullWidth variant="outlined">
-                        <InputLabel htmlFor="dataset-select">Select a dataset</InputLabel>
-                        <Select
-                            label="Select a dataset"
-                            id="dataset-select"
-                            value={dataset}
-                            onChange={handleDatasetChange}
-                        >
-                            <MenuItem value="bayesian_data_analysis">Bayesian Data Analysis</MenuItem>
-                            {/* Add more MenuItem components for additional datasets */}
-                        </Select>
-                    </FormControl>
+                {/* Add this Box for the conversation stream */}
+                <Box mt={4} maxWidth="md" pb={12}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                        Conversation History:
+                    </Typography>
+                    <ConversationContainer>
+                        {conversationHistory.map((item, index) => (
+                            <React.Fragment key={index}>
+                                {item.type === 'question' ? (
+                                    <Question>{item.content}</Question>
+                                ) : (
+                                    <Answer>{item.content}</Answer>
+                                )}
+                            </React.Fragment>
+                        ))}
+                    </ConversationContainer>
                 </Box>
                 {errorMessage && (
                     <Box mt={4}>
@@ -122,47 +234,58 @@ const QAPage = ({ mainContentMargin }) => {
                         </Typography>
                     </Box>
                 )}
-
-                <Box mt={4}>
-                    <TextareaAutosize
-                        aria-label="Ask your question"
-                        placeholder="Ask your question"
-                        value={question}
-                        onChange={handleQuestionChange}
-                        style={{
-                            width: '100%',
-                            padding: '12px 16px',
-                            borderRadius: '4px',
-                            border: '1px solid rgba(0, 0, 0, 0.23)',
-                            fontSize: '1rem',
-                            fontFamily: 'inherit',
-                        }}
-                        minRows={3}
-                    />
-                </Box>
-
-
-                {/* <Box mt={4}>
-      <Typography variant="subtitle1" component="p">
-        Upload a PDF:
-      </Typography>
-      <Input type="file" accept=".pdf" onChange={handleFileChange} />
-    </Box> */}
-                <Box mt={4} display="flex" justifyContent="flex-end">
-                    <Button variant="contained" color="primary" onClick={handleSubmit} disabled={loading}>
-                        {loading ? <CircularProgress size={24} /> : 'Submit'}
-                    </Button>
-                </Box>
-                {answer && (
-                    <Box mt={4} maxWidth="md" pb={12}>
-                        <Typography variant="h6" component="h3" gutterBottom>
-                            Answer:
-                        </Typography>
-                        <Typography variant="body1" component="p">
-                            {answer}
-                        </Typography>
+                {/* Wrap the chat and input components */}
+                <Box display="flex" flexDirection="column" flexGrow={10}>
+                    <Box mt={4}>
+                        <TextareaAutosize
+                            aria-label="Ask your question"
+                            placeholder="Ask your question"
+                            value={question}
+                            onChange={handleQuestionChange}
+                            style={{
+                                width: '100%',
+                                padding: '4px 4px',
+                                borderRadius: '4px',
+                                border: '1px solid rgba(0, 0, 0, 0.23)',
+                                fontSize: '1rem',
+                                fontFamily: 'inherit',
+                            }}
+                            minRows={3}
+                        />
                     </Box>
-                )}
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4}>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                            onClick={() => handleClearCache('memory')}
+                            sx={{ mx: 1, my: 1 }}
+                        >
+                            Clear Memory Cache
+                        </Button>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                            onClick={() => handleClearCache('user')}
+                            sx={{ mx: 1, my: 1 }}
+                        >
+                            Clear User Cache
+                        </Button>
+                        {/* Your other components */}
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                            onClick={handleSubmit}
+                            disabled={loading}
+                            sx={{ mx: 1, my: 1 }}
+                        >
+                            {loading ? <CircularProgress size={24} /> : 'Submit'}
+                        </Button>
+                    </Box>
+
+                </Box>
             </Container>
         </Box>
     );

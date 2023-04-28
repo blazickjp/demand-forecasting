@@ -84,7 +84,7 @@ const AuthNavbar = ({ onDrawerToggle }) => {
         },
         {
             text: 'Questions',
-            href: '/qa',
+            href: '#hidden',
             icon: <QuestionAnswerIcon />,
         },
         // Add more items as needed

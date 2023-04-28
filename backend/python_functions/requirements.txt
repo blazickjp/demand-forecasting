@@ -1,7 +1,9 @@
 # # requirements.txt
-Flask==2.1.1
-Flask-Cors==3.0.10
-langchain==0.0.147
-deeplake==3.2.22
+fastapi==0.95.1
+langchain==0.0.150
+deeplake==3.3.0
 openai==0.27.2
 gunicorn==20.1.0
+tiktoken==0.3.3
+uvicorn==0.21.1
+redis==4.5.4

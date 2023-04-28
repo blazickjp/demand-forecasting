@@ -1,0 +1,4 @@
+runtime: python39
+service: llm-backend
+entrypoint: gunicorn -w 1 -k uvicorn.workers.UvicornWorker main:app
+instance_class: F1
