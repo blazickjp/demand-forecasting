@@ -90,8 +90,8 @@ const QAPage = ({ mainContentMargin }) => {
     const handleClearCache = async (type) => {
         try {
             // console.log(JSON.stringify({ cache_type: type, user_id: user.uid }))
-            // const response = await fetch('http://localhost:8888/clear_cache', {
-            const response = await fetch('https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/clear_cache', {
+            const response = await fetch('http://localhost:8888/clear_cache', {
+            // const response = await fetch('https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/clear_cache', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -150,11 +150,11 @@ const QAPage = ({ mainContentMargin }) => {
     const handleSubmit = async () => {
         setLoading(true);
         setErrorMessage(null); // Reset error message before making a new request
-        // console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
+        console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
         try {
             const response = await fetch(
-                'https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/llm_answer',
-                // 'http://localhost:8888/llm_answer',
+                //'https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/llm_answer',
+                'http://localhost:8888/llm_answer',
                 {
                     method: 'POST',
                     headers: {
