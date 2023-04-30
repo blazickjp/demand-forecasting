@@ -15,7 +15,7 @@ const Footer = () => {
         boxShadow: '0px 100px 0px rgba(211, 211, 211)',
       }}
     >
-      <Container maxWidth="lg" maxHeight="100%">
+      <Container maxWidth="lg">
         <Box py={2} textAlign="center">
           <p>
             &copy; {(new Date()).getFullYear()} DiY.AI. All rights reserved.
