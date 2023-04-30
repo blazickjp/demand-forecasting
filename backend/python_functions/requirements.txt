@@ -8,3 +8,4 @@ tiktoken==0.3.3
 uvicorn==0.21.1
 redis==4.5.4
 elasticsearch==8.7.0
+python-multipart==0.0.6

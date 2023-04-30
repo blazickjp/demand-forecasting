@@ -1,11 +1,22 @@
-from fastapi import FastAPI, HTTPException
+## API
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 from typing import Optional
-import redis
 
+## Database
+import redis
+from elasticsearch import Elasticsearch
+from uuid import uuid4
+
+## Base
 import os
 import json
+import datetime
+
+## Model
+from pydantic import BaseModel
+
+## LangChain imports
 from langchain.vectorstores import DeepLake, ElasticVectorSearch
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
@@ -80,6 +91,23 @@ class LlmAnswerRequest(BaseModel):
 class ClearCacheRequest(BaseModel):
     user_id: str
     cache_type: str
+
+def save_to_elastic(content: str, user_id: str):
+    # Create a new Elasticsearch client
+    es = Elasticsearch([f"llm-vectorstore.es.us-east1.gcp.elastic-cloud.com:9243"], http_auth=("elastic", "4H7MC7XFTOJTDQu9b5CCAxM2"))
+
+    # Create a document with the uploaded content
+    doc = {
+        "content": content,
+        "user_id": user_id,
+        "timestamp": datetime.utcnow(),
+    }
+
+    # Generate a unique ID for the document
+    doc_id = str(uuid4())
+
+    # Index the document into ElasticSearch
+    es.index(index="user-uploads", id=doc_id, body=doc)
 
 
 app = FastAPI()
@@ -235,6 +263,19 @@ def clear_cache(request_data: ClearCacheRequest):
         return {'message': 'User cache cleared'}
     else:
         raise HTTPException(status_code=400, detail="Invalid cache type")
+
+@app.post("/upload")
+async def upload_file(file: UploadFile = File(...), user_id: str = None):
+    # Read the content of the uploaded file
+    content = await file.read()
+
+    # Process the content as needed, e.g., extract text, tokenize, etc.
+
+    # Save the processed content to the ElasticSearch database
+    save_to_elastic(content, user_id)
+
+    return {"filename": file.filename}
+
 
 
 if __name__ == "__main__":

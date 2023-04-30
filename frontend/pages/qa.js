@@ -49,8 +49,10 @@ const importKatexAndShowdown = async () => {
     return { katex: katexModule.default, showdown: showdownModule.default };
 };
 
-
-
+const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
+};
+  
 const QAPage = ({ mainContentMargin }) => {
     const [question, setQuestion] = useState('');
     const [file, setFile] = useState(null);
@@ -64,6 +66,34 @@ const QAPage = ({ mainContentMargin }) => {
     const [conversationHistory, setConversationHistory] = useState([]);
     const userFirstName = user?.displayName?.split(' ')[0] || 'Human';
 
+    const [uploadedFiles, setUploadedFiles] = useState([]);
+    const [preLoadedMaterials, setPreLoadedMaterials] = useState([
+        // Add pre-loaded material filenames or IDs here
+        "kaplan_cfa_level_2_book_1",
+    ]);
+    
+
+    const handleFileUpload = async (event) => {
+        const file = event.target.files[0];
+        const formData = new FormData();
+        formData.append("file", file);
+    
+        // Optionally, you can also send the user_id if needed
+        formData.append("user_id", "your_user_id");
+    
+        try {
+        // Replace "http://localhost:8888" with the appropriate backend API URL
+        const response = await fetch("http://localhost:8888/upload", {
+            method: "POST",
+            body: formData,
+        });
+    
+        const data = await response.json();
+        setUploadedFiles((prevFiles) => [...prevFiles, data.filename]);
+        } catch (error) {
+        console.error("File upload failed:", error);
+        }
+    };  
 
 
     useEffect(() => {
@@ -105,6 +135,10 @@ const QAPage = ({ mainContentMargin }) => {
         }
     };
 
+    const handleUploadMaterialChange = (e) => {
+        setFile(e.target.files[0]);
+        handleFileUpload(e);
+    };
 
     // Redirect to the login page if the user is not authenticated
     React.useEffect(() => {
@@ -151,6 +185,12 @@ const QAPage = ({ mainContentMargin }) => {
         setLoading(true);
         setErrorMessage(null); // Reset error message before making a new request
         console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
+
+        // Create FormData to include the file in the request
+        const formData = new FormData();
+        formData.append('question', question);
+        formData.append('user_id', user.uid);
+        formData.append('dataset', dataset);
         try {
             const response = await fetch(
                 //'https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/llm_answer',
@@ -197,18 +237,34 @@ const QAPage = ({ mainContentMargin }) => {
                     </Typography>
                 </Box>
                 <Box sx={{ minWidth: 120, mx: 1, my: 1 }}>
-                    <Select
+                    {/* <Select
                         value={dataset}
                         onChange={handleDatasetChange}
                         displayEmpty
                         inputProps={{ 'aria-label': 'Select a dataset' }}
                     >
-                        {/* <MenuItem value="bayesian_data_analysis">Bayesian Data Analysis</MenuItem>\ */}
+                        {<MenuItem value="bayesian_data_analysis">Bayesian Data Analysis</MenuItem>\ }
                         <MenuItem value="kaplan_cfa_level_2_book_1">Kaplan CFA Book 1</MenuItem>
-                        {/* <MenuItem value="NCLEX">Nursing Exam NCLEX</MenuItem> */}
+                        {<MenuItem value="NCLEX">Nursing Exam NCLEX</MenuItem> }
 
-                        {/* Add more MenuItem components for other datasets here */}
-                    </Select>
+                        { Add more MenuItem components for other datasets here }
+                    </Select> */}
+                    <select
+                        value={dataset}
+                        onChange={(e) => setDataset(e.target.value)}
+                    >
+                        <option value="">--Select Dataset--</option>
+                        {preLoadedMaterials.map((filename, index) => (
+                            <option key={`preloaded-${index}`} value={filename}>
+                                {filename}
+                            </option>
+                        ))}
+                        {uploadedFiles.map((filename, index) => (
+                            <option key={`uploaded-${index}`} value={filename}>
+                                {filename}
+                            </option>
+                        ))}
+                    </select>
                 </Box>
                 {/* Add this Box for the conversation stream */}
                 <Box mt={4} maxWidth="md" pb={12}>
@@ -272,7 +328,26 @@ const QAPage = ({ mainContentMargin }) => {
                         >
                             Clear User Cache
                         </Button>
-                        {/* Your other components */}
+                        <Box mt={4} display="flex" justifyContent="center" marginBottom={4}>
+                <input
+                    accept="application/pdf" // Accept only PDF files
+                    style={{ display: 'none' }}
+                    id="file-upload"
+                    type="file"
+                    onChange={handleUploadMaterialChange}
+                />
+                <label htmlFor="file-upload">
+                    <Button variant="contained" color="primary" size="large" component="span">
+                        Upload Material
+                    </Button>
+                </label>
+                {file && (
+                    <Typography variant="body1" component="p" sx={{ marginLeft: 1 }}>
+                        {file.name}
+                    </Typography>
+                )}
+                {/* Other buttons and components */}
+                </Box>
                         <Button
                             variant="contained"
                             color="primary"
