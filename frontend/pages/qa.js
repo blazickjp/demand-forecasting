@@ -30,10 +30,21 @@ const Answer = styled('div')({
 });
 
 const ConversationContainer = styled('div')({
-    maxHeight: '300px',
+    maxHeight: '500px',
     overflowY: 'scroll',
     marginBottom: '16px',
 });
+
+
+const fixedPosition = {
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    // background: 'white',
+    padding: '16px',
+    // borderTop: '1px solid rgba(0, 0, 0, 0.23)',
+};
 
 // import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -88,10 +99,12 @@ const QAPage = ({ mainContentMargin }) => {
 
     // Add this function inside the QAPage component
     const handleClearCache = async (type) => {
+        if (type === 'memory') resetConversationHistory();
+
         try {
             // console.log(JSON.stringify({ cache_type: type, user_id: user.uid }))
-            // const response = await fetch('http://localhost:8888/clear_cache', {
-            const response = await fetch('https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/clear_cache', {
+            const response = await fetch('http://localhost:8888/clear_cache', {
+                // const response = await fetch('https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/clear_cache', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -135,6 +148,10 @@ const QAPage = ({ mainContentMargin }) => {
             katex.render(latex, elem);
         });
     }
+    const resetConversationHistory = () => {
+        setConversationHistory([]);
+    };
+
 
     const handleQuestionChange = (e) => {
         setQuestion(e.target.value);
@@ -153,8 +170,8 @@ const QAPage = ({ mainContentMargin }) => {
         // console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
         try {
             const response = await fetch(
-                'https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/llm_answer',
-                // 'http://localhost:8888/llm_answer',
+                // 'https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/llm_answer',
+                'http://localhost:8888/llm_answer',
                 {
                     method: 'POST',
                     headers: {
@@ -211,7 +228,7 @@ const QAPage = ({ mainContentMargin }) => {
                     </Select>
                 </Box>
                 {/* Add this Box for the conversation stream */}
-                <Box mt={4} maxWidth="md" pb={12}>
+                <Box mt={4} maxWidth="md" pb={4}>
                     <Typography variant="h6" component="h3" gutterBottom>
                         Conversation History:
                     </Typography>
@@ -236,15 +253,23 @@ const QAPage = ({ mainContentMargin }) => {
                 )}
                 {/* Wrap the chat and input components */}
                 <Box display="flex" flexDirection="column" flexGrow={10}>
-                    <Box mt={4}>
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4} sx={{
+                        position: 'fixed',
+                        bottom: 40,
+                        left: 0,
+                        right: 0,
+                        // background: 'white',
+                        padding: '16px',
+                        borderTop: '1px solid rgba(0, 0, 0, 0.23)',
+                    }}>
                         <TextareaAutosize
                             aria-label="Ask your question"
                             placeholder="Ask your question"
                             value={question}
                             onChange={handleQuestionChange}
                             style={{
-                                width: '100%',
-                                padding: '4px 4px',
+                                width: '50%',
+                                // padding: '4px 4px',
                                 borderRadius: '4px',
                                 border: '1px solid rgba(0, 0, 0, 0.23)',
                                 fontSize: '1rem',
@@ -253,7 +278,7 @@ const QAPage = ({ mainContentMargin }) => {
                             minRows={3}
                         />
                     </Box>
-                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4}>
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={0} sx={fixedPosition}>
                         <Button
                             variant="contained"
                             color="primary"
@@ -284,10 +309,10 @@ const QAPage = ({ mainContentMargin }) => {
                             {loading ? <CircularProgress size={24} /> : 'Submit'}
                         </Button>
                     </Box>
-
                 </Box>
-            </Container>
-        </Box>
+            </Container >
+
+        </Box >
     );
 };
 
