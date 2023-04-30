@@ -10,13 +10,13 @@ const theme = createTheme({
       main: '#00c2ff', // OpenAI-like secondary color (cyan)
     },
     background: {
-      default: '#f6f8fa', // OpenAI-like background color (light gray)
+      default: 'white', // OpenAI-like background color (light gray)
     },
   },
   typography: {
     body1: {
       fontSize: '1.2rem',
-      
+
     },
     body2: {
       fontSize: '0.875rem',
