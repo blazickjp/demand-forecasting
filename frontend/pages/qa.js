@@ -13,27 +13,62 @@ import withAuthNavBar from '../components/withAuthNavBar';
 import { useRouter } from 'next/router';
 import useAuth from '../hooks/useAuth';
 import { styled } from '@mui/system';
+import { AiOutlineRobot } from 'react-icons/ai';
 
 
-const Question = styled('div')({
-    backgroundColor: '#f0f0f0',
-    borderRadius: '8px',
-    padding: '8px',
-    margin: '8px 0',
-});
 
-const Answer = styled('div')({
-    backgroundColor: '#e0e0e0',
-    borderRadius: '8px',
-    padding: '8px',
-    margin: '8px 0',
-});
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+console.log(apiUrl);
+
+const Question = styled('div')(({ theme }) => ({
+    backgroundColor: '#E1FFC7',
+    borderRadius: '1.2em',
+    padding: '12px 16px',
+    margin: '4px 0',
+    alignSelf: 'flex-end',
+    maxWidth: '70%',
+    wordWrap: 'break-word',
+    borderBottomRightRadius: '0.3em',
+    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.15)', // Add boxShadow
+
+}));
+
+const Answer = styled('div')(({ theme }) => ({
+    backgroundColor: '#F3F3F3',
+    borderRadius: '1.2em',
+    padding: '12px 16px',
+    margin: '4px 0',
+    alignSelf: 'flex-start',
+    maxWidth: '70%',
+    wordWrap: 'break-word',
+    borderBottomLeftRadius: '0.3em',
+    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.15)', // Add boxShadow
+
+}));
 
 const ConversationContainer = styled('div')({
-    maxHeight: '300px',
-    overflowY: 'scroll',
-    marginBottom: '16px',
+    maxHeight: '50vh',
+    overflowY: 'auto', // Change this to 'auto'
+    padding: '0 0 16px 0', // Add padding-bottom instead of marginBottom
+    display: 'flex',
+    flexDirection: 'column',
+    borderTop: '0.3em',
+    gap: '8px',
+    '&:focus': {
+        outline: 'none',
+    },
 });
+
+const fixedPosition = {
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    // background: 'white',
+    padding: '16px',
+    // borderTop: '1px solid rgba(0, 0, 0, 0.23)',
+};
 
 // import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -60,11 +95,13 @@ const QAPage = ({ mainContentMargin }) => {
     const [loading, setLoading] = useState(false);
     const { user, loading: authLoading } = useAuth();
     const router = useRouter();
-    const [dataset, setDataset] = useState('bayesian_data_analysis');
+    const [dataset, setDataset] = useState('kaplan_cfa_level_2_book_1');
     const [errorMessage, setErrorMessage] = useState(null);
     const answerRef = useRef(null);
     const [conversationHistory, setConversationHistory] = useState([]);
     const userFirstName = user?.displayName?.split(' ')[0] || 'Human';
+    const conversationContainerRef = useRef(null);
+
 
     const [uploadedFiles, setUploadedFiles] = useState([]);
     const [preLoadedMaterials, setPreLoadedMaterials] = useState([
@@ -118,10 +155,11 @@ const QAPage = ({ mainContentMargin }) => {
 
     // Add this function inside the QAPage component
     const handleClearCache = async (type) => {
+        if (type === 'memory') resetConversationHistory();
+
         try {
             // console.log(JSON.stringify({ cache_type: type, user_id: user.uid }))
-            const response = await fetch('http://localhost:8888/clear_cache', {
-            // const response = await fetch('https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/clear_cache', {
+            const response = await fetch(`${apiUrl}/clear_cache`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -134,6 +172,12 @@ const QAPage = ({ mainContentMargin }) => {
             console.error('Error clearing cache:', error.message);
         }
     };
+    // Scroll to bottom of conversation when answer is returned
+    useEffect(() => {
+        if (conversationContainerRef.current) {
+            conversationContainerRef.current.scrollTop = conversationContainerRef.current.scrollHeight;
+        }
+    }, [conversationHistory]);
 
     const handleUploadMaterialChange = (e) => {
         setFile(e.target.files[0]);
@@ -169,6 +213,10 @@ const QAPage = ({ mainContentMargin }) => {
             katex.render(latex, elem);
         });
     }
+    const resetConversationHistory = () => {
+        setConversationHistory([]);
+    };
+
 
     const handleQuestionChange = (e) => {
         setQuestion(e.target.value);
@@ -184,17 +232,15 @@ const QAPage = ({ mainContentMargin }) => {
     const handleSubmit = async () => {
         setLoading(true);
         setErrorMessage(null); // Reset error message before making a new request
+        setConversationHistory((prev) => [
+            ...prev,
+            { type: 'question', content: `${userFirstName}: ${question}` },
+        ]);
+        // console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
         console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
-
-        // Create FormData to include the file in the request
-        const formData = new FormData();
-        formData.append('question', question);
-        formData.append('user_id', user.uid);
-        formData.append('dataset', dataset);
         try {
             const response = await fetch(
-                //'https://llm-backend-dot-fresh-oath-383101.ue.r.appspot.com/llm_answer',
-                'http://localhost:8888/llm_answer',
+                `${apiUrl}/llm_answer`,
                 {
                     method: 'POST',
                     headers: {
@@ -214,7 +260,7 @@ const QAPage = ({ mainContentMargin }) => {
             setAnswer(result.answer);
             setConversationHistory((prev) => [
                 ...prev,
-                { type: 'question', content: `${userFirstName}: ${question}` },
+                // { type: 'question', content: `${userFirstName}: ${question}` },
                 { type: 'answer', content: `MindSproutAI: ${result.answer}` },
             ]);
 
@@ -267,17 +313,20 @@ const QAPage = ({ mainContentMargin }) => {
                     </select>
                 </Box>
                 {/* Add this Box for the conversation stream */}
-                <Box mt={4} maxWidth="md" pb={12}>
+                <Box mt={4} maxWidth="md" pb={4}>
                     <Typography variant="h6" component="h3" gutterBottom>
                         Conversation History:
                     </Typography>
-                    <ConversationContainer>
+                    <ConversationContainer ref={conversationContainerRef}>
                         {conversationHistory.map((item, index) => (
                             <React.Fragment key={index}>
                                 {item.type === 'question' ? (
                                     <Question>{item.content}</Question>
                                 ) : (
-                                    <Answer>{item.content}</Answer>
+                                    <Answer>
+                                        <AiOutlineRobot style={{ marginRight: 8 }} />
+                                        {item.content}
+                                    </Answer>
                                 )}
                             </React.Fragment>
                         ))}
@@ -292,15 +341,23 @@ const QAPage = ({ mainContentMargin }) => {
                 )}
                 {/* Wrap the chat and input components */}
                 <Box display="flex" flexDirection="column" flexGrow={10}>
-                    <Box mt={4}>
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4} sx={{
+                        position: 'fixed',
+                        bottom: 40,
+                        left: 0,
+                        right: 0,
+                        // background: 'white',
+                        padding: '16px',
+                        borderTop: '1px solid rgba(0, 0, 0, 0.23)',
+                    }}>
                         <TextareaAutosize
                             aria-label="Ask your question"
                             placeholder="Ask your question"
                             value={question}
                             onChange={handleQuestionChange}
                             style={{
-                                width: '100%',
-                                padding: '4px 4px',
+                                width: '50%',
+                                // padding: '4px 4px',
                                 borderRadius: '4px',
                                 border: '1px solid rgba(0, 0, 0, 0.23)',
                                 fontSize: '1rem',
@@ -309,7 +366,7 @@ const QAPage = ({ mainContentMargin }) => {
                             minRows={3}
                         />
                     </Box>
-                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4}>
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={0} sx={fixedPosition}>
                         <Button
                             variant="contained"
                             color="primary"
@@ -359,10 +416,10 @@ const QAPage = ({ mainContentMargin }) => {
                             {loading ? <CircularProgress size={24} /> : 'Submit'}
                         </Button>
                     </Box>
-
                 </Box>
-            </Container>
-        </Box>
+            </Container >
+
+        </Box >
     );
 };
 

@@ -145,8 +145,8 @@ const AuthNavbar = ({ onDrawerToggle }) => {
                 >
                     <List>
                         {drawerItems.map((item) => (
-                            <>
-                                <Link href={item.href} key={item.text} passHref>
+                            <React.Fragment key={item.text}>
+                                <Link href={item.href} passHref>
                                     <ListItem component="div">
                                         <ListItemIcon sx={{ marginRight: 0 }}>{item.icon}</ListItemIcon>
                                         <ListItemText
@@ -172,9 +172,10 @@ const AuthNavbar = ({ onDrawerToggle }) => {
                                         </ListItem>
                                     </Link>
                                 ))}
-                            </>
+                            </React.Fragment>
                         ))}
                     </List>
+
                     <Divider />
                 </Paper>
             </Slide>
