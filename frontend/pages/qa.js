@@ -341,84 +341,90 @@ const QAPage = ({ mainContentMargin }) => {
                 )}
                 {/* Wrap the chat and input components */}
                 <Box display="flex" flexDirection="column" flexGrow={10}>
-                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4} sx={{
-                        position: 'fixed',
-                        bottom: 40,
-                        left: 0,
-                        right: 0,
-                        // background: 'white',
-                        padding: '16px',
-                        borderTop: '1px solid rgba(0, 0, 0, 0.23)',
-                    }}>
+                <Box mt={4} display="flex" justifyContent="center" marginBottom={4} sx={{
+                position: 'fixed',
+                bottom: 100, // Increase the bottom margin
+                left: 0,
+                right: 0,
+                // background: 'white',
+                padding: '16px',
+                borderTop: '1px solid rgba(0, 0, 0, 0.23)',
+                }}>
                         <TextareaAutosize
-                            aria-label="Ask your question"
-                            placeholder="Ask your question"
-                            value={question}
-                            onChange={handleQuestionChange}
-                            style={{
-                                width: '50%',
-                                // padding: '4px 4px',
-                                borderRadius: '4px',
-                                border: '1px solid rgba(0, 0, 0, 0.23)',
-                                fontSize: '1rem',
-                                fontFamily: 'inherit',
-                            }}
-                            minRows={3}
-                        />
+                        aria-label="Ask your question"
+                        placeholder="Ask your question"
+                        value={question}
+                        onChange={handleQuestionChange}
+                        onKeyPress={(e) => {
+                            if (e.key === "Enter" && !e.shiftKey) {
+                                e.preventDefault();
+                                handleSubmit();
+                            }
+                        }}
+                        style={{
+                            width: '50%',
+                            // padding: '4px 4px',
+                            borderRadius: '4px',
+                            border: '1px solid rgba(0, 0, 0, 0.23)',
+                            fontSize: '1rem',
+                            fontFamily: 'inherit',
+                        }}
+                        minRows={3}
+                    />
                     </Box>
-                    <Box mt={4} display="flex" justifyContent="center" marginBottom={0} sx={fixedPosition}>
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            size="large"
-                            onClick={() => handleClearCache('memory')}
-                            sx={{ mx: 1, my: 1 }}
-                        >
-                            Clear Memory Cache
-                        </Button>
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            size="large"
-                            onClick={() => handleClearCache('user')}
-                            sx={{ mx: 1, my: 1 }}
-                        >
-                            Clear User Cache
-                        </Button>
-                        <Box mt={4} display="flex" justifyContent="center" marginBottom={4}>
-                <input
-                    accept="application/pdf" // Accept only PDF files
-                    style={{ display: 'none' }}
-                    id="file-upload"
-                    type="file"
-                    onChange={handleUploadMaterialChange}
-                />
-                <label htmlFor="file-upload">
-                    <Button variant="contained" color="primary" size="large" component="span">
-                        Upload Material
-                    </Button>
-                </label>
-                {file && (
-                    <Typography variant="body1" component="p" sx={{ marginLeft: 1 }}>
-                        {file.name}
-                    </Typography>
-                )}
-                {/* Other buttons and components */}
-                </Box>
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            size="large"
-                            onClick={handleSubmit}
-                            disabled={loading}
-                            sx={{ mx: 1, my: 1 }}
-                        >
-                            {loading ? <CircularProgress size={24} /> : 'Submit'}
-                        </Button>
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4}>
+                        <Box>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                size="large"
+                                onClick={() => handleClearCache('memory')}
+                                sx={{ mx: 1, my: 1 }}
+                            >
+                                Clear Memory Cache
+                            </Button>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                size="large"
+                                onClick={() => handleClearCache('user')}
+                                sx={{ mx: 1, my: 1 }}
+                            >
+                                Clear User Cache
+                            </Button>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                size="large"
+                                onClick={handleSubmit}
+                                disabled={loading}
+                                sx={{ mx: 1, my: 1 }}
+                            >
+                                {loading ? <CircularProgress size={24} /> : 'Submit'}
+                            </Button>
+                        </Box>
+                        <Box mt={4} display="flex" justifyContent="center" marginBottom={4} width="100%">
+                            <input
+                                accept="application/pdf" // Accept only PDF files
+                                style={{ display: 'none' }}
+                                id="file-upload"
+                                type="file"
+                                onChange={handleUploadMaterialChange}
+                            />
+                            <label htmlFor="file-upload">
+                                <Button variant="contained" color="primary" size="large" component="span">
+                                    Upload Material
+                                </Button>
+                            </label>
+                            {file && (
+                                <Typography variant="body1" component="p" sx={{ marginLeft: 1 }}>
+                                    {file.name}
+                                </Typography>
+                            )}
+                        </Box>
                     </Box>
                 </Box>
-            </Container >
-
+            </Container>
         </Box >
     );
 };

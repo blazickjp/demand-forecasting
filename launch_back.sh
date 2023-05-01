@@ -1,2 +1,2 @@
-cd ../backend/python_functions
+cd backend/python_functions
 python main.py
