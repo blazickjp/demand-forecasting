@@ -83,10 +83,10 @@ export default function Signup() {
     };
 
     return (
-        <div>
+        <Box>
             <Navbar />
             <Container maxWidth="xs">
-                <Box my={25} mx={1} marginBottom={35}>
+                <Box mt={20} mx={1} mb={12}>
                     <Paper elevation={2} sx={{ padding: 2 }}>
                         <Box textAlign="center" pb={2}>
                             <Avatar sx={{ margin: 'auto', backgroundColor: 'secondary.main' }}>
@@ -197,6 +197,6 @@ export default function Signup() {
                 </Box>
             </Container>
             <Footer />
-        </div >
+        </Box >
     );
 }

@@ -1,36 +1,16 @@
 import Head from 'next/head';
-import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Container, Typography, Box, Grid, Button, Card, CardContent, CardMedia } from "@mui/material";
+import { Container, Typography, Box, Grid, Button, Tooltip, Chip } from "@mui/material";
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-
-import Image from 'next/image';
+import OfferCard from '../components/OfferCard';
 import Link from 'next/link';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 
 export default function Home() {
 
-  const OfferCard = ({ image, title, description, className }) => (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image={image}
-        alt={title}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
-    </Card>
-  );
   const FAQItem = ({ question, answer }) => (
     <Accordion>
       <AccordionSummary
@@ -144,6 +124,16 @@ export default function Home() {
                         sx={{ maxWidth: '300px' }} // You can set the desired max width for the cards
                         image="https://images.pexels.com/photos/433333/pexels-photo-433333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         title="Personalized Study Plan"
+                        additionalContent={
+                          <Tooltip title="Features are currently in development and being rolled out to a limited number of users for testing.">
+                            <Chip
+                              icon={<VisibilityIcon />}
+                              label="Preview"
+                              sx={{ color: 'primary.main', borderColor: 'primary.main', borderWidth: 1 }}
+                              variant="outlined"
+                            />
+                          </Tooltip>
+                        }
                         description="Our AI-powered study assistant creates a customized study plan tailored to your needs, helping you focus on the topics that matter most and making the most of your study time."
                       />
                     </Grid>
@@ -152,6 +142,16 @@ export default function Home() {
                         sx={{ maxWidth: '300px' }} // You can set the desired max width for the cards
                         image="https://images.pexels.com/photos/8386437/pexels-photo-8386437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         title="Adaptive Learning"
+                        additionalContent={
+                          <Tooltip title="Features are currently in development and being rolled out to a limited number of users for testing.">
+                            <Chip
+                              icon={<VisibilityIcon />}
+                              label="Preview"
+                              sx={{ color: 'primary.main', borderColor: 'primary.main', borderWidth: 1 }}
+                              variant="outlined"
+                            />
+                          </Tooltip>
+                        }
                         description="Leveraging adaptive learning algorithms, our study assistant adjusts the difficulty and focus of the questions based on your performance, ensuring continuous improvement and mastery of the CFA curriculum."
                       />
                     </Grid>
@@ -161,6 +161,16 @@ export default function Home() {
                         image="https://images.pexels.com/photos/590045/pexels-photo-590045.jpeg?auto=compress&cs=tinysrgb&w=1600"
                         title="Real-time Feedback & Analytics"
                         description="Receive instant feedback on your answers and track your progress with in-depth analytics, enabling you to identify your strengths and weaknesses and fine-tune your study approach."
+                        additionalContent={
+                          <Tooltip title="Features are currently in development and being rolled out to a limited number of users for testing.">
+                            <Chip
+                              icon={<VisibilityIcon />}
+                              label="Preview"
+                              sx={{ color: 'primary.main', borderColor: 'primary.main', borderWidth: 1 }}
+                              variant="outlined"
+                            />
+                          </Tooltip>
+                        }
                       />
                     </Grid>
                   </Grid>
@@ -169,25 +179,50 @@ export default function Home() {
             </Box>
 
 
-            <Box mt={10} mb={10} textAlign="center" py={6}>
-              <Typography variant="h4" fontWeight="bold" mb={2}>
+            <Box mt={10} mb={10} py={6} px={10}>
+              <Typography variant="h4" fontWeight="bold" mb={2} textAlign="center">
                 Frequently Asked Questions
               </Typography>
-              <Box mt={4} mx="auto" maxWidth="800px">
-                <FAQItem
-                  question="What is DiY.AI?"
-                  answer="DiY.AI is an AI-powered study assistant designed to help CFA candidates excel in their studies. Our platform provides personalized learning experiences to make studying more engaging, efficient, and effective."
-                />
-                <FAQItem
-                  question="How does the AI study assistant work?"
-                  answer="Our AI study assistant uses machine learning algorithms and natural language processing to understand your study habits, identify areas where you need improvement, and provide personalized recommendations to help you achieve your study goals."
-                />
-                <FAQItem
-                  question="Is DiY.AI suitable for all CFA candidates?"
-                  answer="Yes, DiY.AI is suitable for all CFA candidates, regardless of their level of experience or familiarity with the CFA curriculum. Our platform is designed to adapt to each user's unique learning style and needs, making it an effective study tool for everyone."
-                />
-              </Box>
+              <Grid container spacing={3} justifyContent="center" mt={4}>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FAQItem
+                    question="What is CFAChat?"
+                    answer="CFAChat is an AI-powered study assistant designed to help CFA candidates excel in their studies by providing personalized learning experiences, real-time feedback, and in-depth analytics."
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FAQItem
+                    question="How does CFAChat personalize my study plan?"
+                    answer="CFAChat's AI algorithms analyze your performance on practice questions and quizzes, identifying your strengths and weaknesses. Based on this analysis, CFAChat creates a customized study plan tailored to your needs, ensuring you focus on the topics that matter most."
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FAQItem
+                    question="Is CFAChat suitable for all CFA levels?"
+                    answer="Yes, CFAChat is designed to assist candidates studying for all three levels of the CFA exam. Our AI algorithms and content are tailored to the specific requirements and learning objectives of each level."
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FAQItem
+                    question="Can I track my progress with CFAChat?"
+                    answer="Absolutely! CFAChat provides real-time feedback on your answers and in-depth analytics to help you track your progress, identify your strengths and weaknesses, and fine-tune your study approach."
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FAQItem
+                    question="How much does CFAChat cost?"
+                    answer="CFAChat will offer various pricing plans to suit different needs and budgets. While in preview, our users will have 100% unlimited access for free."
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <FAQItem
+                    question="Is my data secure with CFAChat?"
+                    answer="We take data security very seriously. CFAChat employs industry-standard security practices to protect your data and ensure your privacy. To learn more, please refer to our Privacy Policy."
+                  />
+                </Grid>
+              </Grid>
             </Box>
+
           </Box>
         </main>
         <Box paddingBottom={10}></Box> {/* Add padding to the bottom */}

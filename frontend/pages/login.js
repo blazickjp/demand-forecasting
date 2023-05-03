@@ -7,19 +7,22 @@ import { Container, Box } from "@mui/material";
 
 export default function LoginPage() {
   return (
-    <Container maxWidth={false} disableGutters>
-      <Box my={4}>
-        <Head>
-          <title>Login - DiY.AI</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <main>
-          <Box maxWidth="lg" mx="auto" mt={55} mb={20}>
-            <Login />
-          </Box>
-        </main>
-        <Footer />
-      </Box >
-    </Container >
+    <Box minHeight="100vh" display="flex" flexDirection="column">
+      <Navbar />
+      <Container maxWidth={false} disableGutters>
+        <Box mt={4}>
+          <Head>
+            <title>Login - CFA Chat</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <main>
+            <Box maxWidth="lg" mx="auto" mt={55} mb={25} flexGrow={1}>
+              <Login />
+            </Box>
+          </main>
+        </Box>
+      </Container >
+      <Footer />
+    </Box >
   );
 }

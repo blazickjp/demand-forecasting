@@ -15,7 +15,7 @@ const Footer = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Box py={2} textAlign="center">
+        <Box pt={2} textAlign="center">
           <p>
             &copy; {(new Date()).getFullYear()} CFAChat.com All rights reserved.
           </p>

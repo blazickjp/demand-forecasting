@@ -12,7 +12,7 @@ const theme = createTheme({
   // },
   palette: {
     primary: {
-      main: '#1D3B6C', // OpenAI-like primary color (dark blue)
+      main: '#2c3458', // OpenAI-like primary color (dark blue)
     },
     secondary: {
       main: '#1C9190', // OpenAI-like secondary color (cyan)

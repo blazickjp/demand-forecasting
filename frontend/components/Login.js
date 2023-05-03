@@ -50,8 +50,8 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <Navbar />
+    <Box>
+      {/* <Navbar /> */}
       <Container maxWidth="xs">
         <Box mx={1} marginTop={-30}>
           <Paper elevation={2} sx={{ padding: 2 }}>
@@ -118,6 +118,6 @@ export default function Login() {
           </Paper>
         </Box>
       </Container>
-    </div>
+    </Box>
   );
 }

@@ -241,13 +241,13 @@ const QAPage = ({ mainContentMargin }) => {
 
     return (
         <Box marginLeft={`${mainContentMargin}px`} paddingLeft={5} transition="margin 225ms cubic-bezier(0, 0, 0.2, 1)">
-            <Container maxWidth="md">
+            <Container maxWidth="lg">
                 <Box mt={4}>
                     <Typography variant="h5" component="h2" gutterBottom>
-                        Q&A
+                        Select a Topic
                     </Typography>
                 </Box>
-                <Box sx={{ minWidth: 120, mx: 1, my: 1 }}>
+                <Box sx={{ minWidth: 120, mx: 0, my: 1 }}>
                     <Select
                         value={dataset}
                         onChange={handleDatasetChange}
@@ -255,7 +255,7 @@ const QAPage = ({ mainContentMargin }) => {
                         inputProps={{ 'aria-label': 'Select a dataset' }}
                     >
                         {/* <MenuItem value="bayesian_data_analysis">Bayesian Data Analysis</MenuItem>\ */}
-                        <MenuItem value="kaplan_cfa_level_2_book_1">Kaplan CFA Book 1</MenuItem>
+                        <MenuItem value="kaplan_cfa_level_2_book_1">Kaplan CFA Book 1 - Ethics / Quantitative Methods</MenuItem>
                         {/* <MenuItem value="NCLEX">Nursing Exam NCLEX</MenuItem> */}
 
                         {/* Add more MenuItem components for other datasets here */}
@@ -263,9 +263,6 @@ const QAPage = ({ mainContentMargin }) => {
                 </Box>
                 {/* Add this Box for the conversation stream */}
                 <Box mt={4} maxWidth="md" pb={4}>
-                    <Typography variant="h6" component="h3" gutterBottom>
-                        Conversation History:
-                    </Typography>
                     <ConversationContainer ref={conversationContainerRef}>
                         {conversationHistory.map((item, index) => (
                             <React.Fragment key={index}>
