@@ -8,6 +8,7 @@ REGION="us-east1"
 DEEPLAKE_ACCOUNT_NAME=$(gcloud secrets versions access latest --secret="deeplake-account-name" --project="$PROJECT_ID")
 DEEPLAKE_TOKEN=$(gcloud secrets versions access latest --secret="deeplake-token" --project="$PROJECT_ID")
 OPENAI_API_KEY=$(gcloud secrets versions access latest --secret="openai-api-key" --project="$PROJECT_ID")
+ELASTICSEARCH_PASSWORD=$(gcloud secrets versions access latest --secret="elastic-pw" --project="$PROJECT_ID")
 
 # Create a temporary app.yaml file with environment variables
 cat > app_temp.yaml << EOL
@@ -19,6 +20,7 @@ env_variables:
   DEEPLAKE_ACCOUNT_NAME: "$DEEPLAKE_ACCOUNT_NAME"
   DEEPLAKE_TOKEN: "$DEEPLAKE_TOKEN"
   OPENAI_API_KEY: "$OPENAI_API_KEY"
+  ELASTICSEARCH_PASSWORD: "$ELASTICSEARCH_PASSWORD"
 EOL
 
 # Deploy to App Engine

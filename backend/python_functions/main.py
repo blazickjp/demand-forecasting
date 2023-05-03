@@ -101,7 +101,10 @@ app.add_middleware(
 
 user_deeplake_instances = {}
 embeddings = OpenAIEmbeddings()
-HOST = "https://elastic:4H7MC7XFTOJTDQu9b5CCAxM2@llm-vectorstore.es.us-east1.gcp.elastic-cloud.com"
+
+
+ELASTIC_PW = os.environ.get("ELASTIC_PW")
+HOST = f"https://elastic:{ELASTIC_PW}@llm-vectorstore.es.us-east1.gcp.elastic-cloud.com"
 PORT = 9243
 
 
