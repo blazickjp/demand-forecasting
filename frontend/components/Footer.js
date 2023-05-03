@@ -6,8 +6,7 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: 'rgba(211, 211, 211)',
-        borderTop: '1px solid rgba(0, 0, 0, 0.12)',
+        borderTop: '2px solid rgba(0, 0, 0, 0.12)',
         zIndex: 1000, // Add zIndex to bring the footer to the front
         position: 'relative',
         width: '100%',
@@ -18,7 +17,7 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Box py={2} textAlign="center">
           <p>
-            &copy; {(new Date()).getFullYear()} DiY.AI. All rights reserved.
+            &copy; {(new Date()).getFullYear()} CFAChat.com All rights reserved.
           </p>
         </Box>
       </Container>

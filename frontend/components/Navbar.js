@@ -9,7 +9,7 @@ import { auth } from '../firebaseClient';
 
 
 const NavLink = styled(Button)`
-  color: white;
+  color: ${({ theme }) => theme.palette.primary.main};
   font-weight: 600;
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -26,15 +26,10 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{ backgroundColor: '#EDF2F6' }}>
       <Toolbar>
         <Link href="/" passHref>
-          <Typography
-            variant="h6"
-            sx={{ color: 'white', cursor: 'pointer', fontWeight: 'bold' }}
-          >
-            DiY.AI
-          </Typography>
+          <NavLink>CFAChat</NavLink>
         </Link>
         <Box
           sx={{
@@ -50,12 +45,6 @@ const Navbar = () => {
               <Link href="/about" passHref>
                 <NavLink>About</NavLink>
               </Link>
-              <Link href="/features" passHref>
-                <NavLink>Features</NavLink>
-              </Link>
-              <Link href="/pricing" passHref>
-                <NavLink>Pricing</NavLink>
-              </Link>
             </>
           )}
           {user ? (
@@ -66,7 +55,6 @@ const Navbar = () => {
             </Link>
           )}
         </Box>
-
       </Toolbar>
     </AppBar>
   );
