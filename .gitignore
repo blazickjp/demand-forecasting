@@ -38,3 +38,7 @@ node_modules
 frontend/.next
 frontend/out
 backend/functions/node_modules
+
+#auth
+app-backend.json
+elastic_key.json

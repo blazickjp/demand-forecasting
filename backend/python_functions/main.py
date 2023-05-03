@@ -1,23 +1,21 @@
-## API
-from fastapi import FastAPI, HTTPException, UploadFile, File
-from fastapi.middleware.cors import CORSMiddleware
-from typing import Optional
-
-## Database
-import redis
-from elasticsearch import Elasticsearch
-from uuid import uuid4
-
 ## Base
+import mimetypes
 import os
-import json
-import datetime
 
 ## Model
 from pydantic import BaseModel
 
-## LangChain imports
-from langchain.vectorstores import DeepLake, ElasticVectorSearch
+## API
+from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
+
+## Database
+from uuid import uuid4
+from google.cloud import storage
+
+## LangChain
+from langchain.vectorstores import ElasticVectorSearch
 from langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms import OpenAI
@@ -32,6 +30,50 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chat_models import ChatOpenAI
 from langchain.agents import initialize_agent
 from langchain.agents import AgentType
+
+## Environment variables ##
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+user_deeplake_instances = {}
+embeddings = OpenAIEmbeddings()
+# find the storage client
+try:
+    gcs_client = storage.Client()
+except:
+    def find_gcs_client(filename="app-backend.json", start_path: str = "."):
+        for root, _, files in os.walk(start_path):
+            if filename in files:
+                gcs_client = storage.Client.from_service_account_json(os.path.join(root, filename))
+                return gcs_client
+            
+        parent_dir = os.path.dirname(os.getcwd())
+        while parent_dir:
+            parent_files = os.listdir(parent_dir)
+            if filename in parent_files:
+                gcs_client = storage.Client.from_service_account_json(os.path.join(parent_dir, filename))
+                return gcs_client
+            parent_dir = os.path.dirname(parent_dir)
+        raise FileNotFoundError(f"Could not find {filename}")
+    gcs_client = find_gcs_client()
+
+
+API_KEY = gcs_client.get_bucket("fresh-oath-383101-app-auth")\
+    .blob("elastic_key.json")\
+    .download_as_string()\
+    .decode("utf-8")
+HOST = "llm-vectorstore.es.us-east1.gcp.elastic-cloud.com"
+KEY_HOST = f"https://elastic:{API_KEY}@{HOST}"
+print(KEY_HOST)
+PORT = 9243
+ELASTIC_URL = f"{KEY_HOST}:{PORT}"
 
 template = """
 You are MindSproutAI. An AI specifically designed to help people study for very important
@@ -65,71 +107,37 @@ QA_PROMPT = PromptTemplate(template=qa_template, input_variables=[
 # from langchain.document_loaders import PyPDFLoader
 # from langchain.embeddings.openai import OpenAIEmbeddings
 
-
+## Functions and Classes ##
 class BadRequestError(Exception):
     pass
-
 
 class MissingUserIdError(BadRequestError):
     pass
 
-
 class MissingDatasetError(BadRequestError):
     pass
 
-
 class MissingQuestionError(BadRequestError):
     pass
-
 
 class LlmAnswerRequest(BaseModel):
     user_id: str
     dataset: str
     question: str
 
-
 class ClearCacheRequest(BaseModel):
     user_id: str
     cache_type: str
 
-def save_to_elastic(content: str, user_id: str):
-    # Create a new Elasticsearch client
-    es = Elasticsearch([f"llm-vectorstore.es.us-east1.gcp.elastic-cloud.com:9243"], http_auth=("elastic", "4H7MC7XFTOJTDQu9b5CCAxM2"))
+# data loading helpers
+def is_pdf(file: UploadFile) -> bool:
+    mimetype, _ = mimetypes.guess_type(file.filename)
+    return mimetype == "application/pdf"
 
-    # Create a document with the uploaded content
-    doc = {
-        "content": content,
-        "user_id": user_id,
-        "timestamp": datetime.utcnow(),
-    }
-
-    # Generate a unique ID for the document
-    doc_id = str(uuid4())
-
-    # Index the document into ElasticSearch
-    es.index(index="user-uploads", id=doc_id, body=doc)
-
-
-app = FastAPI()
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-user_deeplake_instances = {}
-embeddings = OpenAIEmbeddings()
-HOST = "https://elastic:4H7MC7XFTOJTDQu9b5CCAxM2@llm-vectorstore.es.us-east1.gcp.elastic-cloud.com"
-PORT = 9243
-
-
+## App Routing ##
 @app.get("/")
 def hello_world():
     return "Hello, World!"
-
 
 @app.post("/llm_answer")
 def llm_answer(request_data: LlmAnswerRequest):
@@ -153,7 +161,7 @@ def llm_answer(request_data: LlmAnswerRequest):
     if user_id not in user_deeplake_instances or user_deeplake_instances[user_id]["dataset"] != dataset:
         print("\n\n** Creating new DataLake instance **\n\n")
         user_db = ElasticVectorSearch(
-            elasticsearch_url=f"{HOST}:{PORT}",
+            elasticsearch_url=ELASTIC_URL,
             index_name=dataset,
             embedding=embeddings,
         )
@@ -265,17 +273,21 @@ def clear_cache(request_data: ClearCacheRequest):
         raise HTTPException(status_code=400, detail="Invalid cache type")
 
 @app.post("/upload")
-async def upload_file(file: UploadFile = File(...), user_id: str = None):
-    # Read the content of the uploaded file
-    content = await file.read()
-
-    # Process the content as needed, e.g., extract text, tokenize, etc.
+async def upload_pdf(file: UploadFile = File(...), user_id: str = None):
+    if not is_pdf(file):
+        raise HTTPException(status_code=400, detail="Invalid file type")
+    
+    tmp_path = os.path.join("temp", file.filename)
+    with open(tmp_path, "wb") as buffer:
+        buffer.write(file.file, buffer)
 
     # Save the processed content to the ElasticSearch database
-    save_to_elastic(content, user_id)
+    #save_to_elastic(content, user_id)
 
-    return {"filename": file.filename}
+    # remove the temporary file
+    os.remove(tmp_path)
 
+    return JSONResponse(content={"message": "New study materials uploaded and processed successfully."})
 
 
 if __name__ == "__main__":

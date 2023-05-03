@@ -15,9 +15,7 @@ import useAuth from '../hooks/useAuth';
 import { styled } from '@mui/system';
 import { AiOutlineRobot } from 'react-icons/ai';
 
-
-
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const apiUrl = "http://localhost:8888"// process.env.NEXT_PUBLIC_API_URL;
 
 console.log(apiUrl);
 
@@ -84,10 +82,8 @@ const importKatexAndShowdown = async () => {
     return { katex: katexModule.default, showdown: showdownModule.default };
 };
 
-const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
-};
-  
+
+
 const QAPage = ({ mainContentMargin }) => {
     const [question, setQuestion] = useState('');
     const [file, setFile] = useState(null);
@@ -102,35 +98,39 @@ const QAPage = ({ mainContentMargin }) => {
     const userFirstName = user?.displayName?.split(' ')[0] || 'Human';
     const conversationContainerRef = useRef(null);
 
+    // loading functionality
+    const [uploadedFile, setUploadedFile] = useState(null);
+    const handleFileInputChange = (event) => {
+        setUploadedFile(event.target.files[0]);
+    };
 
-    const [uploadedFiles, setUploadedFiles] = useState([]);
-    const [preLoadedMaterials, setPreLoadedMaterials] = useState([
-        // Add pre-loaded material filenames or IDs here
-        "kaplan_cfa_level_2_book_1",
-    ]);
-    
+    const handleFileUpload = async () => {
+        if (!uploadedFile) return;
 
-    const handleFileUpload = async (event) => {
-        const file = event.target.files[0];
         const formData = new FormData();
-        formData.append("file", file);
-    
-        // Optionally, you can also send the user_id if needed
-        formData.append("user_id", "your_user_id");
-    
+        formData.append("file", uploadedFile);
+        if (user?.uid) formData.append("user_id", user.uid);
+
         try {
-        // Replace "http://localhost:8888" with the appropriate backend API URL
-        const response = await fetch("http://localhost:8888/upload", {
-            method: "POST",
-            body: formData,
-        });
-    
-        const data = await response.json();
-        setUploadedFiles((prevFiles) => [...prevFiles, data.filename]);
+            const response = await fetch(`${apiUrl}/upload`, {
+                method: "POST",
+                body: formData,
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.detail || `Request failed with status ${response.status}, ${response.statusText}`);
+            }
+
+            const result = await response.json();
+            console.log(result);
+            alert("File uploaded successfully.");
         } catch (error) {
-        console.error("File upload failed:", error);
+            console.error("Error:", error.message);
+            alert(`Error: ${error.message}`);
         }
-    };  
+    };
+
 
 
     useEffect(() => {
@@ -179,10 +179,6 @@ const QAPage = ({ mainContentMargin }) => {
         }
     }, [conversationHistory]);
 
-    const handleUploadMaterialChange = (e) => {
-        setFile(e.target.files[0]);
-        handleFileUpload(e);
-    };
 
     // Redirect to the login page if the user is not authenticated
     React.useEffect(() => {
@@ -237,7 +233,6 @@ const QAPage = ({ mainContentMargin }) => {
             { type: 'question', content: `${userFirstName}: ${question}` },
         ]);
         // console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
-        console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
         try {
             const response = await fetch(
                 `${apiUrl}/llm_answer`,
@@ -277,41 +272,66 @@ const QAPage = ({ mainContentMargin }) => {
     return (
         <Box marginLeft={`${mainContentMargin}px`} paddingLeft={5} transition="margin 225ms cubic-bezier(0, 0, 0.2, 1)">
             <Container maxWidth="md">
-                <Box mt={4}>
-                    <Typography variant="h5" component="h2" gutterBottom>
-                        Q&A
+            <Box mt={4}>
+                <Typography variant="h5" component="h2" gutterBottom>
+                    Q&A
+                </Typography>
+            </Box>
+            <Box display="flex" alignItems="center">
+                <Box sx={{ minWidth: 120, mx: 1, my: 1 }}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                            Choose Your Study Material:
                     </Typography>
                 </Box>
+                <Box ml={20}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                                Upload Study Material:
+                    </Typography>
+                </Box>
+            </Box>
+            <Box display="flex" alignItems="center">
+                
                 <Box sx={{ minWidth: 120, mx: 1, my: 1 }}>
-                    {/* <Select
+                    <Select
                         value={dataset}
                         onChange={handleDatasetChange}
                         displayEmpty
                         inputProps={{ 'aria-label': 'Select a dataset' }}
                     >
-                        {<MenuItem value="bayesian_data_analysis">Bayesian Data Analysis</MenuItem>\ }
+                        {/* ... */}
                         <MenuItem value="kaplan_cfa_level_2_book_1">Kaplan CFA Book 1</MenuItem>
-                        {<MenuItem value="NCLEX">Nursing Exam NCLEX</MenuItem> }
-
-                        { Add more MenuItem components for other datasets here }
-                    </Select> */}
-                    <select
-                        value={dataset}
-                        onChange={(e) => setDataset(e.target.value)}
-                    >
-                        <option value="">--Select Dataset--</option>
-                        {preLoadedMaterials.map((filename, index) => (
-                            <option key={`preloaded-${index}`} value={filename}>
-                                {filename}
-                            </option>
-                        ))}
-                        {uploadedFiles.map((filename, index) => (
-                            <option key={`uploaded-${index}`} value={filename}>
-                                {filename}
-                            </option>
-                        ))}
-                    </select>
+                    </Select>
                 </Box>
+
+                {/* Upload Study Material */}
+                <Box ml={30}>
+                    <Box display="flex" alignItems="center">
+                        <input
+                            accept=".pdf"
+                            id="contained-button-file"
+                            type="file"
+                            style={{ display: "none" }}
+                            onChange={handleFileInputChange}
+                        />
+                        <label htmlFor="contained-button-file">
+                            <Button variant="contained" component="span" sx={{ mr: 1 }}>
+                                Choose File
+                            </Button>
+                        </label>
+                        <Typography variant="body1" component="span" sx={{ mr: 1 }}>
+                            {uploadedFile ? uploadedFile.name : "No file chosen"}
+                        </Typography>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={handleFileUpload}
+                            disabled={!uploadedFile}
+                        >
+                            Upload
+                        </Button>
+                    </Box>
+                </Box>
+            </Box>
                 {/* Add this Box for the conversation stream */}
                 <Box mt={4} maxWidth="md" pb={4}>
                     <Typography variant="h6" component="h3" gutterBottom>
@@ -341,87 +361,61 @@ const QAPage = ({ mainContentMargin }) => {
                 )}
                 {/* Wrap the chat and input components */}
                 <Box display="flex" flexDirection="column" flexGrow={10}>
-                <Box mt={4} display="flex" justifyContent="center" marginBottom={4} sx={{
-                position: 'fixed',
-                bottom: 100, // Increase the bottom margin
-                left: 0,
-                right: 0,
-                // background: 'white',
-                padding: '16px',
-                borderTop: '1px solid rgba(0, 0, 0, 0.23)',
-                }}>
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4} sx={{
+                        position: 'fixed',
+                        bottom: 40,
+                        left: 0,
+                        right: 0,
+                        // background: 'white',
+                        padding: '16px',
+                        borderTop: '1px solid rgba(0, 0, 0, 0.23)',
+                    }}>
                         <TextareaAutosize
-                        aria-label="Ask your question"
-                        placeholder="Ask your question"
-                        value={question}
-                        onChange={handleQuestionChange}
-                        onKeyPress={(e) => {
-                            if (e.key === "Enter" && !e.shiftKey) {
-                                e.preventDefault();
-                                handleSubmit();
-                            }
-                        }}
-                        style={{
-                            width: '50%',
-                            // padding: '4px 4px',
-                            borderRadius: '4px',
-                            border: '1px solid rgba(0, 0, 0, 0.23)',
-                            fontSize: '1rem',
-                            fontFamily: 'inherit',
-                        }}
-                        minRows={3}
-                    />
+                            aria-label="Ask your question"
+                            placeholder="Ask your question"
+                            value={question}
+                            onChange={handleQuestionChange}
+                            style={{
+                                width: '50%',
+                                // padding: '4px 4px',
+                                borderRadius: '4px',
+                                border: '1px solid rgba(0, 0, 0, 0.23)',
+                                fontSize: '1rem',
+                                fontFamily: 'inherit',
+                            }}
+                            minRows={3}
+                        />
                     </Box>
-                    <Box mt={4} display="flex" justifyContent="center" marginBottom={4}>
-                        <Box>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                size="large"
-                                onClick={() => handleClearCache('memory')}
-                                sx={{ mx: 1, my: 1 }}
-                            >
-                                Clear Memory Cache
-                            </Button>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                size="large"
-                                onClick={() => handleClearCache('user')}
-                                sx={{ mx: 1, my: 1 }}
-                            >
-                                Clear User Cache
-                            </Button>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                size="large"
-                                onClick={handleSubmit}
-                                disabled={loading}
-                                sx={{ mx: 1, my: 1 }}
-                            >
-                                {loading ? <CircularProgress size={24} /> : 'Submit'}
-                            </Button>
-                        </Box>
-                        <Box mt={4} display="flex" justifyContent="center" marginBottom={4} width="100%">
-                            <input
-                                accept="application/pdf" // Accept only PDF files
-                                style={{ display: 'none' }}
-                                id="file-upload"
-                                type="file"
-                                onChange={handleUploadMaterialChange}
-                            />
-                            <label htmlFor="file-upload">
-                                <Button variant="contained" color="primary" size="large" component="span">
-                                    Upload Material
-                                </Button>
-                            </label>
-                            {file && (
-                                <Typography variant="body1" component="p" sx={{ marginLeft: 1 }}>
-                                    {file.name}
-                                </Typography>
-                            )}
-                        </Box>
+                    <Box mt={4} display="flex" justifyContent="center" marginBottom={0} sx={fixedPosition}>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                            onClick={() => handleClearCache('memory')}
+                            sx={{ mx: 1, my: 1 }}
+                        >
+                            Clear Memory Cache
+                        </Button>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                            onClick={() => handleClearCache('user')}
+                            sx={{ mx: 1, my: 1 }}
+                        >
+                            Clear User Cache
+                        </Button>
+                        {/* Your other components */}
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                            onClick={handleSubmit}
+                            disabled={loading}
+                            sx={{ mx: 1, my: 1 }}
+                        >
+                            {loading ? <CircularProgress size={24} /> : 'Submit'}
+                        </Button>
                     </Box>
                 </Box>
             </Container>
