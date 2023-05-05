@@ -2,6 +2,7 @@ import PyPDF2
 import re
 import os
 import pdfplumber
+import fitz
 from transformers import GPT2Tokenizer
 import openai
 import time
@@ -81,6 +82,16 @@ def generate_questions(user_prompt):
         temperature=0.7
     )
     return response['choices'][0]['message']['content']
+
+
+def extract_toc(file_path):
+    doc = fitz.open(file_path)
+    toc = doc.get_toc()
+    toc_entries = []
+    for level, title, page_number in toc:
+        toc_entries.append({"level": level, "title": title,
+                           "page_number": page_number})
+    return toc_entries
 
 
 def process_chunks_and_generate_questions(modules, output_dir):

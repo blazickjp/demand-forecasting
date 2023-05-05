@@ -200,7 +200,7 @@ const QAPage = ({ mainContentMargin }) => {
         setErrorMessage(null); // Reset error message before making a new request
         setConversationHistory((prev) => [
             ...prev,
-            { type: 'question', content: `${userFirstName}: ${question}` },
+            { type: 'question', content: `${question}` },
         ]);
         // console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
         try {
