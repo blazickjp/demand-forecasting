@@ -116,27 +116,19 @@ CONTENT: {content}
 JSON:"""
 
     while delay <= max_delay:
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a helpful AI Assistant."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=TEMPERATURE
-        )
-
         try:
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[
+                    {"role": "system", "content": "You are a helpful AI Assistant."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=TEMPERATURE
+            )
             parsed_json = json.loads(
                 response['choices'][0]['message']['content'])
             return parsed_json
-        except openai.error.RateLimitError as e:
-            if e.response.status_code == 429:  # Status code for Too Many Requests
-                print("Rate limit error detected, waiting before retrying...")
-                print(f"Rate limit exceeded, sleeping for {delay} seconds...")
-                time.sleep(delay)
-                delay *= 2
-            else:
-                raise
+
         except json.JSONDecodeError:
             print(f"Failed to parse with GP3.5 Turbo. Trying with GPT-4.")
             try:
@@ -150,11 +142,18 @@ JSON:"""
                 )
                 parsed_json = json.loads(
                     response['choices'][0]['message']['content'])
+                return parsed_json
             except json.JSONDecodeError:
                 print(
                     f"Failed to parse the following content into JSON:\n{content}")
                 return None
-            return None
+        except:
+            print("Rate limit error detected, waiting before retrying...")
+            print(f"Rate limit exceeded, sleeping for {delay} seconds...")
+            time.sleep(delay)
+            delay *= 2
+            continue
+
     raise Exception("Max delay exceeded")
 
 
@@ -306,7 +305,6 @@ def main(file, output_file):
     # Parse the questions into JSON
     questions_data = []
     for question in tqdm(questions, desc="Parsing questions"):
-        time.sleep(5)
         # print(question)
         question_data = parse_practice_problems_to_json(question)
         # print(question_data)
