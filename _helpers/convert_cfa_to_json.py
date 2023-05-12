@@ -19,15 +19,8 @@ def remove_content_until_learning_outcome(content):
 
 
 def parse_text_to_list(text):
-    # Split the text into lines and remove any empty lines
     lines = [line.strip() for line in text.split('\n') if line.strip()]
-
-    # Create a list to store the parsed items
-    parsed_items = []
-
-    # Iterate through the lines and add them to the parsed_items list
-    for line in lines:
-        parsed_items.append(line.strip('- '))
+    parsed_items = [line.strip('- ') for line in lines]
 
     return parsed_items
 
@@ -51,27 +44,14 @@ def format_LOS(objectives):
 
 
 def preprocess_text(text):
-    # Replace newline characters with a space
-    text = text.replace("\n", " ")
-
-    # Remove copyright information and other boilerplate text
+    # text = text.replace("\n", " ")
     text = re.sub(r'\u00a9.*?Not for distribution\.', '', text)
-
-    # Replace special symbols with textual representation
     text = re.sub(r'\u20ac', 'EUR', text)
-
-    # Replace Unicode characters representing mathematical symbols
     text = re.sub(r'\u2212', '-', text)
     text = re.sub(r'\u2248', 'approx', text)
-
-    # Remove non-printable characters
-    text = "".join(char for char in text if char.isprintable())
-
-    # Replace multiple consecutive spaces with a single space
-    text = re.sub(r'\s+', ' ', text)
-
-    # Remove leading and trailing spaces
-    text = text.strip()
+    # text = "".join(char for char in text if char.isprintable())
+    # text = re.sub(r'\s+', ' ', text)
+    # text = text.strip()
 
     return text
 
@@ -90,10 +70,8 @@ def count_tokens(text, model="gpt-3.5-turbo-0301"):
 def extract_toc(file_path):
     doc = fitz.open(file_path)
     toc = doc.get_toc()
-    toc_entries = []
-    for level, title, page_number in toc:
-        toc_entries.append({"level": level, "title": title,
-                           "page_number": page_number})
+    toc_entries = [{"level": level, "title": title, "page_number": page_number}
+                   for level, title, page_number in toc]
     return toc_entries
 
 
@@ -101,9 +79,8 @@ def remove_child_content(node):
     if not node["children"]:
         return node["content"]
 
-    child_content = ""
-    for child in node["children"]:
-        child_content += remove_child_content(child)
+    child_content = "".join(remove_child_content(child)
+                            for child in node["children"])
 
     node["content"] = node["content"].replace(child_content, "")
     return child_content
@@ -198,6 +175,6 @@ def main(file, output_file):
 
 if __name__ == "__main__":
     # /docs/Level-1/CFA Level 1 Volume 1 (2023, CFA Institute) - libgen.li.pdf
-    file = "./docs/Level-1/CFA Level 1 Volume 1 (2023, CFA Institute) - libgen.li.pdf"
+    file = "./docs/Level-1/cfai_level1_volume1/CFA Level 1 Volume 1 (2023, CFA Institute) - libgen.li.pdf"
     output_file = "output/level_1_volume_1.json"
     main(file, output_file)
