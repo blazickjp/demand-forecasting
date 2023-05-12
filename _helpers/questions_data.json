@@ -10,7 +10,7 @@
             "Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding"
         ],
         "learning_module_name": "Learning Module 1\tThe Time Value of Money",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "1",
             "question": "Based on the information in the above table, address the following:",
             "options": {
@@ -79,7 +79,7 @@
             "Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding"
         ],
         "learning_module_name": "Learning Module 1\tThe Time Value of Money",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "7a3c1d36-332b-44dd-b463-86f3ded3f8f0",
             "question": "The nominal risk-free rate is best described as the sum of the real risk-free rate and a premium for:",
             "options": {
@@ -101,7 +101,7 @@
             "Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding"
         ],
         "learning_module_name": "Learning Module 1\tThe Time Value of Money",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "3",
             "question": "Which of the following risk premiums is most relevant in explaining the difference in yields between 30-year bonds issued by the US Treasury and 30-year bonds issued by a small private issuer?",
             "options": {
@@ -123,7 +123,7 @@
             "Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding"
         ],
         "learning_module_name": "Learning Module 1\tThe Time Value of Money",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "4",
             "question": "The value in six years of $75,000 invested today at a stated annual interest rate of 7% compounded quarterly is closest to:",
             "options": {
@@ -145,7 +145,7 @@
             "Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding"
         ],
         "learning_module_name": "Learning Module 1\tThe Time Value of Money",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "5",
             "question": "A bank quotes a stated annual interest rate of 4.00%. If that rate is equal to an effective annual rate of 4.08%, then the bank is compounding interest:",
             "options": {
@@ -167,7 +167,7 @@
             "Calculate and interpret the effective annual rate, given the stated annual interest rate and the frequency of compounding"
         ],
         "learning_module_name": "Learning Module 1\tThe Time Value of Money",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "6",
             "question": "Given a EUR1,000,000 investment for four years with a stated annual rate of 3% compounded continuously, the difference in its interest earnings compared with the same investment compounded daily is closest to:",
             "options": {
@@ -197,7 +197,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "3cdf913c-ef4d-4133-83dc-a462ef690850",
             "question": "Published ratings on stocks ranging from 1 (strong sell) to 5 (strong buy) are examples of which measurement scale?",
             "options": {
@@ -227,7 +227,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "429ef612-e326-4f87-8edb-ec7596e35758",
             "question": "Data values that are categorical and not amenable to being organized in a logical order are most likely to be characterized as:",
             "options": {
@@ -257,7 +257,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "306f4553-3023-46d8-9c40-46cd2544c8a2",
             "question": "Which of the following data types would be classified as being categorical?",
             "options": {
@@ -287,7 +287,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "4",
             "question": "A fixed-income analyst uses a proprietary model to estimate bankruptcy probabilities for a group of firms. The model generates probabilities that can take any value between 0 and 1. The resulting set of estimated probabilities would most likely be characterized as:",
             "options": {
@@ -317,7 +317,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "5",
             "question": "An analyst uses a software program to analyze unstructured data\u2014specifically, management\u2019s earnings call transcript for one of the companies in her research coverage. The program scans the words in each sentence of the transcript and then classifies the sentences as having negative, neutral, or positive sentiment. The resulting set of sentiment data would most likely be characterized as:",
             "options": {
@@ -347,7 +347,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "f7c5c5c5-7c5c-4c5c-8c5c-5c5c5c5c5c5c",
             "question": "Each individual column of data in the table can be best characterized as:",
             "options": {
@@ -413,7 +413,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "7",
             "question": "Each individual row of data in the table can be best characterized as:",
             "options": {
@@ -479,7 +479,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "4a7d06a0-e317-45e7-ada5-e4bdb0d04bd8",
             "question": "A two-dimensional rectangular array would be most suitable for organizing a collection of raw:",
             "options": {
@@ -509,7 +509,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "9",
             "question": "In a frequency distribution, the absolute frequency measure:",
             "options": {
@@ -539,7 +539,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "10",
             "question": "Which of the following statements is correct?",
             "options": {
@@ -596,7 +596,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "11",
             "question": "The cumulative relative frequency for the bin -1.71% \u2264 x < 2.03% is closest to:",
             "options": {
@@ -659,7 +659,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "12",
             "question": "The marginal frequency of energy sector bonds is closest to:",
             "options": {
@@ -737,7 +737,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "13",
             "question": "The relative frequency of AA rated energy bonds, based on the total count, is closest to:",
             "options": {
@@ -814,7 +814,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "14",
             "question": "Based on the chart, yen appreciation:",
             "options": {
@@ -869,7 +869,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "15",
             "question": "A bar chart that orders categories by frequency in descending order and includes a line displaying cumulative relative frequency is referred to as a:",
             "options": {
@@ -899,7 +899,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "16",
             "question": "Which visualization tool works best to represent unstructured, textual data?",
             "options": {
@@ -929,7 +929,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "17",
             "question": "A tree-map is best suited to illustrate:",
             "options": {
@@ -959,7 +959,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "18",
             "question": "A line chart with two variables\u2014for example, revenues and earnings per share\u2014is best suited for visualizing:",
             "options": {
@@ -989,7 +989,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "19",
             "question": "A heat map is best suited for visualizing the:",
             "options": {
@@ -1019,7 +1019,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "20",
             "question": "Which valuation tool is recommended to be used if the goal is to make comparisons of three or more variables over time?",
             "options": {
@@ -1049,7 +1049,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "21",
             "question": "The bin containing the median return is:",
             "options": {
@@ -1082,7 +1082,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "22",
             "question": "Based on the previous histogram, the distribution is best described as being:",
             "options": {
@@ -1131,7 +1131,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "23",
             "question": "The median annual return from portfolio creation to Year 5 for:",
             "options": {
@@ -1198,7 +1198,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "24",
             "question": "The portfolio return for Year X is closest to:",
             "options": {
@@ -1258,7 +1258,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "25",
             "question": "The geometric mean return for Fund Y is closest to:",
             "options": {
@@ -1315,7 +1315,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "26",
             "question": "A portfolio manager invests EUR5,000 annually in a security for four years at the prices shown in the following exhibit. The average price is best represented as the:",
             "options": {
@@ -1368,7 +1368,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "27",
             "question": "When analyzing investment returns, which of the following statements is correct?",
             "options": {
@@ -1448,7 +1448,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "28",
             "question": "The arithmetic mean return over the 10 years is closest to:",
             "options": {
@@ -1527,7 +1527,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "29",
             "question": "The geometric mean return over the 10 years is closest to:",
             "options": {
@@ -1606,7 +1606,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "30",
             "question": "The harmonic mean return over the 10 years is closest to:",
             "options": {
@@ -1686,7 +1686,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "31",
             "question": "The standard deviation of the 10 years of returns is closest to:",
             "options": {
@@ -1765,7 +1765,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "32",
             "question": "The target semideviation of the returns over the 10 years if the target is 2% is closest to:",
             "options": {
@@ -1845,7 +1845,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "33",
             "question": "The median is closest to:",
             "options": {
@@ -1891,7 +1891,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "34",
             "question": "The interquartile range is closest to:",
             "options": {
@@ -1937,7 +1937,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "35",
             "question": "The fourth quintile return for the MSCI World Index is closest to:",
             "options": {
@@ -2014,7 +2014,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "36",
             "question": "For Year 6\u2013Year 10, the mean absolute deviation of the MSCI World Index total returns is closest to:",
             "options": {
@@ -2094,7 +2094,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "37",
             "question": "The fund with the highest absolute dispersion is:",
             "options": {
@@ -2182,7 +2182,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "38",
             "question": "The geometric mean return of Portfolio B is:",
             "options": {
@@ -2222,7 +2222,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "39",
             "question": "Based on the coefficient of variation, the riskiest sector is:",
             "options": {
@@ -2277,7 +2277,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "40",
             "question": "The coefficient of variation is closest to:",
             "options": {
@@ -2316,7 +2316,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "41",
             "question": "This distribution is best described as:",
             "options": {
@@ -2355,7 +2355,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "42",
             "question": "Compared to the normal distribution, this sample\u2019s distribution is best described as having tails of the distribution with:",
             "options": {
@@ -2394,7 +2394,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "43",
             "question": "An analyst calculated the excess kurtosis of a stock\u2019s returns as -0.75. From this information, we conclude that the distribution of returns is:",
             "options": {
@@ -2424,7 +2424,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "44",
             "question": "A correlation of 0.34 between two variables, X and Y, is best described as:",
             "options": {
@@ -2454,7 +2454,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "45",
             "question": "Which of the following is a potential problem with interpreting a correlation coefficient?",
             "options": {
@@ -2484,7 +2484,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "46",
             "question": "Without calculating the correlation coefficient, the correlation of the portfolio returns and the bond index returns is:",
             "options": {
@@ -2552,7 +2552,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "47",
             "question": "Without calculating the correlation coefficient, the correlation of the portfolio returns and the real estate index returns is:",
             "options": {
@@ -2610,7 +2610,7 @@
             "Interpret correlation between two variables"
         ],
         "learning_module_name": "Learning Module 2\tOrganizing, Visualizing, and Describing Data",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "48",
             "question": "If variable A has a mean of -0.56, variable B has a mean of 0.23, and the covariance between the two variables is positive, the correlation between these two variables is:",
             "options": {
@@ -2640,7 +2640,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "4e97e991-095c-4cd3-a0b1-ac0872ae17dd",
             "question": "In probability theory, exhaustive events are best described as the set of events that:",
             "options": {
@@ -2670,7 +2670,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "c4abd90b-4160-4dd2-923c-06949cbeec1a",
             "question": "Which probability estimate most likely varies greatly between people?",
             "options": {
@@ -2700,7 +2700,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "3",
             "question": "If the probability that Zolaf Company sales exceed last year\u2019s sales is 0.167, the odds for exceeding sales are closest to:",
             "options": {
@@ -2730,7 +2730,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "4",
             "question": "If Rayan Khan's odds of beating the benchmark for the year are 3 to 1, what is the probability that his portfolio will beat the benchmark for the year?",
             "options": {
@@ -2760,7 +2760,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "14",
             "question": "The amount of the expected recovery is closest to:",
             "options": {
@@ -2825,7 +2825,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "15",
             "question": "The standard deviation of sales is closest to:",
             "options": {
@@ -2876,7 +2876,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "16",
             "question": "If the correlation between the two bonds is 0.24, the covariance of returns is closest to:",
             "options": {
@@ -2910,7 +2910,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "17",
             "question": "The covariance of returns is positive when the returns on two assets tend to:",
             "options": {
@@ -2940,7 +2940,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "18",
             "question": "Which of the following correlation coefficients indicates the weakest linear relationship between two variables?",
             "options": {
@@ -2970,7 +2970,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "19",
             "question": "The correlation of returns between the hedge fund and the market index is closest to:",
             "options": {
@@ -3018,7 +3018,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "20",
             "question": "All else being equal, as the correlation between two assets approaches +1.0, the diversification benefits:",
             "options": {
@@ -3048,7 +3048,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "21",
             "question": "Given a portfolio of five stocks, how many unique covariance terms, excluding variances, are required to calculate the portfolio return variance?",
             "options": {
@@ -3078,7 +3078,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "22",
             "question": "Which of the following statements is most accurate? If the covariance of returns between two assets is 0.0023, then:",
             "options": {
@@ -3108,7 +3108,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "23",
             "question": "What is the standard deviation of portfolio returns?",
             "options": {
@@ -3160,7 +3160,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "24",
             "question": "Hunziger estimated the portfolio return to be 6.3%. What is the portfolio standard deviation?",
             "options": {
@@ -3228,7 +3228,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "25",
             "question": "The covariance of returns on the foreign index and the returns on the domestic index is closest to:",
             "options": {
@@ -3273,7 +3273,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "26",
             "question": "You have developed a set of criteria for evaluating distressed credits. Companies that do not receive a passing score are classed as likely to go bankrupt within 12 months. What is P(pass test | non-survivor)? Using Bayes\u2019 formula, calculate the probability that a company is a survivor, given that it passes the test; that is, calculate P(survivor | pass test). What is the probability that a company is a non-survivor, given that it fails the test? Is the test effective?",
             "options": {},
@@ -3323,7 +3323,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "27",
             "question": "Use Bayes\u2019 formula to predict the probability of failure given a \u201cgood\u201d rating.",
             "options": {
@@ -3362,7 +3362,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "28",
             "question": "Using Bayes\u2019 formula, what is the probability that a CEO will be fired given \u201cgood\u201d performance?",
             "options": {
@@ -3400,7 +3400,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "29",
             "question": "A manager will select 20 bonds out of his universe of 100 bonds to construct a portfolio. Which formula provides the number of possible portfolios?",
             "options": {
@@ -3430,7 +3430,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "30",
             "question": "A firm will select two of four vice presidents to be added to the investment committee. How many different groups of two are possible?",
             "options": {
@@ -3460,7 +3460,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "31",
             "question": "Which formula is most appropriate to calculate the number of possible ways the funds could be ranked?",
             "options": {
@@ -3490,7 +3490,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "32",
             "question": "Himari Fukumoto has joined a new firm and is selecting mutual funds in the firm\u2019s pension plan. If 10 mutual funds are available, and she plans to select four, how many different sets of mutual funds can she choose?",
             "options": {
@@ -3542,7 +3542,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "33",
             "question": "What are the chances of winning if the contestants must pick the five stocks in the correct order of their total return? If choosing five stocks randomly, a contestant\u2019s chance of winning is one out of:",
             "options": {
@@ -3574,7 +3574,7 @@
             "Identify the most appropriate method to solve a particular counting problem and analyze counting problems using factorial, combination, and permutation concepts"
         ],
         "learning_module_name": "Learning Module 3\tProbability Concepts",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "34",
             "question": "What are the chances of winning if the contestants must pick the top five stocks without regard to order? If choosing five stocks randomly, a contestant\u2019s chance of winning is one out of:",
             "options": {
@@ -3611,7 +3611,7 @@
             "Calculate and interpret probabilities for a random variable given its cumulative distribution function"
         ],
         "learning_module_name": "Learning Module 4\tCommon Probability Distributions",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "a96876c4-4f37-4da3-aa7f-b67b24327794",
             "question": "A European put option on stock conveys the right to sell the stock at a prespecified price, called the exercise price, at the maturity date of the option. The value of this put at maturity is (exercise price \u2013 stock price) or $0, whichever is greater. Suppose the exercise price is $100 and the underlying stock trades in increments of $0.01. At any time before maturity, the terminal value of the put is a random variable.",
             "options": {
@@ -3645,7 +3645,7 @@
             "Calculate and interpret probabilities for a random variable given its cumulative distribution function"
         ],
         "learning_module_name": "Learning Module 4\tCommon Probability Distributions",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "330af32a-c64c-4a96-a235-5c4529a52989",
             "question": "Which of the following is a continuous random variable?",
             "options": {
@@ -3679,7 +3679,7 @@
             "Calculate and interpret probabilities for a random variable given its cumulative distribution function"
         ],
         "learning_module_name": "Learning Module 4\tCommon Probability Distributions",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "3",
             "question": "The conditions for a probability function are satisfied by:",
             "options": {
@@ -3748,7 +3748,7 @@
             "Calculate and interpret probabilities for a random variable given its cumulative distribution function"
         ],
         "learning_module_name": "Learning Module 4\tCommon Probability Distributions",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "4",
             "question": "The value of the cumulative distribution function F(x), where x is a particular outcome, for a discrete uniform distribution:",
             "options": {
@@ -3782,7 +3782,7 @@
             "Calculate and interpret probabilities for a random variable given its cumulative distribution function"
         ],
         "learning_module_name": "Learning Module 4\tCommon Probability Distributions",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "fb3fc405-dd09-47b2-8863-82642b919efe",
             "question": "In a discrete uniform distribution with 20 potential outcomes of integers 1\u201320, the probability that X is greater than or equal to 3 but less than 6, P(3 \u2264 X < 6), is:",
             "options": {
@@ -3816,7 +3816,7 @@
             "Calculate and interpret probabilities for a random variable given its cumulative distribution function"
         ],
         "learning_module_name": "Learning Module 4\tCommon Probability Distributions",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "12",
             "question": "Assuming independent annual trials, what is the probability that she will outperform her benchmark four or more times over the next five years?",
             "options": {
@@ -3842,7 +3842,7 @@
             "Describe the issues regarding selection of the appropriate sample size, data snooping bias, sample selection bias, survivorship bias, look-ahead bias, and time-period bias"
         ],
         "learning_module_name": "Learning Module 5\tSampling and Estimation",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "1",
             "question": "The most appropriate sampling method for Kinzua to use is:",
             "options": {
@@ -3870,7 +3870,7 @@
             "Describe the issues regarding selection of the appropriate sample size, data snooping bias, sample selection bias, survivorship bias, look-ahead bias, and time-period bias"
         ],
         "learning_module_name": "Learning Module 5\tSampling and Estimation",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "c23f3908-7e01-45cf-b38f-0be45d2d64d0",
             "question": "Which one of the following statements is true about non-probability sampling?",
             "options": {
@@ -3896,7 +3896,7 @@
             "Describe the issues regarding selection of the appropriate sample size, data snooping bias, sample selection bias, survivorship bias, look-ahead bias, and time-period bias"
         ],
         "learning_module_name": "Learning Module 5\tSampling and Estimation",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "3",
             "question": "The best approach for creating a stratified random sample of a population involves:",
             "options": {
@@ -3925,7 +3925,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "561e9fa2-fc9e-49eb-ac15-ea5e709f3cf5",
             "question": "Which of the following statements about hypothesis testing is correct?",
             "options": {
@@ -3954,7 +3954,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "2fc0068d-9bdc-4b87-b950-7eaa8c241e3d",
             "question": "Willco is a manufacturer in a mature cyclical industry. During the most recent industry cycle, its net income averaged $30 million per year with a standard deviation of $10 million (n = 6 observations). Management claims that Willco\u2019s performance during the most recent cycle results from new approaches and that Willco\u2019s profitability will exceed the $24 million per year observed in prior cycles. Formulate null and alternative hypotheses consistent with testing Willco management\u2019s claim. Assuming that Willco\u2019s net income is at least approximately normally distributed, identify the appropriate test statistic and calculate the degrees of freedom. Based on critical value of 2.",
             "options": {},
@@ -3979,7 +3979,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "3",
             "question": "Which of the following statements is correct with respect to the null hypothesis?",
             "options": {
@@ -4008,7 +4008,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "3f6c9011-9aaa-4dea-8377-b02fbc1267ca",
             "question": "Which of the following statements regarding a one-tailed hypothesis test is correct?",
             "options": {
@@ -4037,7 +4037,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "5",
             "question": "A hypothesis test for a normally distributed population at a 0.05 significance level implies a:",
             "options": {
@@ -4066,7 +4066,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "2b9dfe76-5ca3-4951-8779-4bc7fdc57848",
             "question": "The value of a test statistic is best described as the basis for deciding whether to:",
             "options": {
@@ -4095,7 +4095,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "7",
             "question": "Which of the following is a Type I error?",
             "options": {
@@ -4124,7 +4124,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "8",
             "question": "A Type II error is best described as:",
             "options": {
@@ -4153,7 +4153,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "9",
             "question": "The level of significance of a hypothesis test is best used to:",
             "options": {
@@ -4182,7 +4182,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "10",
             "question": "All else equal, is specifying a smaller significance level in a hypothesis test likely to increase the probability of a:",
             "options": {
@@ -4211,7 +4211,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "11",
             "question": "The probability of correctly rejecting the null hypothesis is the:",
             "options": {
@@ -4240,7 +4240,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "12",
             "question": "The power of a hypothesis test is:",
             "options": {
@@ -4269,7 +4269,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "13",
             "question": "For each of the following hypothesis tests concerning the population mean, \u03bc, state the conclusion regarding the test of the hypotheses.",
             "options": {
@@ -4298,7 +4298,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "14",
             "question": "In the step \u201cstating a decision rule\u201d in testing a hypothesis, which of the following elements must be specified?",
             "options": {
@@ -4327,7 +4327,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "15",
             "question": "When making a decision about investments involving a statistically significant result, the:",
             "options": {
@@ -4356,7 +4356,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "16",
             "question": "The results are most likely:",
             "options": {
@@ -4395,7 +4395,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "17",
             "question": "Which of the following statements is correct with respect to the p-value?",
             "options": {
@@ -4424,7 +4424,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "18",
             "question": "Which of the following represents a correct statement about the p-value?",
             "options": {
@@ -4453,7 +4453,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "19",
             "question": "Which of the following statements on p-value is correct?",
             "options": {
@@ -4482,7 +4482,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "20",
             "question": "In which test should we reject the null hypothesis?",
             "options": {
@@ -4528,7 +4528,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "21",
             "question": "Identify the appropriate test statistic or statistics for conducting the following hypothesis tests. (Clearly identify the test statistic and, if applicable, the number of degrees of freedom. For example, \u201cWe conduct the test using an x-statistic with y degrees of freedom.\u201d)",
             "options": {
@@ -4560,7 +4560,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "22",
             "question": "For each of the following hypothesis tests concerning the population mean, state the conclusion.",
             "options": {
@@ -4610,7 +4610,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "23",
             "question": "With \u03bc as the population mean forecasting error, formulate null and alternative hypotheses for a zero-mean test of forecasting quality.",
             "options": {
@@ -4787,7 +4787,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "24",
             "question": "Formulate null and alternative hypotheses consistent with determining whether the population mean value of Analyst A\u2019s forecast errors (\u03bc1) are larger than Analyst B\u2019s (\u03bc2).",
             "options": {},
@@ -4838,7 +4838,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "25",
             "question": "Which of the following is the most appropriate test to test the hypothesis that the historical average return on an index is less than or equal to 6%?",
             "options": {
@@ -4867,7 +4867,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "28ed1aa7-4cb8-4228-aa38-12f3e0e64487",
             "question": "Which of the following tests of a hypothesis concerning the population mean is most appropriate?",
             "options": {
@@ -4896,7 +4896,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "27",
             "question": "For a small sample from a normally distributed population with unknown variance, the most appropriate test statistic for the mean is the:",
             "options": {
@@ -4925,7 +4925,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "28",
             "question": "The results of the hypothesis test indicate that the:",
             "options": {
@@ -4968,7 +4968,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "29",
             "question": "A pooled estimator is used when testing a hypothesis concerning the:",
             "options": {
@@ -4997,7 +4997,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "30",
             "question": "Use a significance level of 0.05 and assume that mean differences are approximately normally distributed. A. Formulate null and alternative hypotheses consistent with testing whether any difference exists between the mean returns on the S&P 500 and small-cap stocks. B. Determine whether to reject the null hypothesis for the entire sample period if the critical values are \u00b11.96. C. Determine whether to reject the null hypothesis for the first subperiod if the critical values are \u00b11.96. D. Determine whether to reject the null hypothesis for the second subperiod if the critical values are \u00b11.96.",
             "options": {},
@@ -5057,7 +5057,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "31",
             "question": "When evaluating mean differences between two dependent samples, the most appropriate test is a:",
             "options": {
@@ -5086,7 +5086,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "32",
             "question": "A chi-square test is most appropriate for tests concerning:",
             "options": {
@@ -5115,7 +5115,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "33",
             "question": "During a 10-year period, the standard deviation of annual returns on a portfolio you are analyzing was 15% a year. You want to see whether this record is sufficient evidence to support the conclusion that the portfolio\u2019s underlying variance of return was less than 400, the return variance of the portfolio\u2019s benchmark.",
             "options": {
@@ -5144,7 +5144,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "34",
             "question": "You are investigating whether the population variance of returns on an index changed subsequent to a market disruption. You gather the following data for 120 months of returns before the disruption and for 120 months of returns after the disruption. You have specified a 0.05 level of significance.",
             "options": {
@@ -5196,7 +5196,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "35",
             "question": "Which of the following should be used to test the difference between the variances of two normally distributed populations?",
             "options": {
@@ -5225,7 +5225,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "36",
             "question": "In which of the following situations would a nonparametric test of a hypothesis most likely be used?",
             "options": {
@@ -5254,7 +5254,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "37",
             "question": "To test whether the mean return of one fund is greater than the mean return of the other fund, the analyst can use:",
             "options": {
@@ -5283,7 +5283,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "41",
             "question": "What are the null and alternative hypotheses to test whether the dividend and financial leverage groups are independent of one another?",
             "options": {
@@ -5338,7 +5338,7 @@
             "Explain tests of independence based on contingency table data"
         ],
         "learning_module_name": "Learning Module 6\tHypothesis Testing",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "42",
             "question": "Which of the following statements is correct regarding the chi-square test of independence?",
             "options": {
@@ -5362,7 +5362,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "1",
             "question": "Homoskedasticity is best described as the situation in which the variance of the residuals of a regression is:",
             "options": {
@@ -5386,7 +5386,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "2",
             "question": "Julie Moon is an energy analyst examining electricity, oil, and natural gas consumption in different regions over different seasons. She ran a simple regression explaining the variation in energy consumption as a function of temperature. The total variation of the dependent variable was 140.58, and the explained variation was 60.16. She had 60 monthly observations.",
             "options": {
@@ -5410,7 +5410,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "18",
             "question": "Based on Exhibits 1 and 2, if Liu were to graph the 50 observations, the scatter plot summarizing this relation would be best described as:",
             "options": {
@@ -5434,7 +5434,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "19",
             "question": "Based on Exhibit 1, the sample covariance is closest to:",
             "options": {
@@ -5458,7 +5458,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "20",
             "question": "Based on Exhibits 1 and 2, the correlation between the debt ratio and the short interest ratio is closest to:",
             "options": {
@@ -5482,7 +5482,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "21",
             "question": "Which of the interpretations best describes Liu\u2019s findings?",
             "options": {
@@ -5506,7 +5506,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "22",
             "question": "The dependent variable in Liu\u2019s regression analysis is the:",
             "options": {
@@ -5530,7 +5530,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "23",
             "question": "Based on Exhibit 2, the degrees of freedom for the t-test of the slope coefficient in this regression are:",
             "options": {
@@ -5554,7 +5554,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "24",
             "question": "Which of the following should Liu conclude from the results shown in Exhibit 2?",
             "options": {
@@ -5580,7 +5580,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "25",
             "question": "Based on Exhibit 2, the short interest ratio expected for MQD Corporation is closest to:",
             "options": {
@@ -5604,7 +5604,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "26",
             "question": "Based on Liu\u2019s regression results in Exhibit 2, the F-statistic for testing whether the slope coefficient is equal to zero is closest to:",
             "options": {
@@ -5628,7 +5628,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "27",
             "question": "Which of Vasileva\u2019s assumptions regarding regression analysis is incorrect?",
             "options": {
@@ -5742,7 +5742,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "28",
             "question": "Based on Exhibit 1, the standard error of the estimate is closest to:",
             "options": {
@@ -5821,7 +5821,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "29",
             "question": "Based on Exhibit 2, Vasileva should reject the null hypothesis that:",
             "options": {
@@ -5912,7 +5912,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "30",
             "question": "Based on Exhibit 2 and Vasileva\u2019s prediction of the crude oil return for Month 37, the estimate of Amtex share return for Month 37 is closest to:",
             "options": {
@@ -6011,7 +6011,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "31",
             "question": "Using information from Exhibit 2, the 99% prediction interval for Amtex share return for Month 37 is best described as:",
             "options": {
@@ -6062,7 +6062,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "32",
             "question": "Based on Exhibit 1, Olabudo should:",
             "options": {
@@ -6125,7 +6125,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "33",
             "question": "Based on Exhibit 1, Olabudo should calculate a prediction interval for the actual US CPI closest to:",
             "options": {
@@ -6180,7 +6180,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "34",
             "question": "Which of Olabudo\u2019s observations of forecasting is correct?",
             "options": {
@@ -6242,7 +6242,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "35",
             "question": "The coefficient of determination is closest to:",
             "options": {
@@ -6319,7 +6319,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "36",
             "question": "The standard error of the estimate is closest to:",
             "options": {
@@ -6396,7 +6396,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "37",
             "question": "At a 0.01 level of significance, Jones should conclude that:",
             "options": {
@@ -6472,7 +6472,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "38",
             "question": "The predicted net profit margin for a company with a fixed asset turnover of 2 times is closest to:",
             "options": {
@@ -6548,7 +6548,7 @@
             "Describe different functional forms of simple linear regressions"
         ],
         "learning_module_name": "Learning Module 7\tIntroduction to Linear Regression",
-        "parsed_quetion": {
+        "parsed_question": {
             "id": "39",
             "question": "Using the same information as in Question 8, what would Accent\u2019s cost of goods sold be under the weighted average cost method?",
             "options": {

@@ -66,11 +66,6 @@ const AuthNavbar = ({ onDrawerToggle }) => {
             icon: <AccountCircle />,
         },
         {
-            text: 'Question Bank',
-            href: '#/dashboard/question-bank',
-            icon: <AssignmentIcon />,
-        },
-        {
             text: 'Study Plan',
             href: '#/dashboard/study-plan',
             icon: <ScheduleIcon />,
@@ -79,6 +74,11 @@ const AuthNavbar = ({ onDrawerToggle }) => {
             //     // { text: 'How-To', href: '/dashboard/schedule-optimization/how-to' },
             //     { text: 'Run Optimization', href: '/dashboard/schedule-optimization/run' },
             // ],
+        },
+        {
+            text: 'Practice Problems',
+            href: '/dashboard/practice-problems',
+            icon: <AssignmentIcon />,
         },
         {
             text: 'CFA Chat',

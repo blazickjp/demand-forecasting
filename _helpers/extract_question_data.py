@@ -142,6 +142,7 @@ JSON:"""
                 )
                 parsed_json = json.loads(
                     response['choices'][0]['message']['content'])
+                print("Successfully parsed with GPT-4!")
                 return parsed_json
             except json.JSONDecodeError:
                 print(
@@ -157,30 +158,69 @@ JSON:"""
     raise Exception("Max delay exceeded")
 
 
+# def find_practice_problems(data):
+#     """
+#     Searches the JSON data for the "Practice Problems" section and returns a list of the practice problems.
+
+#     Args:
+#         data (dict): The JSON data to be searched.
+
+#     Returns:
+#         list: A list of practice problems found in the data.
+#     """
+
+#     practice_problems = []
+
+#     # Recursive function to search for practice problems in the JSON data
+#     def search_practice_problems(data):
+#         if isinstance(data, dict):
+#             if 'title' in data and data['title'] == "Practice Problems":
+#                 practice_problems.append(data)
+#             else:
+#                 for key in data:
+#                     search_practice_problems(data[key])
+#         elif isinstance(data, list):
+#             for item in data:
+#                 search_practice_problems(item)
+
+#     search_practice_problems(data)
+#     return practice_problems
+
 def find_practice_problems(data):
     """
-    Searches the JSON data for the "Practice Problems" section and returns a list of the practice problems.
+    Searches the JSON data for the "Practice Problems" section and returns a list of the practice problems,
+    each with the "learning_objectives" and "learning_module_name" field from the parent node.
 
     Args:
         data (dict): The JSON data to be searched.
 
     Returns:
-        list: A list of practice problems found in the data.
+        list: A list of practice problems found in the data, each with the "learning_objectives" and "learning_module_name" field from the parent node.
     """
 
     practice_problems = []
 
     # Recursive function to search for practice problems in the JSON data
-    def search_practice_problems(data):
+    def search_practice_problems(data, learning_objectives=None, learning_module_name=None):
         if isinstance(data, dict):
             if 'title' in data and data['title'] == "Practice Problems":
+                # Add the "learning_objectives" and "learning_module_name" field to the practice problem
+                data["learning_objectives"] = learning_objectives
+                data["learning_module_name"] = learning_module_name
                 practice_problems.append(data)
             else:
+                new_learning_objectives = data.get(
+                    "learning_objectives", learning_objectives)
+                # Check if the title starts with "Learning Module" and if so, update the learning module name
+                if data.get('title', '').startswith("Learning Module"):
+                    learning_module_name = data['title']
                 for key in data:
-                    search_practice_problems(data[key])
+                    search_practice_problems(
+                        data[key], new_learning_objectives, learning_module_name)
         elif isinstance(data, list):
             for item in data:
-                search_practice_problems(item)
+                search_practice_problems(
+                    item, learning_objectives, learning_module_name)
 
     search_practice_problems(data)
     return practice_problems
@@ -300,17 +340,28 @@ def main(file, output_file):
     questions = []
     for problem in practice_problems:
         content = problem['content']
-        questions.extend(parse_questions(content))
+        learning_objectives = problem.get('learning_objectives', [])
+        learning_module_name = problem.get('learning_module_name', '')
+        parsed_questions = parse_questions(content)
+        # Add the "learning_objectives" and "learning_module_name" to each question
+        for question in parsed_questions:
+            question_dict = {
+                'content': question,
+                'learning_objectives': learning_objectives,
+                'learning_module_name': learning_module_name,
+            }
+            questions.append(question_dict)
 
     # Parse the questions into JSON
     questions_data = []
     for question in tqdm(questions, desc="Parsing questions"):
         # print(question)
-        question_data = parse_practice_problems_to_json(question)
+        question_data = parse_practice_problems_to_json(question['content'])
         # print(question_data)
         # break
         if question_data:
-            questions_data.append(question_data)
+            question.update({"parsed_question": question_data})
+            questions_data.append(question)
 
     # Save the questions data to a JSON file
     with open(output_file, 'w') as f:
