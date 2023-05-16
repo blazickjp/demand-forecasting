@@ -161,34 +161,6 @@ JSON:"""
     raise Exception("Max delay exceeded")
 
 
-# def find_practice_problems(data):
-#     """
-#     Searches the JSON data for the "Practice Problems" section and returns a list of the practice problems.
-
-#     Args:
-#         data (dict): The JSON data to be searched.
-
-#     Returns:
-#         list: A list of practice problems found in the data.
-#     """
-
-#     practice_problems = []
-
-#     # Recursive function to search for practice problems in the JSON data
-#     def search_practice_problems(data):
-#         if isinstance(data, dict):
-#             if 'title' in data and data['title'] == "Practice Problems":
-#                 practice_problems.append(data)
-#             else:
-#                 for key in data:
-#                     search_practice_problems(data[key])
-#         elif isinstance(data, list):
-#             for item in data:
-#                 search_practice_problems(item)
-
-#     search_practice_problems(data)
-#     return practice_problems
-
 def find_practice_problems(data):
     """
     Searches the JSON data for the "Practice Problems" section and returns a list of the practice problems,

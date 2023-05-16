@@ -10,7 +10,7 @@ const OfferCard = ({ image, title, description, additionalContent }) => {
                 <Typography gutterBottom variant="h5" component="div">
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2">
                     {description}
                 </Typography>
             </CardContent>

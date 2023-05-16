@@ -16,7 +16,6 @@ import {
 import { GoogleAuthProvider } from 'firebase/auth';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 
@@ -51,7 +50,6 @@ export default function Login() {
 
   return (
     <Box>
-      {/* <Navbar /> */}
       <Container maxWidth="xs">
         <Box mx={1} marginTop={-30}>
           <Paper elevation={2} sx={{ padding: 2 }}>
@@ -87,7 +85,6 @@ export default function Login() {
               type="submit"
               fullWidth
               variant="contained"
-              color="primary"
               sx={{ mb: 2 }}
               onClick={handleEmailLogin}
             >
@@ -98,7 +95,6 @@ export default function Login() {
                 <Button
                   variant="outlined"
                   fullWidth
-                  color="primary"
                   onClick={() => handleLogin(new GoogleAuthProvider())}
                 >
                   Sign in with Google
@@ -108,9 +104,7 @@ export default function Login() {
                 <Typography variant="body2" align="center">
                   Don't have an account?{' '}
                   <Link href="/signup" passHref>
-                    <Typography component="a" variant="body2" color="primary">
-                      Sign Up
-                    </Typography>
+                    Sign Up
                   </Link>
                 </Typography>
               </Grid>

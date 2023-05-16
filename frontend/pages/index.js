@@ -27,7 +27,7 @@ export default function Home() {
   );
 
   return (
-    <Container maxWidth={true} disableGutters>
+    <Container disableGutters>
       <Box marginTop={0}>
         <Head>
           <title>CFAChat</title>
