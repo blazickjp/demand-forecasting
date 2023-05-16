@@ -8,7 +8,7 @@ from requests.exceptions import HTTPError
 import time
 
 # Constants
-MODEL_NAME = "gpt-3.5-turbo"
+MODEL_NAME = "gpt-4"
 TEMPERATURE = 0.0
 MAX_QUESTION_NUMBER = 50
 
@@ -44,6 +44,10 @@ Parse the following unstructured questions into json and return the json object 
     }},
     "data": {{}}
 }}
+For questions with associated data, the 'data' field should include a description (if provided) and a table (if provided). 
+The table should be represented as an object with 'headers' and 'rows' fields, and each row should be an object with keys 
+matching the headers and values representing the cell contents. If a cell is empty or not applicable, it should be represented 
+with an empty string. Keys should never be empty strings.
 
 EXAMPLE 1:
 CONTENT: 1. Published ratings on stocks ranging from 1 (strong sell) to 5 (strong buy) are 
@@ -101,14 +105,13 @@ JSON:
     }},
     "data": {{
         "table": {{
-            "headers": ["Year 1","Year 2","Year 3","Year 4","Year 5"],
-        "rows": [
-            {{"Portfolio P": "-3.0","Portfolio Q": "","Portfolio R": "1.0"}},
-            {{"Portfolio P": "4.0", "Portfolio Q": "3.0", "Portfolio R": "-1.0"}},
-            {{"Portfolio P": "5.0", "Portfolio Q": "6.0", "Portfolio R": "4.0"}},
-            {{"Portfolio P": "3.0", "Portfolio Q": "4.0", "Portfolio R": "4.0"}},
-            {{"Portfolio P": "7.0", "Portfolio Q": "8.0", "Portfolio R": "3.0"}}
-        ]}}
+            "headers": ["Portfolio", "Year 1","Year 2","Year 3","Year 4","Year 5"],
+            "rows": [
+                {{"Portfolio": "P", "Year 1": "-3.0", "Year 2": "4.0", "Year 3": "5.0", "Year 4": "3.0", "Year 5": "7.0"}},
+                {{"Portfolio": "Q", "Year 1": "", "Year 2": "3.0", "Year 3": "6.0", "Year 4": "4.0", "Year 5": "8.0"}},
+                {{"Portfolio": "R", "Year 1": "1.0", "Year 2": "-1.0", "Year 3": "4.0", "Year 4": "4.0", "Year 5": "3.0"}}
+            ]
+        }}
     }}
 }}
 
@@ -118,9 +121,9 @@ JSON:"""
     while delay <= max_delay:
         try:
             response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model=MODEL_NAME,
                 messages=[
-                    {"role": "system", "content": "You are a helpful AI Assistant."},
+                    {"role": "system", "content": "You are a helpful AI that parses unstructured text into JSON"},
                     {"role": "user", "content": prompt}
                 ],
                 temperature=TEMPERATURE
