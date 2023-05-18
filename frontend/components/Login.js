@@ -57,7 +57,7 @@ export default function Login() {
               <Avatar sx={{ margin: 'auto', backgroundColor: 'secondary.main' }}>
                 <LockOutlinedIcon />
               </Avatar>
-              <Typography variant="h5" component="h1" gutterBottom>
+              <Typography variant="h5" component="h1" gutterBottom color="primary">
                 Sign In
               </Typography>
             </Box>
@@ -95,6 +95,7 @@ export default function Login() {
                 <Button
                   variant="outlined"
                   fullWidth
+                  color='primary'
                   onClick={() => handleLogin(new GoogleAuthProvider())}
                 >
                   Sign in with Google

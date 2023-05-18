@@ -2,23 +2,15 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  // typography: {
-  //   fontFamily: '"Custom Font", sans-serif',
-  //   h4: {
-  //     fontWeight: 900,
-  //     fontSize: '72px',
-  //     lineHeight: 1.2,
-  //   },
-  // },
   palette: {
     primary: {
-      main: '#2c3458', // OpenAI-like primary color (dark blue)
+      main: '#2c3458',
     },
     secondary: {
-      main: '#1C9190', // OpenAI-like secondary color (cyan)
+      main: '#1C9190',
     },
     background: {
-      default: '#EDF2F6', // OpenAI-like background color (light gray)
+      default: '#EDF2F6',
     },
   },
   typography: {
@@ -33,4 +25,3 @@ const theme = createTheme({
 });
 
 export default theme;
-// #EDF2F6 - light gray

@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Container, Typography, Box, Grid, Card, CardContent, CardMedia } from "@mui/material";
-import { maxWidth, minHeight } from '@mui/system';
 
 export default function AboutPage() {
   return (
@@ -26,7 +25,7 @@ export default function AboutPage() {
             padding: "0px 0",
           }}
         >
-          {/* <Typography
+          <Typography
             variant="h1"
             align="center"
             sx={{
@@ -54,7 +53,7 @@ export default function AboutPage() {
             }}
           >
             Revolutionize your CFA preparation with our AI-powered study assistant, tailored to your needs.
-          </Typography> */}
+          </Typography>
         </Box>
         <Box mt={8} width={"100%"} display="flex" justifyContent="center" alignItems="center" alignContent={"center"}>
           <Typography variant="h3" component="h2" gutterBottom>
@@ -85,9 +84,9 @@ export default function AboutPage() {
                       justifyContent: "center",
                     }}
                   >
-                    {/* <Typography variant="body1">
+                    <Typography variant="body1">
                       Our mission at CFAChat is to empower CFA candidates by providing a personalized, AI-driven study assistant that helps them efficiently and effectively prepare for the CFA exams. By leveraging advanced AI and adaptive learning algorithms, we aim to revolutionize the way candidates approach their studies, enabling them to focus on the topics that matter most and make the most of their study time.
-                    </Typography> */}
+                    </Typography>
                   </CardContent>
                 </Card>
               </Grid>
@@ -115,16 +114,14 @@ export default function AboutPage() {
                           justifyContent: 'center',
                         }}
                       >
-                        {/* <Typography variant="body1" paddingY={3}>
+                        <Typography variant="body1" paddingY={3}>
                           At CFAChat, our team is passionate about empowering CFA candidates to succeed:
-                        </Typography> */}
-                        {/* <Typography variant="body1">
-                          <ul>
-                            <li>Committed to delivering the most effective study tools for the CFA curriculum</li>
-                            <li>Dedicated to continuous improvement of our platform based on user feedback</li>
-                            <li>Collaborating with industry experts and partners to enhance our offerings</li>
-                          </ul>
-                        </Typography> */}
+                        </Typography>
+                        <ul>
+                          <li>Committed to delivering the most effective study tools for the CFA curriculum</li>
+                          <li>Dedicated to continuous improvement of our platform based on user feedback</li>
+                          <li>Collaborating with industry experts and partners to enhance our offerings</li>
+                        </ul>
                       </CardContent>
                     </Card>
                   </Box>

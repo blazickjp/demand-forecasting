@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Chip, Box } from '@mui/material';
-import VisibilityIcon from '@mui/icons-material/Visibility';
+import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
 
 const OfferCard = ({ image, title, description, additionalContent }) => {
     return (

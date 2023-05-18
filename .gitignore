@@ -10,9 +10,9 @@
 *.txt
 # testing
 /coverage
-
+*/build
 # next.js
-/.next/
+/.next/*
 /out/
 
 # production

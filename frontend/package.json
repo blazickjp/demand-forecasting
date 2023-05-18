@@ -1,12 +1,14 @@
 {
-  "name": "demand-forecasting-app",
+  "name": "cfa-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "gcp-build": "next build"
+    "start": "next start -p $PORT"
+  },
+  "engines": {
+    "node": "18.x.x"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -31,8 +33,8 @@
     "next-connect": "^0.13.0",
     "papaparse": "^5.4.1",
     "postcss": "^8.4.21",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
     "react-icons": "^4.8.0",
     "react-papaparse": "^4.1.0",

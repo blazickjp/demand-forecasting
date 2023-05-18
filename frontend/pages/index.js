@@ -27,7 +27,7 @@ export default function Home() {
   );
 
   return (
-    <Container disableGutters>
+    <>
       <Box marginTop={0}>
         <Head>
           <title>CFAChat</title>
@@ -49,6 +49,7 @@ export default function Home() {
               justifyContent="center"
               alignItems="center"
               minHeight="620px"
+              width="100%"
               style={{
                 background: "linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,#191C23 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-works-angle.svg?v=2020-11-06T16:36:54.345Z) center center/cover repeat scroll padding-box",
                 padding: "0px 0"
@@ -90,6 +91,7 @@ export default function Home() {
                   sx={{
                     color: "white",
                     marginTop: "80px",
+                    backgroundColor: "secondary.main",
                     letterSpacing: "0.5px",
                     '&:hover': {
                       transform: "translateY(-4px)"
@@ -228,7 +230,7 @@ export default function Home() {
         <Box paddingBottom={10}></Box> {/* Add padding to the bottom */}
         <Footer />
       </Box>
-    </Container>
+    </>
   );
 }
 

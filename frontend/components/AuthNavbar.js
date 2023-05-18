@@ -4,11 +4,9 @@ import { useRouter } from 'next/router';
 import useAuth from '../hooks/useAuth';
 import { signOut } from 'firebase/auth';
 import MenuIcon from '@mui/icons-material/Menu';
-import BarChartIcon from '@mui/icons-material/BarChart';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 import React, { forwardRef } from 'react';
 import {
@@ -148,7 +146,7 @@ const AuthNavbar = ({ onDrawerToggle }) => {
                             <React.Fragment key={item.text}>
                                 <ListItem component={Link} href={item.href}>
                                     <ListItemIcon sx={{ marginRight: 0 }}>{item.icon}</ListItemIcon>
-                                    <ListItemText sx={{ marginLeft: -2, color: (theme) => theme.palette.primary.main }} primary={item.text} />
+                                    <ListItemText sx={{ marginLeft: -2, color: "primary.main" }} primary={item.text} />
                                 </ListItem>
                                 {item.subItems &&
                                     item.subItems.map((subItem) => (
@@ -164,7 +162,6 @@ const AuthNavbar = ({ onDrawerToggle }) => {
                             </React.Fragment>
                         ))}
                     </List>
-
                     <Divider />
                 </Paper>
             </Slide>
