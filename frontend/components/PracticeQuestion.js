@@ -44,10 +44,7 @@ function PracticeQuestions({ question }) {
                             <Divider />
                         </Box>
                         <Box mt={2}>
-                            {/* <Typography variant="h6" color="text.primary" sx={{ backgroundColor: '#f5f5f5', p: 2 }}>
 
-                                {question.learning_objectives[0]}
-                            </Typography> */}
                         </Box>
                         {question?.parsed_question?.data && question?.parsed_question?.data.table && (
                             <Box mt={2} sx={{ display: 'flex', justifyContent: 'center' }}>

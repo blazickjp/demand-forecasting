@@ -183,7 +183,7 @@ export default function Signup() {
                                         type="submit"
                                         fullWidth
                                         variant="contained"
-                                        sx={{ mb: 2, color: "primary.main" }}
+                                        sx={{ mb: 2, color: "white" }}
                                         onClick={handleEmailSignup}
                                         disabled={!isFormValid()}
                                     >
