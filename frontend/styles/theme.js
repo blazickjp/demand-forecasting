@@ -21,7 +21,7 @@ const theme = createTheme({
     // fontFamily: 'Montserrat, sans-serif',
     fontFamily: 'Source Sans Pro, sans-serif',
     h1: {
-      fontSize: '3rem',
+      fontSize: '4.5rem',
       fontWeight: 500,
     },
     h2: {
@@ -49,6 +49,22 @@ const theme = createTheme({
     },
     body2: {
       fontSize: '0.875rem',
+    },
+  },
+  components: {
+    MuiTypography: {
+      styleOverrides: {
+        h2: {
+          fontWeight: 'bold',
+        },
+      },
+    },
+    FAQItem: {
+      styleOverrides: {
+        question: {
+          fontWeight: 'bold', // Add this line to make the FAQ questions bold
+        },
+      },
     },
   },
 });

@@ -76,7 +76,7 @@ function PracticeQuestions({ question }) {
                                 </Dialog>
                                 <Tooltip title={<React.Fragment><strong>Learning Module: </strong>{question.learning_module_name.replace(/Learning Module \d+/, '')}</React.Fragment>}>
                                     <Button variant="outlined" sx={{ fontSize: '.5em' }}>
-                                        Learning Modu
+                                        Learning Module
                                     </Button>
                                 </Tooltip>
                             </Box>
