@@ -1,5 +1,5 @@
 // components/FeatureUpdates.js
-import { Typography, List, ListItem, Box } from '@mui/material';
+import { Typography, Box, Checkbox } from '@mui/material';
 
 export default function FeatureUpdates() {
     return (
@@ -7,23 +7,76 @@ export default function FeatureUpdates() {
             <Typography variant="h6" gutterBottom>
                 This whole site has been made by: GPT-4
             </Typography>
-            {/* <List>
-                <ListItem>
-                    Added CFA study material questions
-                </ListItem>
-            </List>
-
             <Typography variant="h6" gutterBottom>
                 Upcoming Features:
             </Typography>
-            <List>
-                <ListItem>
+            <Typography component="div">
+                <Checkbox
+                    checked
+                    disabled
+                    sx={{
+                        '&.Mui-checked': {
+                            color: 'green',
+                        },
+                        '&.Mui-disabled': {
+                            color: 'success',
+                        },
+                    }}
+                    color="success"
+                />
+                <Typography variant="body1" component="span" sx={{ textDecoration: 'line-through' }}>
                     Submitting questions feature
-                </ListItem>
-                <ListItem>
+                </Typography>
+                <br />
+                <Checkbox
+                    checked
+                    disabled
+                    sx={{
+                        '&.Mui-checked': {
+                            color: 'green',
+                        },
+                        '&.Mui-disabled': {
+                            color: 'success',
+                        },
+                    }}
+                    color="success"
+                />
+                <Typography variant="body1" component="span" sx={{ textDecoration: 'line-through' }}>
                     Analytics on performance
-                </ListItem>
-            </List> */}
+                </Typography>
+                <br />
+                <Checkbox
+                    disabled
+                    sx={{
+                        '&.Mui-checked': {
+                            color: 'green',
+                        },
+                        '&.Mui-disabled': {
+                            color: 'success',
+                        },
+                    }}
+                    color="success"
+                />
+                <Typography variant="body1" component="span">
+                    Integration with external APIs
+                </Typography>
+                <br />
+                <Checkbox
+                    disabled
+                    sx={{
+                        '&.Mui-checked': {
+                            color: 'green',
+                        },
+                        '&.Mui-disabled': {
+                            color: 'success',
+                        },
+                    }}
+                    color="success"
+                />
+                <Typography variant="body1" component="span">
+                    Improved user interface
+                </Typography>
+            </Typography>
         </Box>
     );
 }

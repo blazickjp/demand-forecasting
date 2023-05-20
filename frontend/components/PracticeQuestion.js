@@ -8,9 +8,6 @@ import { color } from '@mui/system';
 import { alpha } from '@mui/system';
 
 
-
-
-
 function PracticeQuestions({ question }) {
     const [selectedValue, setSelectedValue] = React.useState('');
     const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
