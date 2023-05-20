@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Set your variables here
-PROJECT_ID=$(gcloud config get-value project)
+PROJECT_ID=$PROJECT_ID
 SERVICE_NAME="cf-chat-app"
 REGION="us-east1"
 IMAGE_NAME="cfa-chat-app"
-ENV_FILE=".env.prod"  # use .env.dev for development
+ENV_FILE=".env.production"  # use .env.dev for development
 
 # Read environment variables from the .env file
 export $(grep -v '^#' $ENV_FILE | xargs)

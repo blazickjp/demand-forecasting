@@ -2,7 +2,11 @@ import React from 'react';
 import { Box, Card, CardContent, Typography, FormControl, FormControlLabel, Radio, RadioGroup, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 import { CardHeader, Divider } from '@mui/material';
 import { Tooltip, IconButton } from '@mui/material';
-import { InfoOutlined as InfoOutlinedIcon } from '@mui/icons-material';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import { Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
+import { color } from '@mui/system';
+import { alpha } from '@mui/system';
+
 
 
 
@@ -12,6 +16,24 @@ function PracticeQuestions({ question }) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
+    };
+    // const [anchorEl, setAnchorEl] = React.useState(null);
+
+    // const handleClick = (event) => {
+    //     setAnchorEl(event.currentTarget);
+    // };
+
+    // const handleClose = () => {
+    //     setAnchorEl(null);
+    // };
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
     };
 
     const handleSubmit = () => {
@@ -30,12 +52,35 @@ function PracticeQuestions({ question }) {
             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', bgcolor: 'background.default' }}>
                 <Card sx={{ width: '80%', mb: 3, boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)' }}>
                     <CardContent>
-                        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-                            <Box sx={{ alignItems: 'baseline' }}>
-                                <Tooltip title={<React.Fragment><strong>Learning Objective: </strong>{question.learning_objectives[0]}</React.Fragment>}>
-                                    <IconButton aria-label="info">
-                                        <InfoOutlinedIcon />
-                                    </IconButton>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                            <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+                                <Tooltip title="Click to view learning objectives associated with this question">
+                                    <Button variant="outlined" onClick={handleOpen} sx={{ fontSize: '.5em' }}>
+                                        Learning Objectives
+                                    </Button>
+                                </Tooltip>
+                                <Dialog onClose={handleClose} open={open}>
+                                    <DialogTitle>Learning Objectives</DialogTitle>
+                                    <DialogContent>
+                                        <ol >
+                                            {question.predicted_objectives.map((objective, index) => (
+                                                <li key={index} style={{ fontSize: '.9rem' }}>
+                                                    <Typography style={{ fontSize: '.9rem' }} key={index}>{objective}</Typography>
+                                                </li>
+
+                                            ))}
+                                        </ol>
+                                    </DialogContent>
+                                    <DialogActions>
+                                        <Button onClick={handleClose}>
+                                            Close
+                                        </Button>
+                                    </DialogActions>
+                                </Dialog>
+                                <Tooltip title={<React.Fragment><strong>Learning Module: </strong>{question.learning_module_name.replace(/Learning Module \d+/, '')}</React.Fragment>}>
+                                    <Button variant="outlined" sx={{ fontSize: '.5em' }}>
+                                        Learning Modu
+                                    </Button>
                                 </Tooltip>
                             </Box>
                             <CardHeader title={question?.parsed_question?.question} titleTypographyProps={{ variant: 'body1' }} />
@@ -53,7 +98,16 @@ function PracticeQuestions({ question }) {
                                         <TableHead>
                                             <TableRow>
                                                 {question?.parsed_question?.data?.table.headers.map((header) => (
-                                                    <TableCell key={header} style={{ fontWeight: 'bold', backgroundColor: '#fafafa', borderBottom: '2px solid #a0a0a0' }}>{header}</TableCell>
+                                                    <TableCell
+                                                        key={header}
+                                                        sx={{
+                                                            fontWeight: 'bold',
+                                                            backgroundColor: (theme) => alpha(theme.palette.secondary.main, 0.8),
+                                                            borderBottom: '2px solid #a0a0a0',
+                                                            color: 'white'
+                                                        }}                                                    >
+                                                        {header}
+                                                    </TableCell>
                                                 ))}
                                             </TableRow>
                                         </TableHead>
