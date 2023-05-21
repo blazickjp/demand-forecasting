@@ -133,7 +133,7 @@ function PracticeQuestions({ question }) {
                                                 <Radio
                                                     style={{ paddingRight: "25px" }} /> // Aligns the Radio button to the top of the text
                                             }
-                                            label={`${key}: ${value}`}
+                                            label={`${value}`}
                                             style={{ margin: '15px 0' }}  // Add custom margin here
                                         />
                                     ))}

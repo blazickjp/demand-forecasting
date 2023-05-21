@@ -9,6 +9,17 @@ import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 
 const QuestionNavbar = ({ onPrevious, onNext, currentIndex, totalQuestions, learningModules, onFilterChange }) => {
+    const compareModules = (a, b) => {
+        const aNum = parseInt(a.replace(/\D/g, ''));
+        const bNum = parseInt(b.replace(/\D/g, ''));
+        if (aNum < bNum) {
+          return -1;
+        }
+        if (aNum > bNum) {
+          return 1;
+        }
+        return 0;
+      };
     return (
         <Box
             display="flex"
@@ -40,16 +51,30 @@ const QuestionNavbar = ({ onPrevious, onNext, currentIndex, totalQuestions, lear
                 </Button>
             </Box>
             <Box display="flex" width={"20%"}>
-                <FormControl variant="outlined" sx={{ minWidth: 200 }}> {/* Change here */}
+                <FormControl variant="outlined" sx={{ minWidth: 200, marginTop: 2 }}> {/* Change here */}
                     <InputLabel id="learning-module-label">Learning Module</InputLabel>
                     <Select
                         labelId="learning-module-label"
                         id="learning-module-select"
                         onChange={onFilterChange}
                         label="Learning Module"
+                        sx={{ height: '70%' }} // Add this line to set the maxHeight
+                        MenuProps={{
+                            anchorOrigin: {
+                                vertical: "bottom",
+                                horizontal: "left"
+                            },
+                            transformOrigin: {
+                                vertical: "top",
+                                horizontal: "left"
+                            },
+                            getContentAnchorEl: null
+                        }}
                     >
-                        {learningModules && learningModules.map((module, index) => (
-                            <MenuItem key={index} value={module}>{module}</MenuItem>
+                        {learningModules.sort(compareModules) && learningModules.map((module, index) => (
+                            <MenuItem key={index} value={module} style={{ fontSize: '1rem', minHeight: '20px' }}>
+                                {module.replace(/Learning Module \d+/, '')}
+                            </MenuItem> 
                         ))}
                     </Select>
                 </FormControl>
