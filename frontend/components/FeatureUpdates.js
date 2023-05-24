@@ -54,6 +54,11 @@ const features = [
         disabled: false,
         description: 'Develop an AI system that can generate practice questions based on the CFA curriculum. It could create new questions on the fly or rephrase existing ones to provide a diverse range of practice materials'
     },
+    {
+        label: 'Discussion Forum',
+        checked: false,
+        disabled: false
+    },
 
 ];
 
