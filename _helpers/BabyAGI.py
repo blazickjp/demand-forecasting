@@ -21,10 +21,10 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 # Use a service account
-cred = credentials.Certificate('cfa-creds.json')
-firebase_admin.initialize_app(cred)
+# cred = credentials.Certificate('cfa-creds.json')
+# firebase_admin.initialize_app(cred)
 
-db = firestore.client()
+# db = firestore.client()
 
 # Define your embedding model
 embeddings_model = OpenAIEmbeddings()
@@ -64,8 +64,7 @@ class TaskCreationChain(LLMChain):
         task_creation_template = (
             "You are an task creation AI that uses the result of an execution agent"
             " to create new tasks with the following objective: {objective},"
-            " The last completed task was: {task_description}."
-            " This result was: {result}."
+            " The list of completed tasks are: {completed_tasks}."
             " These are the incomplete tasks still remaining: {incomplete_tasks}."
             " Based on the result, create new tasks to be completed"
             " by the AI system that do not overlap with incomplete tasks."
@@ -73,8 +72,7 @@ class TaskCreationChain(LLMChain):
         )
         prompt = PromptTemplate(
             template=task_creation_template,
-            input_variables=["result", "task_description",
-                             "incomplete_tasks", "objective"],
+            input_variables=["completed_tasks", "incomplete_tasks", "objective"],
         )
         return cls(prompt=prompt, llm=llm, verbose=verbose)
 
@@ -113,17 +111,56 @@ def search_parser(string: str):
     return search.results(string, num_results=4)
 
 
+# Create a prompt template for text summarization
+summarize_prompt = PromptTemplate.from_template("Please summarize the following text: {text}")
+
+# Create an LLMChain for text summarization using the OpenAI language model and the prompt template
+summarize_chain = LLMChain(llm=OpenAI(temperature=0.3), prompt=summarize_prompt)
+
+
+def save_summary_to_file(text: str, file_path: str) -> str:
+    """Summarize the given text and save the summary to a file.
+
+    Args:
+        text: The text to be summarized.
+        file_path: The path to the file where the summary will be saved.
+
+    Returns:
+        A string indicating the path to the file where the summary was saved.
+    """
+    # Use the summarize_chain to generate a summary of the text
+    summary = summarize_chain.run({"text": text})
+
+    # Save the summary to a file
+    with open(file_path, 'w') as f:
+        f.write(summary)
+
+    return f"Summary saved to {file_path}"
+
+
+# Define the file path where the summary will be saved
+file_path = os.path.join(os.getcwd(), 'summary.txt')
+
+# Add a tool to your tools list that summarizes text and saves the summary to a file
+tools.append(
+    Tool(
+        name="Summarize and Save",
+        func=save_summary_to_file,
+        description=f"useful for when you need to summarize a large amount of text and save the summary to a file. Input: a large amount of text. Output: a string indicating the path to the file where the summary was saved. The summary will be saved to {file_path}."
+    )
+)
+
 tools = [
     Tool(
         name="Search",
         func=search_parser,
         description="useful for when you need to gather real time information using Google Search. Input: a search query. Output: the top 4 search results."
     ),
-    Tool(
-        name="TODO",
-        func=todo_chain.run,
-        description="useful for when you need to come up with todo lists. Input: an objective to create a todo list for. Output: a todo list for that objective. Please be very clear what the objective is!"
-    )
+    # Tool(
+    #     name="Take Notes",
+    #     func=note_chain.run,
+    #     description="useful for when you need to take notes. Input: a string of information you want to keep. Output: the string."
+    # )
 ]
 
 
@@ -152,118 +189,24 @@ prompt = ZeroShotAgent.create_prompt(
 )
 
 
-def get_next_task(task_creation_chain: LLMChain, result: Dict, task_description: str, task_list: List[str], objective: str) -> List[Dict]:
-    """Get the next task."""
-    incomplete_tasks = ", ".join(task_list)
-    response = task_creation_chain.run(
-        result=result, task_description=task_description, incomplete_tasks=incomplete_tasks, objective=objective)
-    new_tasks = response.split('\n')
-    return [{"task_name": task_name, "iteration": 0, "status": "incomplete", "summary": ""} for task_name in new_tasks if task_name.strip()]
-
-
-def prioritize_tasks(task_prioritization_chain: LLMChain, this_task_id: int, task_list: List[Dict], objective: str) -> List[Dict]:
-    """Prioritize tasks."""
-    task_names = [t["task_name"] for t in task_list]
-    next_task_id = int(this_task_id) + 1
-    response = task_prioritization_chain.run(task_names=task_names,
-                                             next_task_id=next_task_id,
-                                             objective=objective)
-    new_tasks = response.split('\n')
-    prioritized_task_list = []
-    for task_string in new_tasks:
-        if not task_string.strip():
-            continue
-        task_parts = task_string.strip().split(".", 1)
-        if len(task_parts) == 2:
-            task_id = task_parts[0].strip()
-            task_name = task_parts[1].strip()
-            prioritized_task_list.append(
-                {"task_id": task_id, "task_name": task_name, "iteration": 0, "status": "incomplete", "summary": ""})
-    return prioritized_task_list
-
-
-def _get_top_tasks(vectorstore, query: str, k: int) -> List[str]:
-    """Get the top k tasks based on the query."""
-    print("Query:", query)
-    if query == "":
-        return [' ']
-    results = vectorstore.similarity_search_with_score(query, k=k)
-    if not results:
-        return []
-    sorted_results, _ = zip(*sorted(results, key=lambda x: x[1], reverse=True))
-    return [str(item.metadata['task']) for item in sorted_results]
-
-
-def execute_task(vectorstore, execution_chain: AgentExecutor, objective: str, task: str, summary: str,  k: int = 5) -> str:
-    """Execute a task."""
-    context = _get_top_tasks(vectorstore, query=objective, k=k)
-    result = execution_chain(inputs={"objective": objective, "context": context, "task": task, "summary": summary})
-    # Do something with intermediate_steps...
-    return result['output'], result['intermediate_steps']
-
-
 class BabyAGI(Chain, BaseModel):
     """Controller model for the BabyAGI agent."""
-
     task_creation_chain: TaskCreationChain = Field(...)
     task_prioritization_chain: TaskPrioritizationChain = Field(...)
     task_progress_chain: TaskProgressChain = Field(...)
+    todo_chain: LLMChain = Field(...)
     execution_chain: AgentExecutor = Field(...)
-    task_id_counter: int = Field(1)
+    task_id_counter: int = Field(0)
     task_list: List = Field([])
     completed_tasks: List = Field([])
     vectorstore: VectorStore = Field(init=False)
+    objective: str = Field("")
     max_iterations: Optional[int] = None
-    # path to the task list file
     task_file_path: str = Field("task_list.json")
 
     class Config:
         """Configuration for this pydantic object."""
         arbitrary_types_allowed = True
-
-    def add_task(self, task: Dict):
-        """Add a task to the task list."""
-        self.task_list.append(task)
-        with open(self.task_file_path, 'w') as file:
-            json.dump(list(self.task_list), file)
-
-    def load_tasks_from_file(self):
-        """Load tasks from the task list file."""
-        if os.path.exists(self.task_file_path):
-            with open(self.task_file_path, 'r') as file:
-                self.task_list = deque(json.load(file))
-
-    # def add_task(task):
-    #     doc_ref = db.collection(u'tasks').document(str(task['task_id']))
-    #     doc_ref.set(task)
-
-    # def get_tasks():
-    #     tasks = db.collection(u'tasks').stream()
-    #     task_list = []
-    #     for task in tasks:
-    #         task_list.append(task.to_dict())
-    #     return task_list
-
-    def get_max_task_id(self):
-        """Get the maximum task id."""
-        if not self.task_list:
-            return 0
-        return max([int(t["task_id"]) for t in self.task_list])
-
-    def print_task_list(self):
-        print("\033[95m\033[1m" + "\n*****TASK LIST*****\n" + "\033[0m\033[0m")
-        if self.task_list:
-            for t in self.task_list:
-                print(t)
-
-    def print_next_task(self, task: Dict):
-        print("\033[92m\033[1m" + "\n*****NEXT TASK*****\n" + "\033[0m\033[0m")
-        print(str(task["task_id"]) + ": " + task["task_name"])
-
-    def print_task_result(self, result: str):
-        print("\033[93m\033[1m" +
-              "\n*****TASK RESULT*****\n" + "\033[0m\033[0m")
-        print(result)
 
     @property
     def input_keys(self) -> List[str]:
@@ -273,93 +216,113 @@ class BabyAGI(Chain, BaseModel):
     def output_keys(self) -> List[str]:
         return []
 
-    def _call(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
-        """Run the agent."""
+    def initialize_task_file(self):
         if os.path.exists(self.task_file_path):
             os.remove(self.task_file_path)
-        objective = inputs['objective']
-        if not self.task_list:  # Only add the first task if the task list is empty
-            self.add_task({"task_id": "0", "task_name": "Make a Todo List", "iteration": 0,
-                           "status": "incomplete", "summary": ""})
-            task = [i for i in self.task_list if i['task_id'] == "0"][0]
 
-            # Step 2: Execute the task
-            result, _ = execute_task(
-                self.vectorstore, self.execution_chain, objective, task["task_name"], summary=""
-            )
-            task.update({f"result_{task['iteration']}": result})
-            new_tasks = get_next_task(
-                self.task_creation_chain, result, task["task_name"], [
-                    t["task_name"] for t in self.task_list], objective
-            )
-            self.task_id_counter = self.get_max_task_id()
-            for new_task in new_tasks:
-                self.task_id_counter += 1
-                new_task.update({"task_id": self.task_id_counter})
-                self.add_task(new_task)
-            reprioritized_tasks = prioritize_tasks(
-                self.task_prioritization_chain, "0", list(
-                    self.task_list), objective
-            )
-            task.update({"status": "complete"})
-            self.task_list = [task] + reprioritized_tasks
-            with open(self.task_file_path, 'w') as file:
-                json.dump(self.task_list, file)
+    def get_task(self, task_id: str):
+        return [t for t in self.task_list if t["task_id"] == str(task_id)]
 
-        task_in_work = 0
+    def get_max_task_id(self):
+        return max([int(t["task_id"]) for t in self.task_list])
 
+    def add_task(self, task):
+        self.task_list.append(task)
+
+    def initialize_task_list(self):
+        """
+        Initialize the task list with a TODO task.
+        """
+        self.add_task({"task_id": "0", "task_name": "Make a Todo List", "iteration": 0,
+                       "status": "incomplete", "summary": ""})
+        self.refresh_task_list()
+        self.save_task_list()
+
+    def execute_and_update_task(self, task):
+        response = self.execution_chain(
+            inputs={
+                "objective": self.objective,
+                "context": self.completed_tasks,
+                "task": task,
+                "summary": task["summary"]
+            }
+        )
+        result = response["output"]
+        intermediate_steps = response["intermediate_steps"]
+        task.update({f"result_{task['iteration']}": result})
+        task.update({f"step_{task['iteration']}": intermediate_steps})
+        task.update({"iteration": str(int(task["iteration"]) + 1)})
+
+        self.save_task_list()
+
+    def reprioritize_tasks(self):
+        starting_task_id = self.task_id_counter + 1
+        task_names = [i for i in self.get_task_names(starting_task_id)]
+        reprioritized_tasks = self.task_prioritization_chain(
+            inputs={"objective": self.objective, "next_task_id": starting_task_id, "task_names": task_names}
+        )
+        reprioritized_task_list = reprioritized_tasks["text"].split("\n")
+        task = self.get_task(str(self.task_id_counter))
+        for task_name in reprioritized_task_list:
+            if task_name.strip():
+                task.append({"task_id": str(starting_task_id), "task_name": task_name,
+                             "iteration": 0, "status": "incomplete", "summary": ""})
+                starting_task_id += 1
+
+        self.task_list = task
+        self.save_task_list()
+
+    def save_task_list(self):
+        with open(self.task_file_path, 'w') as file:
+            json.dump(self.task_list, file)
+
+    def load_task_list(self):
+        with open(self.task_file_path, 'r') as file:
+            self.task_list = json.load(file)
+
+    def get_task_names(self, starting_task_id: int):
+        return [t["task_name"] for t in self.task_list if int(t["task_id"]) >= starting_task_id]
+
+    def remove_task(self, task):
+        new_tasks = [t for t in self.task_list if t["task_id"] != task["task_id"]]
+        self.task_list = new_tasks
+        self.save_task_list()
+
+    def refresh_task_list(self):
+        """Get the next task."""
+        max_id = self.get_max_task_id()
+        response = todo_chain.run(
+            incomplete_tasks=self.task_list, objective=self.objective, completed_tasks=self.completed_tasks)
+        new_tasks = response.split('\n')
+        new_task_list = [{"task_name": task_name, "iteration": "0", "status": "incomplete", "summary": "", "task_id": j + max_id}
+                         for j, task_name in enumerate(new_tasks) if task_name.strip()]
+        for i in new_task_list:
+            self.add_task(i)
+        self.save_task_list()
+
+    def _call(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
+        """Run the agent."""
+        self.objective = inputs['objective']
+        self.initialize_task_file()
+        self.initialize_task_list()
         while True:
             if self.task_list:
                 input("Check Progress and update Status. Press Enter to continue...")
-                self.load_tasks_from_file()
-                task = [i for i in self.task_list if i['task_id'] == str(task_in_work)][0]
+                self.load_task_list()
+                task = self.get_task(str(self.task_id_counter))[0]
                 iteration = task["iteration"]
                 if task['status'] == "complete":
-                    task_in_work += 1
                     print("Completed task!\t- ", task['task_name'])
                     self.completed_tasks.append(task)
-                    continue
-
-                # Step 2: Execute the task
-                result, intermediate_steps = execute_task(
-                    self.vectorstore, self.execution_chain, objective, task["task_name"], task["summary"]
-                )
-                task.update({f"result_{iteration}": result})
-                task.update({f"intermediate_steps_{iteration}": intermediate_steps})
-                this_task_id = int(task["task_id"])
-                self.print_task_result(result)
-
-                summary = self.task_progress_chain.run(
-                    task_name=task["task_name"], metadata=task
-                )
-                task.update({"summary": summary})
-
-                # Step 3: Store the result in Pinecone
-                result_id = f"result_{iteration}"
-                self.vectorstore.add_texts(
-                    texts=[result],
-                    metadatas=[{"task": task["task_name"]}],
-                    ids=[result_id],
-                )
-
-                # Step 4: Create new tasks and reprioritize task list
-                new_tasks = get_next_task(
-                    self.task_creation_chain, result, task["task_name"], [
-                        t["task_name"] for t in self.task_list], objective
-                )
-                self.task_id_counter = self.get_max_task_id()
-                for new_task in new_tasks:
+                    self.remove_task(task)
+                    self.reprioritize_tasks()
                     self.task_id_counter += 1
-                    new_task.update({"task_id": self.task_id_counter})
-                    self.add_task(new_task)
-                reprioritized_tasks = prioritize_tasks(
-                    self.task_prioritization_chain, this_task_id, list(
-                        self.task_list), objective
-                )
-                task
-                self.task_list = [task] + reprioritized_tasks
-                with open(self.task_file_path, 'w') as file:
-                    json.dump(self.task_list, file)
+                else:
+                    self.execute_and_update_task(task)
+                    self.save_task_list()
+            else:
+                print("No Tasks left to do!")
+                break
         return {}
 
     @classmethod
@@ -391,6 +354,7 @@ class BabyAGI(Chain, BaseModel):
             execution_chain=agent_executor,
             task_progress_chain=task_progress_chain,
             vectorstore=vectorstore,
+            todo_chain=todo_chain,
             **kwargs
         )
 
