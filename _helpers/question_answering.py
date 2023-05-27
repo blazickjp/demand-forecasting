@@ -3,6 +3,8 @@ from langchain.schema import AgentAction, AgentFinish
 from langchain.embeddings import OpenAIEmbeddings
 from langchain import OpenAI, SerpAPIWrapper, LLMMathChain
 from langchain.vectorstores.elastic_vector_search import ElasticVectorSearch
+import firebase_admin
+from firebase_admin import credentials
 from firebase_admin import db
 import os
 
@@ -22,9 +24,10 @@ conn = ElasticVectorSearch(
     embedding=embeddings,
 )
 
-
 # Set up Firebase
-# Assuming you've already initialized your Firebase app
+cred = credentials.Certificate('cfa-creds.json')
+firebase_admin.initialize_app(cred)
+db = firestore.client()
 ref = db.reference('questions')
 
 # Set up LLM Math Chaina
