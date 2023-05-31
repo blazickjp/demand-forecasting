@@ -142,26 +142,20 @@ def save_summary_to_file(text: str, file_path: str) -> str:
 file_path = os.path.join(os.getcwd(), 'summary.txt')
 
 # Add a tool to your tools list that summarizes text and saves the summary to a file
-tools.append(
+tools = []
+tools = [
     Tool(
         name="Summarize and Save",
         func=save_summary_to_file,
         description=f"useful for when you need to summarize a large amount of text and save the summary to a file. Input: a large amount of text. Output: a string indicating the path to the file where the summary was saved. The summary will be saved to {file_path}."
-    )
-)
-
-tools = [
+    ),
     Tool(
         name="Search",
         func=search_parser,
         description="useful for when you need to gather real time information using Google Search. Input: a search query. Output: the top 4 search results."
     ),
-    # Tool(
-    #     name="Take Notes",
-    #     func=note_chain.run,
-    #     description="useful for when you need to take notes. Input: a string of information you want to keep. Output: the string."
-    # )
 ]
+
 
 
 prefix = """

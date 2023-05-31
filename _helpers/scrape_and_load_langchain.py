@@ -1,27 +1,16 @@
-import requests
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-from langchain.document_loaders import WebBaseLoader
-import chromadb
 import pickle
-import os
 import json
 import openai
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.text_splitter import TokenTextSplitter
-from langchain.text_splitter import PythonCodeTextSplitter
-from langchain.docstore.document import Document
-from typing import List, Any
-from langchain.vectorstores import Chroma
-from chromadb.config import Settings
-from langchain.document_loaders import UnstructuredURLLoader, ReadTheDocsLoader, DirectoryLoader, TextLoader
-from pathlib import Path
 import ast
-from typing import List, Any, Optional
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.docstore.document import Document
+from langchain.document_loaders import DirectoryLoader
 from langchain.document_loaders import DirectoryLoader
 from langchain.docstore.document import Document
+from pathlib import Path
+from typing import List, Any
+from typing import List, Any, Optional
 from retry import retry
-import time
 
 MODEL_NAME = 'gpt-3.5-turbo'
 PROMPT_PREFIX = '''
@@ -261,7 +250,7 @@ class PythonClassDirectoryLoader(DirectoryLoader):
 
                 except Exception as e:
                     if self.silent_errors:
-                        logger.warning(e)
+                        print(e)
                     else:
                         raise e
                 finally:
@@ -278,4 +267,4 @@ class PythonClassDirectoryLoader(DirectoryLoader):
 embeddings = OpenAIEmbeddings()
 loader = PythonClassDirectoryLoader("../../langchain", glob="**/*.py", show_progress=True, use_multithreading=False)
 loader.load()
-pickle.dump(loader.docs, open("docs.pkl", "wb"))
+pickle.dump(loader.docs, open("lanchain_classes.pkl", "wb"))
