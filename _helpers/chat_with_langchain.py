@@ -12,13 +12,13 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.tools import BaseTool
 
 embedding = OpenAIEmbeddings()
-llm = ChatOpenAI(model_name='gpt-4', temperature=0, max_tokens=500)
+llm = ChatOpenAI(model_name='gpt-3.5-turbo', temperature=0, max_tokens=500)
 
 persist_directory = 'db_langchain'
 vectordb = Chroma(persist_directory=persist_directory, embedding_function=embedding)
-retriever = vectordb.as_retriever(search_type="mmr")
+retriever = vectordb.as_retriever()
 retriever.search_kwargs = {"n": 5, "k": 10}
-
+print(vectordb.similarity_search("How do I use the Agent class in Langchain?"))
 
 class VectorDBQueryAndFilterTool(BaseTool):
     def __init__(self, vectordb, filter_chain):
@@ -50,19 +50,18 @@ qa = RetrievalQA.from_chain_type(llm=OpenAI(temperature=0), chain_type="map_redu
 #     return qa({"question": question, "chat_history": []})
 
 
-tools = [
-    Tool(
-        name="Intermediate Answer",
-        func=qa.run,
-        description="Useful to answer questions with information from the python Langchain documentation.",
-    )
-]
+# tools = [
+#     Tool(
+#         name="LangChain codebase",
+#         func=qa.run,
+#         description="Useful to answer questions with information from the python Langchain documentation.",
+#     )
+# ]
 
-self_ask_with_search = initialize_agent(tools, llm, agent=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
-self_ask_with_search.run(
-    """
-    Write a python tutorial on how the Agent class works in Langchain. Your tutorial should
-    be aimed at information retrieval from a Chroma Database and the best way to 
-    generate a body of text systhesizing data from multiple db queries.
-    """
-)
+# qa.run(
+#     """
+#     Write a python tutorial on how the Agent class works in Langchain. Your tutorial should
+#     be aimed at information retrieval from a Chroma Database and the best way to 
+#     generate a body of text systhesizing data from multiple db queries.
+#     """
+# )
