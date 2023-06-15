@@ -4,6 +4,7 @@ import useAuth from '../hooks/useAuth';
 import Dashboard from '../components/Dashboard';
 import { useEffect } from 'react';
 
+
 export default function DashboardPage() {
     const user = useAuth();
     const router = useRouter();
@@ -18,9 +19,5 @@ export default function DashboardPage() {
         return null;
     }
 
-    return (
-
-        <Dashboard />
-
-    );
+    return <Dashboard />;
 }

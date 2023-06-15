@@ -15,9 +15,7 @@ import useAuth from '../hooks/useAuth';
 import { styled } from '@mui/system';
 import { AiOutlineRobot } from 'react-icons/ai';
 
-
-
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const apiUrl = "http://localhost:8888"// process.env.NEXT_PUBLIC_API_URL;
 
 console.log(apiUrl);
 
@@ -100,6 +98,38 @@ const QAPage = ({ mainContentMargin }) => {
     const userFirstName = user?.displayName?.split(' ')[0] || 'Human';
     const conversationContainerRef = useRef(null);
 
+    // loading functionality
+    const [uploadedFile, setUploadedFile] = useState(null);
+    const handleFileInputChange = (event) => {
+        setUploadedFile(event.target.files[0]);
+    };
+
+    const handleFileUpload = async () => {
+        if (!uploadedFile) return;
+
+        const formData = new FormData();
+        formData.append("file", uploadedFile);
+        if (user?.uid) formData.append("user_id", user.uid);
+
+        try {
+            const response = await fetch(`${apiUrl}/upload`, {
+                method: "POST",
+                body: formData,
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.detail || `Request failed with status ${response.status}, ${response.statusText}`);
+            }
+
+            const result = await response.json();
+            console.log(result);
+            alert("File uploaded successfully.");
+        } catch (error) {
+            console.error("Error:", error.message);
+            alert(`Error: ${error.message}`);
+        }
+    };
 
 
 
@@ -200,7 +230,7 @@ const QAPage = ({ mainContentMargin }) => {
         setErrorMessage(null); // Reset error message before making a new request
         setConversationHistory((prev) => [
             ...prev,
-            { type: 'question', content: `${question}` },
+            { type: 'question', content: `${userFirstName}: ${question}` },
         ]);
         // console.log(JSON.stringify({ question, user_id: user.uid, dataset }))
         try {
@@ -241,28 +271,72 @@ const QAPage = ({ mainContentMargin }) => {
 
     return (
         <Box marginLeft={`${mainContentMargin}px`} paddingLeft={5} transition="margin 225ms cubic-bezier(0, 0, 0.2, 1)">
-            <Container maxWidth="lg">
-                <Box mt={4}>
-                    <Typography variant="h5" component="h2" gutterBottom>
-                        Select a Topic
+            <Container maxWidth="md">
+            <Box mt={4}>
+                <Typography variant="h5" component="h2" gutterBottom>
+                    Q&A
+                </Typography>
+            </Box>
+            <Box display="flex" alignItems="center">
+                <Box sx={{ minWidth: 120, mx: 1, my: 1 }}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                            Choose Your Study Material:
                     </Typography>
                 </Box>
-                <Box sx={{ minWidth: 120, mx: 0, my: 1 }}>
+                <Box ml={20}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                                Upload Study Material:
+                    </Typography>
+                </Box>
+            </Box>
+            <Box display="flex" alignItems="center">
+                
+                <Box sx={{ minWidth: 120, mx: 1, my: 1 }}>
                     <Select
                         value={dataset}
                         onChange={handleDatasetChange}
                         displayEmpty
                         inputProps={{ 'aria-label': 'Select a dataset' }}
                     >
-                        {/* <MenuItem value="bayesian_data_analysis">Bayesian Data Analysis</MenuItem>\ */}
-                        <MenuItem value="kaplan_cfa_level_2_book_1">Kaplan CFA Book 1 - Ethics / Quantitative Methods</MenuItem>
-                        {/* <MenuItem value="NCLEX">Nursing Exam NCLEX</MenuItem> */}
-
-                        {/* Add more MenuItem components for other datasets here */}
+                        {/* ... */}
+                        <MenuItem value="kaplan_cfa_level_2_book_1">Kaplan CFA Book 1</MenuItem>
                     </Select>
                 </Box>
+
+                {/* Upload Study Material */}
+                <Box ml={30}>
+                    <Box display="flex" alignItems="center">
+                        <input
+                            accept=".pdf"
+                            id="contained-button-file"
+                            type="file"
+                            style={{ display: "none" }}
+                            onChange={handleFileInputChange}
+                        />
+                        <label htmlFor="contained-button-file">
+                            <Button variant="contained" component="span" sx={{ mr: 1 }}>
+                                Choose File
+                            </Button>
+                        </label>
+                        <Typography variant="body1" component="span" sx={{ mr: 1 }}>
+                            {uploadedFile ? uploadedFile.name : "No file chosen"}
+                        </Typography>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={handleFileUpload}
+                            disabled={!uploadedFile}
+                        >
+                            Upload
+                        </Button>
+                    </Box>
+                </Box>
+            </Box>
                 {/* Add this Box for the conversation stream */}
                 <Box mt={4} maxWidth="md" pb={4}>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                        Conversation History:
+                    </Typography>
                     <ConversationContainer ref={conversationContainerRef}>
                         {conversationHistory.map((item, index) => (
                             <React.Fragment key={index}>
@@ -344,8 +418,7 @@ const QAPage = ({ mainContentMargin }) => {
                         </Button>
                     </Box>
                 </Box>
-            </Container >
-
+            </Container>
         </Box >
     );
 };

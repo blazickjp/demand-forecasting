@@ -16,6 +16,7 @@ import {
 import { GoogleAuthProvider } from 'firebase/auth';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Link from 'next/link';
+import Navbar from '../components/Navbar';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 
@@ -49,7 +50,8 @@ export default function Login() {
   };
 
   return (
-    <Box>
+    <div>
+      <Navbar />
       <Container maxWidth="xs">
         <Box mx={1} marginTop={-30}>
           <Paper elevation={2} sx={{ padding: 2 }}>
@@ -57,7 +59,7 @@ export default function Login() {
               <Avatar sx={{ margin: 'auto', backgroundColor: 'secondary.main' }}>
                 <LockOutlinedIcon />
               </Avatar>
-              <Typography variant="h5" component="h1" gutterBottom color="primary">
+              <Typography variant="h5" component="h1" gutterBottom>
                 Sign In
               </Typography>
             </Box>
@@ -85,6 +87,7 @@ export default function Login() {
               type="submit"
               fullWidth
               variant="contained"
+              color="primary"
               sx={{ mb: 2 }}
               onClick={handleEmailLogin}
             >
@@ -95,7 +98,7 @@ export default function Login() {
                 <Button
                   variant="outlined"
                   fullWidth
-                  color='primary'
+                  color="primary"
                   onClick={() => handleLogin(new GoogleAuthProvider())}
                 >
                   Sign in with Google
@@ -105,7 +108,9 @@ export default function Login() {
                 <Typography variant="body2" align="center">
                   Don't have an account?{' '}
                   <Link href="/signup" passHref>
-                    Sign Up
+                    <Typography component="a" variant="body2" color="primary">
+                      Sign Up
+                    </Typography>
                   </Link>
                 </Typography>
               </Grid>
@@ -113,6 +118,6 @@ export default function Login() {
           </Paper>
         </Box>
       </Container>
-    </Box>
+    </div>
   );
 }

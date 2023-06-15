@@ -53,7 +53,7 @@ const QAComponent = ({ user }) => {
             </select>
             {errorMessage && (
                 <Box mt={4}>
-                    <Typography variant="body1" component="p">
+                    <Typography variant="body1" component="p" color="error">
                         {errorMessage}
                     </Typography>
                 </Box>

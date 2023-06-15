@@ -4,67 +4,22 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#2c3458',
+      main: '#2c3458', // OpenAI-like primary color (dark blue)
     },
     secondary: {
-      main: '#1C9190',
+      main: '#00c2ff', // OpenAI-like secondary color (cyan)
     },
     background: {
-      default: '#EDF2F6',
+      default: 'white', // OpenAI-like background color (light gray)
     },
   },
   typography: {
-    // Uncomment the font you want to use
-    // fontFamily: 'Poppins, sans-serif',
-    // fontFamily: 'Open Sans, sans-serif',
-    // fontFamily: 'Lato, sans-serif',
-    // fontFamily: 'Montserrat, sans-serif',
-    fontFamily: 'Source Sans Pro, sans-serif',
-    h1: {
-      fontSize: '4.5rem',
-      fontWeight: 500,
-    },
-    h2: {
-      fontSize: '2.5rem',
-      fontWeight: 500,
-    },
-    h3: {
-      fontSize: '2rem',
-      fontWeight: 500,
-    },
-    h4: {
-      fontSize: '1.5rem',
-      fontWeight: 500,
-    },
-    h5: {
-      fontSize: '1.25rem',
-      fontWeight: 500,
-    },
-    h6: {
-      fontSize: '1rem',
-      fontWeight: 500,
-    },
     body1: {
       fontSize: '1.2rem',
+
     },
     body2: {
       fontSize: '0.875rem',
-    },
-  },
-  components: {
-    MuiTypography: {
-      styleOverrides: {
-        h2: {
-          fontWeight: 'bold',
-        },
-      },
-    },
-    FAQItem: {
-      styleOverrides: {
-        question: {
-          fontWeight: 'bold', // Add this line to make the FAQ questions bold
-        },
-      },
     },
   },
 });

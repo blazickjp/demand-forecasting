@@ -83,10 +83,10 @@ export default function Signup() {
     };
 
     return (
-        <Box>
+        <div>
             <Navbar />
             <Container maxWidth="xs">
-                <Box mt={20} mx={1} mb={12}>
+                <Box my={25} mx={1} marginBottom={35}>
                     <Paper elevation={2} sx={{ padding: 2 }}>
                         <Box textAlign="center" pb={2}>
                             <Avatar sx={{ margin: 'auto', backgroundColor: 'secondary.main' }}>
@@ -183,7 +183,8 @@ export default function Signup() {
                                         type="submit"
                                         fullWidth
                                         variant="contained"
-                                        sx={{ mb: 2, color: "white" }}
+                                        color="primary"
+                                        sx={{ mb: 2 }}
                                         onClick={handleEmailSignup}
                                         disabled={!isFormValid()}
                                     >
@@ -194,8 +195,8 @@ export default function Signup() {
                         </form>
                     </Paper>
                 </Box>
-            </Container >
+            </Container>
             <Footer />
-        </Box >
+        </div >
     );
 }

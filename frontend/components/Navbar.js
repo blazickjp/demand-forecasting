@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { AppBar, Toolbar, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 import useAuth from '../hooks/useAuth';
 import { signOut } from 'firebase/auth';
@@ -9,7 +9,11 @@ import { auth } from '../firebaseClient';
 
 
 const NavLink = styled(Button)`
+  color: white;
   font-weight: 600;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 `;
 
 const Navbar = () => {
@@ -22,10 +26,15 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: '#EDF2F6' }}>
+    <AppBar position="fixed">
       <Toolbar>
         <Link href="/" passHref>
-          <NavLink color="primary">CFAChat</NavLink>
+          <Typography
+            variant="h6"
+            sx={{ color: 'white', cursor: 'pointer', fontWeight: 'bold' }}
+          >
+            DiY.AI
+          </Typography>
         </Link>
         <Box
           sx={{
@@ -39,7 +48,13 @@ const Navbar = () => {
           {!user && (
             <>
               <Link href="/about" passHref>
-                <NavLink color="primary">About</NavLink>
+                <NavLink>About</NavLink>
+              </Link>
+              <Link href="/features" passHref>
+                <NavLink>Features</NavLink>
+              </Link>
+              <Link href="/pricing" passHref>
+                <NavLink>Pricing</NavLink>
               </Link>
             </>
           )}
@@ -47,10 +62,11 @@ const Navbar = () => {
             <NavLink onClick={handleLogout}>Logout</NavLink>
           ) : (
             <Link href="/login" passHref>
-              <NavLink color="primary">Login</NavLink>
+              <NavLink>Login</NavLink>
             </Link>
           )}
         </Box>
+
       </Toolbar>
     </AppBar>
   );

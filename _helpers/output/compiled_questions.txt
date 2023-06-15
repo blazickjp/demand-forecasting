@@ -1,0 +1,4740 @@
+EASY
+1. What is the purpose of a sequential pay CMO structure?
+A. To reduce prepayment risk for all tranches.
+B. To allocate cash flows to tranches in sequential order.
+C. To increase contraction risk for all tranches.
+
+MEDIUM
+2. What is the purpose of a planned amortization class (PAC) tranche in a CMO structure?
+A. To make predictable payments regardless of prepayment rates.
+B. To increase prepayment risk for all tranches.
+C. To reduce extension risk for all tranches.
+
+HARD
+3. What is the initial PAC collar?
+A. The upper and lower bounds on the actual prepayment rates for which the support tranches can provide or absorb prepayments to keep the PAC payments on schedule.
+B. The upper and lower bounds on the actual prepayment rates for which the PAC tranches can provide or absorb prepayments to keep the support tranches on schedule.
+C. The upper and lower bounds on the actual prepayment rates for which the PAC tranches can provide or absorb prepayments to keep the PAC payments on schedule.
+
+************
+
+EASY
+1. What is an important consideration when investing in nonagency RMBS?
+A. Interest rates
+B. Credit risk
+C. Market liquidity
+
+MEDIUM
+2. What is the debt-to-service-coverage ratio (DSC) used for in the analysis of CMBS securities?
+A. To assess the credit risk of the borrower
+B. To compare the loan amount on the property to its current fair market or appraisal value
+C. To determine the amount of cash flow from a commercial property available to make debt service payments compared to the required debt service cost
+
+HARD
+3. What is the purpose of credit tranching (subordination) in enhancing the credit quality of senior RMBS securities?
+A. To suspend payments to the subordinated securities for a period of time until the credit quality of the senior securities is restored
+B. To segregate each CMBS issue into tranches
+C. To absorb losses due to default first by the tranche with the lowest priority
+
+************
+
+EASY
+1. What is prepayment risk in the context of pass-through securities?
+A. The risk that principal repayments will be slower than expected.
+B. The risk that principal repayments will be more rapid than expected.
+C. The risk that the securities will not be repaid at all.
+
+MEDIUM
+2. What is the single monthly mortality rate (SMM)?
+A. The annualized measure of prepayments.
+B. The percentage by which prepayments reduce the month-end principal balance.
+C. The expected number of years until all the loan principal is repaid.
+
+HARD
+3. How do collateralized mortgage obligations (CMOs) help match investor preferences?
+A. By reallocating prepayment risk among different CMO tranches.
+B. By increasing the potential market for securitized mortgages.
+C. By reducing funding costs for securitized mortgages.
+
+************
+
+EASY
+1. What is a defeased loan in the context of a CMBS?
+A. A loan that has been paid off in full by the borrower.
+B. A loan that has been taken over by the government.
+C. A loan that has been paid off using a portfolio of government securities.
+
+MEDIUM
+2. What is a prepayment penalty point?
+A. A fee charged to borrowers who prepay mortgage principal.
+B. A fee charged to lenders who refinance a mortgage.
+C. A fee charged to borrowers who miss a mortgage payment.
+
+HARD
+3. What is balloon risk in the context of a commercial mortgage?
+A. The risk that the borrower will be unable to make the balloon payment at the end of the loan term.
+B. The risk that the lender will default on the loan.
+C. The risk that the borrower will default on the loan before the balloon payment is due.
+
+************
+
+EASY
+1. What is the primary benefit of securitizing financial assets?
+A. Reducing funding costs
+B. Increasing credit risk
+C. Decreasing liquidity
+
+MEDIUM
+2. What is the purpose of a collateral manager in a collateralized debt obligation (CDO)?
+A. To buy and sell securities in the collateral pool to generate cash for promised payments
+B. To manage the interest rate risk of the collateral pool
+C. To determine the credit quality of the collateral pool
+
+HARD
+3. Which tranche of a CDO has characteristics more similar to equity investments than bond investments?
+A. Senior tranche
+B. Mezzanine tranche
+C. Subordinated tranche
+
+MEDIUM
+4. What is the purpose of an interest rate swap in a CDO?
+A. To earn returns from the spread between funding costs and portfolio returns
+B. To make the collateral yield more closely match the funding costs in an environment of changing interest rates
+C. To provide additional collateral for the CDO
+
+EASY
+5. What is the role of a servicer in a securitization?
+A. To carry out collections and other responsibilities related to the financial assets
+B. To buy and sell securities in the collateral pool to generate cash for promised payments
+C. To determine the credit quality of the collateral pool
+
+HARD
+6. What type of CDO is supported by a portfolio of credit default swaps on structured securities?
+A. Synthetic CDO
+B. Structured finance CDO
+C. Collateralized loan obligation
+
+MEDIUM
+7. What is the purpose of an early amortization provision in credit card ABS?
+A. To provide for earlier amortization of principal when it is necessary to preserve the credit quality of the securities
+B. To allow investors to receive principal payments before the lockout period ends
+C. To increase the interest payments on the securities
+
+EASY
+8. What is the risk that mortgage prepayments will occur more slowly than expected?
+A. Default risk
+B. Extension risk
+C. Contraction risk
+
+MEDIUM
+9. What is the purpose of issuing a floating-rate senior tranche in a CDO?
+A. To make the collateral yield more closely match the funding costs in an environment of changing interest rates
+B. To provide additional collateral for the CDO
+C. To earn returns from the spread between funding costs and portfolio returns
+
+HARD
+10. What type of CDO is supported by a pool of debt obligations that are corporate and emerging market debt?
+A. Collateralized loan obligation
+B. Collateralized bond obligation
+C. Synthetic CDO
+
+************
+
+EASY
+1. In a securitization, the firm that is securitizing financial assets is described as the:
+A. servicer.
+B. seller.
+C. special purpose entity.
+
+MEDIUM
+2. Which of the following statements regarding credit tranching is true?
+A. Credit tranching is a characteristic of a mortgage-backed security with senior and junior tranches.
+B. Credit tranching is a characteristic of a mortgage-backed security with senior and subordinated tranches.
+C. Credit tranching is a characteristic of a securitized asset with a single tranche.
+
+HARD
+3. Which of the following mortgages has a balloon payment at maturity equal to the original loan principal?
+A. Fully amortizing mortgage.
+B. Convertible mortgage.
+C. Interest-only lifetime mortgage.
+
+************
+
+EASY
+1. What is time tranching in asset-backed securities (ABS)?
+A. Classes that receive principal payments sequentially.
+B. Classes that absorb credit losses first.
+C. A third-party guarantee provided for credit enhancement.
+
+MEDIUM
+2. Which of the following is a characteristic of agency residential mortgage-backed securities (RMBS)?
+A. Nonconforming loans that do not meet minimum credit quality standards.
+B. Collateralized by pools of commercial real estate properties.
+C. Guaranteed and issued by GNMA, Fannie Mae, or Freddie Mac.
+
+HARD
+3. What is extension risk in collateralized mortgage obligations (CMOs)?
+A. The risk that loan principal will be repaid more rapidly than expected.
+B. The risk that loan principal will be repaid more slowly than expected.
+C. The risk that the first tranche to be paid principal has the most contraction risk.
+
+************
+
+EASY
+1. What is the meaning of time tranching in a securitization structure?
+A. It refers to the priority claims of different tranches to the cash flows from the underlying loans.
+B. It refers to the redistribution of credit risk across different tranches.
+C. It refers to the sequential payment of principal to different tranches.
+
+MEDIUM
+2. In a credit tranching structure of ABS, which tranche would absorb credit losses first?
+A. Senior tranche.
+B. Subordinated tranche A.
+C. Subordinated tranche B.
+
+HARD
+3. Which of the following is not a typical asset-backed security (ABS)?
+A. Corporate bonds.
+B. Credit card receivables.
+C. Home equity loans.
+
+************
+
+EASY
+1. What is the loan-to-value ratio (LTV)?
+A. The percentage of the loan amount that is paid in interest charges.
+B. The percentage of the collateral real estate that is loaned to the borrower.
+C. The percentage of the borrower's income that is used to pay the mortgage.
+
+MEDIUM
+2. What is the advantage of loans with lower LTVs for lenders?
+A. They are less risky because the borrower has more to lose in the event of default.
+B. They are more likely to default.
+C. They are easier to sell to investors.
+
+HARD
+3. What is the difference between a fixed-rate mortgage and an adjustable-rate mortgage (ARM)?
+A. A fixed-rate mortgage has an interest rate that can change over the life of the mortgage, while an ARM has an interest rate that is unchanged.
+B. A fixed-rate mortgage has an interest rate that is unchanged over the life of the mortgage, while an ARM has an interest rate that can change.
+C. A fixed-rate mortgage has a lower interest rate than an ARM. 
+
+MEDIUM
+4. What is a balloon payment?
+A. A lump sum of principal that remains to be paid at the end of the loan period.
+B. A partial or full repayment of principal in excess of the scheduled principal repayments required by the mortgage.
+C. An additional payment that must be made if principal is prepaid during an initial period after loan origination.
+
+EASY
+5. What is a prepayment?
+A. A partial or full repayment of principal in excess of the scheduled principal repayments required by the mortgage.
+B. A lump sum of principal that remains to be paid at the end of the loan period.
+C. A payment that is made in advance of the scheduled payment due date.
+
+HARD
+6. What is a nonrecourse loan?
+A. A loan where the lender has no claim against the assets of the borrower in the event of default.
+B. A loan where the lender has a claim against the assets of the borrower in the event of default.
+C. A loan where the borrower has no obligation to repay the loan. 
+
+MEDIUM
+7. What is a rollover mortgage?
+A. A mortgage where the initial interest rate terms can be changed at the option of the borrower.
+B. A mortgage where the interest rate changes to a different fixed rate after the initial fixed-rate period.
+C. A mortgage where the loan becomes an adjustable-rate mortgage after the initial fixed-rate period.
+
+HARD
+8. What is an interest-only mortgage?
+A. A mortgage where the borrower pays only the interest for the life of the loan.
+B. A mortgage where the borrower pays only the principal for the life of the loan.
+C. A mortgage where the borrower can choose to pay either the interest or the principal each month.
+
+MEDIUM
+9. What is a prepayment penalty?
+A. An additional payment that must be made if principal is prepaid during an initial period after loan origination.
+B. A payment that is made in advance of the scheduled payment due date.
+C. A payment that is made when the mortgage is paid off early because market interest rates have decreased since the mortgage loan was made.
+
+EASY
+10. What is the advantage of a fully amortizing loan?
+A. Each payment includes both an interest payment and a repayment of some of the loan principal so there is no loan principal remaining after the last regular mortgage payment.
+B. Each payment includes only an interest payment, and there is a lump sum of principal that remains to be paid at the end of the loan period.
+C. Each payment includes a repayment of some of the loan principal, but there is a lump sum of principal that remains to be paid at the end of the loan period.
+
+************
+
+EASY
+1. What is securitization?
+A. A process by which financial assets are purchased by an entity that then issues securities supported by the cash flows from those financial assets.
+B. A process by which financial assets are held by banks to increase liquidity.
+C. A process by which financial assets are sold to investors without the issuance of securities.
+
+MEDIUM
+2. What are the primary benefits of securitization of financial assets?
+A. A reduction in funding costs and a decrease in liquidity of the underlying financial assets.
+B. An increase in funding costs and a decrease in the liquidity of the underlying financial assets.
+C. A reduction in funding costs and an increase in the liquidity of the underlying financial assets.
+
+HARD
+3. What is a special purpose entity (SPE) in a securitization transaction?
+A. The entity that originates the financial assets and sells them to the SPE.
+B. The entity that services the financial assets.
+C. The entity that buys the financial assets from the seller and issues ABS to investors.
+
+************
+
+EASY
+1. What is a strategic default in the context of mortgage loans?
+A. A default that occurs when the borrower is unable to make the mortgage payments.
+B. A default that occurs when the outstanding loan principal is greater than the home value.
+C. A default that occurs when the borrower voluntarily returns the property to the lender.
+
+MEDIUM
+2. Which of the following entities issue agency RMBS in the United States?
+A. Federal Reserve Bank and Federal Deposit Insurance Corporation.
+B. Government National Mortgage Association, Federal National Mortgage Association, and Federal Home Loan Mortgage Corporation.
+C. Securities and Exchange Commission and Department of Housing and Urban Development.
+
+HARD
+3. What is the weighted average maturity of a pool of mortgages included in a mortgage pass-through security?
+A. The weighted average of the interest rates of all the mortgages in the pool.
+B. The weighted average of the final maturities of all the mortgages in the pool.
+C. The weighted average of the original loan amounts of all the mortgages in the pool.
+
+EASY
+4. What are conforming loans in the context of mortgage pass-through securities?
+A. Loans that meet the standards for inclusion in agency MBS.
+B. Loans that do not meet the standards for inclusion in agency MBS.
+C. Loans that are secured by collateral other than real estate.
+
+MEDIUM
+5. Which of the following entities guarantees Ginnie Mae securities?
+A. Securities and Exchange Commission.
+B. Federal Reserve Bank.
+C. Government National Mortgage Association.
+
+HARD
+6. What is the primary source of cash flows for investors in mortgage pass-through securities?
+A. Monthly cash flows generated by the underlying pool of mortgages.
+B. Payments made by the issuer of the securities.
+C. Principal payments made by the borrowers. 
+
+EASY
+7. What are nonconforming loans in the context of mortgage pass-through securities?
+A. Loans that meet the standards for inclusion in agency MBS.
+B. Loans that do not meet the standards for inclusion in agency MBS.
+C. Loans that are secured by collateral other than real estate.
+
+MEDIUM
+8. What is the difference between agency RMBS and nonagency RMBS?
+A. Agency RMBS are guaranteed by the GNMA, Fannie Mae, or Freddie Mac while nonagency RMBS are not guaranteed by any government-sponsored enterprise.
+B. Agency RMBS are issued by private companies while nonagency RMBS are issued by government-sponsored enterprises.
+C. Agency RMBS are nonrecourse loans while nonagency RMBS are recourse loans.
+
+HARD
+9. What is the relationship between pass-through rates and mortgage rates in mortgage pass-through securities?
+A. Pass-through rates are higher than mortgage rates to compensate for prepayment risk.
+B. Pass-through rates are lower than mortgage rates to account for servicing and guarantee/insurance fees.
+C. Pass-through rates are the same as mortgage rates.
+
+MEDIUM
+10. Which of the following criteria must be met by a mortgage loan to be included in agency MBS?
+A. A minimum percentage down payment and maximum LTV ratio.
+B. A maximum loan amount and minimum documentation required.
+C. A minimum credit score and no insurance purchased by the borrower.
+
+************
+
+EASY
+1. What is the motivation behind issuing collateralized mortgage obligations (CMOs)? 
+A. To reduce extension risk. 
+B. To reduce funding costs. 
+C. To reduce contraction risk.
+
+MEDIUM
+2. What is extension risk in the context of collateralized mortgage obligations (CMOs)? 
+A. The risk that prepayments will shorten the expected life of the security. 
+B. The risk that interest rates will rise, reducing the value of the security. 
+C. The risk that the issuer will default on the security.
+
+HARD
+3. Which of the following is a benefit of collateralized mortgage obligations (CMOs) for investors? 
+A. Increased extension risk. 
+B. Lower credit risk. 
+C. Higher funding costs.
+
+************
+
+EASY
+1. What is a basis point margin equivalent to?
+A. 0.1%
+B. 1.2%
+C. 10.0%
+
+MEDIUM
+2. What is the benefit of a floor in a floating-rate note?
+A. It places a limit on how high the coupon rate can rise.
+B. It places a minimum on the coupon rate regardless of how low the reference rate falls.
+C. It increases the coupon rate over time according to a predetermined schedule.
+
+HARD
+3. Which of the following types of bonds carries a provision stating that the coupon rate will go up by a certain amount if the credit rating of the issuer falls and go down if the credit rating of the issuer improves?
+A. Payment-in-kind bond
+B. Step-up coupon bond
+C. Credit-linked coupon bond
+
+************
+
+EASY
+1. Which of the following is an integral part of a bond contract and not a separate security?
+A. Straight bond
+B. Option-free bond
+C. Embedded option
+
+MEDIUM
+2. What is the call premium for a bond that can be redeemed by the issuer at 102% of par after June 1, 2017, with a par value of $1,000?
+A. $10
+B. $20
+C. $30
+
+HARD
+3. Which of the following bond exercise styles allows the bonds to be called anytime after the first call date?
+A. American style
+B. European style
+C. Bermuda style
+
+************
+
+EASY
+1. What is a bullet structure for a bond?
+A. A structure where the principal is fully paid off when the last periodic payment is made.
+B. A structure where the final payment includes a lump sum in addition to the final period’s interest.
+C. A structure where the periodic payments include both interest and some repayment of principal.
+
+MEDIUM
+2. What is the advantage of a sinking fund provision for bondholders?
+A. The periodic redemptions reduce the total amount of principal to be repaid at maturity.
+B. The sinking fund provision allows bondholders to buy bonds in the open market at a discount.
+C. Sinking fund provisions have no advantages for bondholders.
+
+HARD
+3. Which of the following coupon structures is based on a current market rate of interest?
+A. Fixed-coupon structure.
+B. Partially amortizing structure.
+C. Floating-rate notes (FRN) or floaters.
+
+************
+
+EASY
+1. What is a make-whole call provision?
+A. It is a provision that allows the issuer to call the bond at any time. 
+B. It is a provision that penalizes the issuer for calling the bond early. 
+C. It is a provision that gives the bondholder the right to sell the bond back to the issuer at a prespecified price.
+
+MEDIUM
+2. Why do putable bonds typically sell at a higher price than option-free bonds?
+A. Because they have a make-whole call provision.
+B. Because they have a put option that is valuable to the bondholder.
+C. Because they have a conversion option that is valuable to the bondholder.
+
+HARD
+3. What is the advantage of issuing convertible bonds to issuers?
+A. They have a lower yield compared to straight bonds.
+B. They offer downside protection to equity shares.
+C. They offer the opportunity to convert debt financing to equity financing.
+
+************
+
+EASY
+1. What are the basic features of a fixed income security?
+A. Issuer, maturity date, coupon rate, currency.
+B. Issuer, maturity date, coupon rate, coupon frequency, currency.
+C. Issuer, maturity date, par value, coupon rate, coupon frequency, currency.
+
+MEDIUM
+2. What is the difference between negative and affirmative covenants in a bond indenture?
+A. Negative covenants restrict the issuer's operating decisions while affirmative covenants are administrative actions the issuer must perform.
+B. Negative covenants are administrative actions the issuer must perform while affirmative covenants restrict the issuer's operating decisions.
+C. There is no difference between negative and affirmative covenants.
+
+HARD
+3. What is the difference between secured and unsecured bonds?
+A. Secured bonds are backed by specific collateral while unsecured bonds represent an overall claim against the issuer's cash flows and assets.
+B. Secured bonds represent an overall claim against the issuer's cash flows and assets while unsecured bonds are backed by specific collateral.
+C. There is no difference between secured and unsecured bonds.
+
+************
+
+EASY
+1. Which of the following structures has a balloon payment at maturity?
+A. Fully amortizing structure
+B. Sinking fund provision
+C. Partially amortizing structure
+
+MEDIUM
+2. Which type of bond allows the bondholder to choose a currency in which to be paid?
+A. Dual-currency bond
+B. Currency option bond
+C. Floating-rate note
+
+HARD
+3. Which party benefits from a put option embedded in a bond?
+A. The issuer
+B. The bondholder
+C. Neither party benefits from a put option.
+
+************
+
+EASY
+1. What is a bond indenture?
+A. The legal contract between the bond issuer and bondholders.
+B. The interest paid on a bond.
+C. The market value of a bond.
+
+MEDIUM
+2. What are negative covenants in a bond indenture?
+A. Actions the borrower promises to perform.
+B. Prohibitions on the borrower.
+C. The obligation to pay interest and principal to bondholders.
+
+HARD
+3. Which of the following is not an example of a negative covenant in a bond indenture?
+A. Restriction on asset sales.
+B. Negative pledge of collateral.
+C. Compliance with applicable laws and regulations.
+
+************
+
+EASY
+1. What is a special purpose entity (SPE) or special purpose vehicle (SPV)?
+A. A type of sovereign bond
+B. A type of corporate bond
+C. An entity created to issue securitized bonds and own the assets supporting those bonds
+
+MEDIUM
+2. What is collateral in bond issuance?
+A. The tax receipts of the issuing country
+B. Cash generated by a firm's operations
+C. Assets pledged to support the bond issue
+
+HARD
+3. How are secured bonds different from unsecured bonds?
+A. Secured bonds are backed by specific assets, while unsecured bonds represent a claim to the overall assets of the issuer.
+B. Unsecured bonds are senior to secured bonds in the event of bankruptcy or liquidation.
+C. Unsecured bonds are backed by specific assets, while secured bonds represent a claim to the overall assets of the issuer. 
+
+MEDIUM
+4. What is an example of internal credit enhancement for a bond issue?
+A. Overcollateralization
+B. Third-party credit enhancement
+C. A cash reserve fund
+
+EASY
+5. What is a mortgage-backed security (MBS)?
+A. A bond issued by a special purpose entity to purchase mortgages
+B. A bond issued by a corporation backed by specific assets
+C. A bond issued by a sovereign government to fund infrastructure projects
+
+MEDIUM
+6. What is the difference between covered bonds and securitized bonds?
+A. Covered bonds are backed by segregated assets that remain on the balance sheet of the issuing corporation, while securitized bonds are backed by assets owned by a special purpose entity.
+B. Covered bonds are backed by assets owned by a special purpose entity, while securitized bonds are backed by segregated assets that remain on the balance sheet of the issuing corporation.
+C. Covered bonds and securitized bonds are the same thing.
+
+HARD
+7. What is the purpose of dividing a bond issue into tranches with different seniority of claims?
+A. To provide additional credit enhancement to the bond issue
+B. To give investors the ability to choose the level of risk they are comfortable with
+C. To allow the bond issuer to retain control over the underlying assets
+
+EASY
+8. What is credit enhancement?
+A. A method of reducing the credit risk of a bond issue
+B. A method of increasing the credit risk of a bond issue
+C. A method of investing in high-risk bonds
+
+MEDIUM
+9. How are bonds issued by non-sovereign government entities typically repaid?
+A. By general taxes
+B. By revenues of a specific project
+C. By special taxes or fees dedicated to bond repayment
+
+HARD
+10. What is an excess spread account in securitized bond issuance?
+A. A cash reserve fund set aside to make up for credit losses on the underlying assets
+B. A method of internal credit enhancement in which the yield promised on the bonds issued is less than the promised yield on the assets supporting the ABS.
+C. A method of external credit enhancement provided by a third party.
+
+************
+
+EASY
+1. What is the par value of a bond?
+A. The annual percentage of the bond's face value that will be paid to bondholders.
+B. The principal amount that will be repaid at maturity.
+C. The annual discount rate used to calculate the present value of the bond's cash flows.
+
+MEDIUM
+2. What is the term used to describe the time remaining until a bond's maturity date?
+A. Coupon rate.
+B. Par value.
+C. Term to maturity.
+
+HARD
+3. Which of the following entities issues bonds that are not a direct obligation of a country's government or central bank?
+A. Sovereign national governments.
+B. Quasi-government entities.
+C. Supranational entities.
+
+************
+
+EASY
+1. Which of the following external credit enhancements increases the credit quality of debt issues and decreases their yields?
+A. Surety bonds
+B. Subordinated tranches
+C. Bankruptcy filing
+
+MEDIUM
+2. What is the tax treatment for interest income from bonds issued by municipal governments in the United States?
+A. Taxed as ordinary income at the same rate as wage and salary income.
+B. Exempt from national income tax and often from any state income tax in the state of issue.
+C. Taxed at a lower rate than ordinary income.
+
+HARD
+3. What is the tax liability for original issue discount (OID) bonds in many tax jurisdictions?
+A. No tax liability until maturity.
+B. Tax liability only when cash interest payment is made.
+C. A portion of the discount from par at issuance is treated as taxable interest income each year.
+
+************
+
+EASY
+1. What does DTL measure?
+A. The sensitivity of EPS to change in sales.
+B. The sensitivity of sales to change in EPS.
+C. The sensitivity of EBIT to change in sales.
+
+MEDIUM
+2. What is the degree of total leverage for a company if its DOL is 2.2727 and its DFL is 1.5714?
+A. 1.4356
+B. 3.5713
+C. 4.8438
+
+HARD
+3. Which scenario results in a higher ROE: 100% equity financing or 50% equity and 50% debt financing, assuming a 10% increase in EBIT?
+A. 100% equity financing.
+B. 50% equity and 50% debt financing.
+C. Both scenarios result in the same ROE increase.
+
+************
+
+EASY
+1. What is business risk?
+A. Uncertainty about the firm's sales.
+B. The combination of operating risk and financial risk.
+C. The trade-off between fixed and variable costs.
+
+MEDIUM
+2. Which of the following is a key determinant of financial leverage?
+A. The competitive nature of the business.
+B. The level and cost of debt.
+C. The proportion of fixed costs in total costs.
+
+HARD
+3. Jayco, Inc. sells 5,000 units at a price of $6 per unit. Jayco's fixed costs are $12,000, interest expense is $4,000, variable costs are $2 per unit, and EBIT is $16,000. What is Jayco's degree of financial leverage (DFL)?
+A. 2.0
+B. 1.5
+C. 1.0
+
+EASY
+4. What is the operating breakeven quantity of sales?
+A. The quantity of sales that results in net income of zero.
+B. The quantity of sales that results in EBIT of zero.
+C. The quantity of sales that results in operating income of zero.
+
+MEDIUM
+5. Which of the following statements about capital structure and leverage is most accurate?
+A. Financial leverage is directly related to operating leverage.
+B. A firm with high operating leverage has a small proportion of its total costs in fixed costs.
+C. Increasing the corporate tax rate can affect capital structure decisions.
+
+HARD
+6. Vischer Concrete has $2 million in assets that are currently financed with 100% equity. Vischer's EBIT is $400,000, and its tax rate is 40%. If Vischer changes its capital structure (recapitalizes) to include 50% debt, what is Vischer's degree of total leverage (DTL)? Assume that the interest rate on debt is 6%.
+A. 2.0
+B. 1.5
+C. 1.2
+
+EASY
+7. What is the formula to calculate the breakeven quantity of sales?
+A. Fixed costs / (price - variable cost per unit)
+B. Sales revenue - total costs
+C. Operating income / sales revenue
+
+MEDIUM
+8. Which of the following is an example of financial leverage?
+A. A company invests in new technology to increase efficiency.
+B. A company issues bonds to finance its operations.
+C. A company offers volume discounts to increase sales.
+
+HARD
+9. Jayco, Inc. sells 8,000 units at a price of $4.50 per unit. Jayco's fixed costs are $15,000, interest expense is $3,000, variable costs are $2.50 per unit, and EBIT is $12,000. What is Jayco's degree of operating leverage (DOL)?
+A. 1.5
+B. 2.0
+C. 2.5
+
+EASY
+10. What is the difference between operating leverage and financial leverage?
+A. Operating leverage refers to fixed operating costs, while financial leverage refers to fixed financing costs.
+B. Operating leverage refers to the firm's sales risk, while financial leverage refers to the firm's business risk.
+C. Operating leverage and financial leverage are the same thing.
+
+************
+
+EASY
+1. What is leverage?
+A. The amount of fixed costs a firm has.
+B. The amount of variable costs a firm has.
+C. The amount of debt a firm has.
+
+MEDIUM
+2. What is business risk?
+A. The risk associated with a firm's operating income.
+B. The risk associated with a firm's debt.
+C. The risk associated with a firm's equity.
+
+HARD
+3. What is the formula for calculating the degree of operating leverage (DOL)?
+A. ΔEBIT/ΔQ
+B. Q(P-V)/[Q(P-V)-F]
+C. EBIT/(EBIT-interest)
+
+************
+
+EASY
+1. Business risk refers to the risk associated with a firm’s:
+A. capital structure
+B. interest expense
+C. operating income
+
+MEDIUM
+2. The degree of financial leverage (DFL) measures the:
+A. additional variability of EPS compared to EBIT
+B. variability of EBIT compared to sales
+C. variability of sales compared to operating costs
+
+HARD
+3. The breakeven quantity of sales is calculated as:
+A. fixed operating costs + fixed financing costs / price - variable cost per unit
+B. total revenue - total fixed costs - total variable costs
+C. fixed operating costs / price - variable cost per unit + interest expense per unit of debt
+
+************
+
+EASY
+1. What is the marginal cost of capital (MCC)?
+A. The cost of raising an additional dollar of capital.
+B. The cost of the firm's existing sources of financing.
+C. The cost of the firm's total capital structure.
+
+MEDIUM
+2. Why does the marginal cost of capital schedule typically have an upward slope?
+A. Because different sources of financing become cheaper as the firm raises more capital.
+B. Because different sources of financing become more expensive as the firm raises more capital.
+C. Because the cost of capital remains constant regardless of the amount of financing.
+
+HARD
+3. How are break points calculated in the marginal cost of capital schedule?
+A. By dividing the amount of capital by the weight of the component in the capital structure.
+B. By subtracting the cost of one component from the total WACC.
+C. By identifying the amount of capital at which the cost of one component changes and dividing it by the weight of the component in the capital structure.
+
+************
+
+EASY
+1. What is the correct way to account for flotation costs in a project?
+A. Increase ongoing expenses for the project.
+B. Adjust the initial project cost.
+C. Ignore them completely.
+
+MEDIUM
+2. A company is considering a project that requires a $500,000 cash outlay and is expected to produce cash flows of $100,000 per year for the next five years. The company's tax rate is 30%, and the before-tax cost of debt is 6%. The company finances the project with 40% debt and 60% equity capital, and flotation costs for equity are 3%. What is the appropriate discount rate for the project?
+A. 6.3%
+B. 7.2%
+C. 7.5%
+
+HARD
+3. A company is considering investing in a new project. The project requires an initial investment of $1,000,000 and is expected to generate cash inflows of $300,000 per year for the next five years. The company's cost of capital is 10%, and the project's beta is 1.2. If the market risk premium is 8% and the risk-free rate is 5%, what is the project's NPV?
+A. $80,000
+B. $120,000
+C. $200,000
+
+EASY
+4. Which of the following is not a factor that affects a company's weighted average cost of capital (WACC)?
+A. Tax rate
+B. Debt-to-equity ratio
+C. Market share
+
+MEDIUM
+5. A company is considering investing in a new project that requires an initial investment of $500,000. The project is expected to generate cash inflows of $150,000 per year for the next five years. The company's tax rate is 25%, and the before-tax cost of debt is 7%. The company finances the project with 60% equity and 40% debt capital. The flotation costs for equity are 4%. What is the NPV of the project using the correct treatment of flotation costs?
+A. $123,050
+B. $135,750
+C. $145,600
+
+HARD
+6. A company is considering investing in one of two projects. Project A requires an initial investment of $1,000,000 and is expected to generate cash inflows of $300,000 per year for the next five years. Project B requires an initial investment of $2,000,000 and is expected to generate cash inflows of $500,000 per year for the next five years. The company's cost of capital is 12%, and the risk-free rate is 5%. If the beta for Project A is 1.2 and the beta for Project B is 1.8, which project has the higher NPV?
+A. Project A
+B. Project B
+C. Both projects have the same NPV. 
+
+EASY
+7. Which of the following is a limitation of using the pure-play method to estimate a company's cost of equity for a project?
+A. There may not be a pure-play company in the same line of business.
+B. The beta of the pure-play company may not be representative of the project.
+C. The pure-play company may have a different tax rate than the company considering the project.
+
+MEDIUM
+8. A company is considering investing in a new project that requires an initial investment of $800,000. The project is expected to generate cash inflows of $200,000 per year for the next four years. The company's tax rate is 30%, and the before-tax cost of debt is 5%. The company finances the project with 50% equity and 50% debt capital. The flotation costs for equity are 2.5%. What is the appropriate discount rate for the project?
+A. 7.25%
+B. 7.5%
+C. 8.0%
+
+HARD
+9. A company is considering investing in a new project that requires an initial investment of $2,000,000. The project is expected to generate cash inflows of $500,000 per year for the next seven years. The company's tax rate is 35%, and the before-tax cost of debt is 8%. The company finances the project with 60% equity and 40% debt capital. The flotation costs for equity are 5%. What is the NPV of the project using the correct treatment of flotation costs?
+A. $1,214,350
+B. $1,356,750
+C. $1,507,200
+
+EASY
+10. Which of the following is a limitation of using the payback period method to evaluate a project?
+A. It does not consider the time value of money.
+B. It does not consider the risk of the project.
+C. It does not consider the company's cost of capital.
+
+************
+
+EASY
+1. What is a project’s beta?
+A. A measure of its systematic or market risk.
+B. A measure of its unsystematic or idiosyncratic risk.
+C. A measure of its total risk.
+
+MEDIUM
+2. What is the pure-play method used for?
+A. To estimate a project’s beta directly.
+B. To adjust for differences between a specific project’s risk and the average risk of a firm’s projects.
+C. To estimate the cost of debt for a project.
+
+HARD
+3. What is the formula to get the asset beta for a publicly traded firm?
+A. β = βASSET EQUITY {1 + (1 − t)D} [E]
+B. β = βEQUITY ASSET {1 + (1 − t)D} [E]
+C. β = βASSET EQUITY {1 − (1 − t)D} [E]
+
+MEDIUM
+4. What is the equity beta for the project in the example given?
+A. 0.439
+B. 0.966
+C. 0.9
+
+HARD
+5. When estimating the beta of a comparable company’s equity, which of the following factors can affect the estimate?
+A. Length of time used for historical returns data.
+B. Frequency of data used.
+C. All of the above.
+
+EASY
+6. What is a country risk premium?
+A. A premium added to the market risk premium when using the CAPM in developing countries.
+B. A premium added to the market risk premium when using the CAPM in developed countries.
+C. A premium added to the cost of debt when investing in foreign bonds.
+
+MEDIUM
+7. How is the general risk of a developing country reflected in its sovereign yield spread?
+A. It is not reflected in the sovereign yield spread.
+B. It is reflected in the difference in yields between the developing country’s government bonds and Treasury bonds of a similar maturity.
+C. It is reflected in the difference in yields between the developing country’s corporate bonds and Treasury bonds of a similar maturity.
+
+HARD
+8. How do you estimate an equity risk premium for a developing country?
+A. Adjust the sovereign yield spread by the ratio of volatility between the country’s equity market and its government bond market.
+B. Adjust the sovereign yield spread by the ratio of volatility between the country’s equity market and its corporate bond market.
+C. Adjust the sovereign yield spread by the ratio of volatility between the country’s equity market and its Treasury bond market.
+
+MEDIUM
+9. What is the formula to calculate the appropriate WACC for a project?
+A. D/E ratio times the asset beta.
+B. Equity beta times the expected return on the market portfolio.
+C. Weight of debt times the cost of debt plus weight of equity times the cost of equity.
+
+EASY
+10. Why must we adjust the pure-play beta from a comparable company for the company’s leverage?
+A. Because the greater a firm’s reliance on debt financing, the greater its equity beta.
+B. Because the greater a firm’s reliance on equity financing, the greater its equity beta.
+C. Because the greater a firm’s reliance on cash financing, the greater its equity beta.
+
+************
+
+EASY
+1. What is the correct formula for calculating WACC?
+A. WACC = (w_d * k_d * (1-t)) + (w_ps * k_ps) + (w_ce * k_ce)
+B. WACC = (w_d * k_d) + (w_ps * k_ps) + (w_ce * k_ce * (1-t))
+C. WACC = (w_d * k_d * t) + (w_ps * k_ps) + (w_ce * k_ce)
+
+MEDIUM
+2. Which of the following correctly describes how to adjust the discount rate for a project that differs in risk from the average risk of a firm's existing projects?
+A. Adjust the discount rate upward for lower-risk projects and downward for higher-risk projects.
+B. Adjust the discount rate upward for higher-risk projects and downward for lower-risk projects.
+C. The discount rate does not need to be adjusted for projects with different risk profiles.
+
+HARD
+3. A company is considering a new project that has a higher risk profile than the company's existing projects. Which of the following methods can be used to calculate the project's required return?
+A. Unlever the beta of a comparable company to get the asset beta, then re-lever the asset beta using the company's own capital structure.
+B. Use the dividend discount model to estimate the project's required return.
+C. Add a risk premium of 3-5% to the market yield on the company's long-term debt.
+
+************
+
+EASY
+1. What is the formula for calculating Weighted Average Cost of Capital (WACC)?
+A. WACC = (w)(k)(1 - t) + (w)(k)
+B. WACC = (w)(k)(1 + t) + (w)(k)
+C. WACC = (w)(k)(1 - t) - (w)(k)
+
+MEDIUM
+2. What is the after-tax cost of debt if a company's cost of debt is 14% and the corporate tax rate is 40%?
+A. 4.2%
+B. 8.4%
+C. 10.6%
+
+HARD
+3. Which of the following factors can cause a marginal cost of capital schedule to slope upward?
+A. Raising additional debt results in a lower required yield.
+B. Restrictions on issuing new debt with the same seniority as previously issued debt.
+C. Capital is raised in the exact proportions of the company's capital structure.
+
+************
+
+EASY
+1. What is a target capital structure?
+A. The proportions of debt, preferred stock, and equity the firm expects to achieve over time.
+B. The proportions of current debt, preferred stock, and equity the firm has in its capital structure.
+C. The proportions of debt, preferred stock, and equity the firm has in its target market.
+
+MEDIUM
+2. How can an analyst determine a firm's target capital structure?
+A. By using the firm's current capital structure as the best indication of its target capital structure.
+B. By using the industry average capital structure as the target capital structure for a firm under analysis.
+C. Both A and B.
+
+HARD
+3. What is the marginal cost of capital?
+A. The cost of raising additional capital.
+B. The cost of the firm's existing capital structure.
+C. The cost of debt capital.
+
+************
+
+EASY
+1. When determining the cost of debt for a project, which interest rate should be used? 
+A. Coupon rate on the firm's existing debt.
+B. Market interest rate on new debt.
+C. Average interest rate for similar projects.
+
+MEDIUM
+2. What is the formula for calculating the cost of preferred stock?
+A. kps = D / P
+B. kps = P / D
+C. kps = D * P
+
+HARD
+3. Which approach can be used to estimate the cost of equity using a firm's expected constant growth rate?
+A. Capital asset pricing model approach.
+B. Dividend discount model approach.
+C. Bond-yield-plus risk-premium approach.
+
+************
+
+EASY
+1. What is the weighted average cost of capital (WACC)?
+A. The cost of each capital component of a firm
+B. The average cost of capital for a firm weighted by the proportion of each capital component
+C. The required rate of return for equity investors
+
+MEDIUM
+2. How is the after-tax cost of debt calculated in the WACC formula?
+A. By subtracting the firm's marginal tax rate from the before-tax cost of debt
+B. By adding the firm's marginal tax rate to the before-tax cost of debt
+C. By multiplying the before-tax cost of debt by the firm's marginal tax rate
+
+HARD
+3. If a company's target capital structure is 40% debt, 10% preferred stock, and 50% common equity, and its before-tax cost of debt is 6%, cost of preferred stock is 7%, cost of common equity is 12%, and marginal tax rate is 35%, what is the company's WACC?
+A. 8.3%
+B. 8.7%
+C. 9.1%
+
+************
+
+EASY
+1. According to the Capital Asset Pricing Model (CAPM), what is the formula for calculating the cost of equity?
+A. k = (D / E) + g
+B. k = Rf + β(Rm - Rf)
+C. k = D / (D + E)
+
+MEDIUM
+2. A company has a capital structure consisting of 30% debt, 20% preferred stock, and 50% common stock. The required rate of return for debt is 10%, for preferred stock is 11%, and for common stock is 18%. Assuming a 40% tax rate, what is the company's weighted average cost of capital (WACC)?
+A. 11.6%
+B. 13.5%
+C. 15.0%
+
+HARD
+3. A company is considering a project that is less risky than its existing projects. What interest rate should the company use to discount the cash flows of this project?
+A. The company's WACC
+B. A rate less than the company's WACC
+C. A rate greater than the company's WACC
+
+************
+
+EASY
+1. What is the purpose of a credit-linked note (CLN)?
+A. To guarantee a minimum value at maturity.
+B. To provide capital protection.
+C. To increase yield by linking the redemption value to a specific credit event.
+
+MEDIUM
+2. Which of the following is an example of a capital protected instrument?
+A. A floating-rate note.
+B. An inverse floater.
+C. A security that guarantees a minimum value at maturity plus potential upside gain.
+
+HARD
+3. Which of the following best describes the coupon payments on an inverse floater?
+A. They increase when a reference rate decreases and decrease when a reference rate increases.
+B. They are based on the value of a short-term interest rate.
+C. They move with the performance of an equity price or index.
+
+************
+
+EASY
+1. What is a common minimum or floor rate for the coupon rate on an inverse floater?
+A. 1%
+B. 3%
+C. 0%
+
+MEDIUM
+2. Which of the following short-term funding sources are typically less liquid and offer less transaction services than checking accounts?
+A. Money market mutual funds and savings accounts
+B. Interest-bearing certificates of deposit (CDs)
+C. Large denomination negotiable CDs
+
+HARD
+3. What is the percentage difference between the market value and the amount loaned in a repo agreement called?
+A. The repo rate
+B. The haircut
+C. The collateral security rate
+
+************
+
+EASY
+1. What is a syndicated loan?
+A. A loan funded by several banks. 
+B. A loan funded by only one bank. 
+C. A loan that is unsecured. 
+
+MEDIUM
+2. How do corporations reduce their funding costs when issuing short-term debt securities?
+A. By issuing commercial paper. 
+B. By issuing corporate bonds. 
+C. By issuing medium-term notes. 
+
+HARD
+3. What is rollover risk in the context of commercial paper?
+A. The risk that a company will not be able to sell new commercial paper to replace maturing paper. 
+B. The risk that a company will default on its commercial paper. 
+C. The risk that a company will not be able to secure a backup line of credit with a bank.
+
+************
+
+EASY
+1. Which of the following bond classifications is based on the time to maturity?
+A. Credit quality
+B. Coupon
+C. Original maturity
+
+MEDIUM
+2. What is the purpose of a sinking fund provision in a corporate bond issue?
+A. To provide collateral security for the bond
+B. To allow for early redemption of the bond
+C. To provide a mechanism for interest rate adjustments
+
+HARD
+3. Which of the following is a characteristic of a private placement bond offering?
+A. The sale of bonds to individual retail investors
+B. The use of an investment bank to underwrite the offering
+C. The sale of the entire issue to a qualified investor or group of investors
+
+************
+
+EASY
+1. Which of the following is an example of a participation instrument?
+A. A sinking fund bond.
+B. A floating rate note.
+C. An inverse floater.
+
+MEDIUM
+2. What is the repo margin or haircut in a repurchase agreement?
+A. The percentage difference between the repurchase price and the amount borrowed.
+B. The percentage difference between the amount borrowed and the value of the collateral.
+C. The implicit interest rate of the repurchase agreement.
+
+HARD
+3. Which of the following short-term funding alternatives available to banks involves unsecured loans between banks for periods up to a year?
+A. Central bank funds market.
+B. Customer deposits.
+C. Interbank funds.
+
+************
+
+EASY
+1. What is a primary market transaction?
+A. The trading of previously issued bonds.
+B. The sale of newly issued bonds.
+C. The sale of government bonds.
+
+MEDIUM
+2. What is the structured overnight financing rate (SOFR)?
+A. A rate based on the actual rates of repurchase (repo) transactions and reported daily by the Federal Reserve.
+B. A rate determined by investment banks for newly issued bonds.
+C. A rate used for trading previously issued bonds.
+
+HARD
+3. What is the difference between an underwritten offering and a best efforts offering?
+A. In an underwritten offering, investment banks sell the bonds on a commission basis, while in a best efforts offering, the entire bond issue is purchased by the investment bank.
+B. In an underwritten offering, the investment bank commits to purchase the whole bond issue, while in a best efforts offering, the investment banks sell the bonds on a commission basis.
+C. In an underwritten offering, the entire bond issue is purchased by the syndicate of investment banks, while in a best efforts offering, the lead underwriter heads the syndicate of investment banks. 
+
+MEDIUM
+4. What is the difference between bid and ask prices for bond issues?
+A. Bid prices are the purchase prices posted by dealers, while ask prices are the selling prices posted by dealers.
+B. Bid prices are the selling prices posted by dealers, while ask prices are the purchase prices posted by dealers.
+C. Bid prices are the prices set by investment banks for newly issued bonds, while ask prices are the prices for trading previously issued bonds.
+
+EASY
+5. What is a sovereign bond?
+A. A bond issued by a private corporation.
+B. A bond issued by a national government.
+C. A bond issued by a local government. 
+
+MEDIUM
+6. What is the difference in settlement time for government bonds and corporate bonds?
+A. Government bonds typically settle on T+1, while corporate bonds settle on T+2 or T+3.
+B. Government bonds typically settle on T+2 or T+3, while corporate bonds settle on T+1.
+C. Both government bonds and corporate bonds settle on T+1.
+
+HARD
+7. What is the shelf registration for bond issues?
+A. A bond issue is registered with securities regulators in its aggregate value with a master prospectus, and bonds can then be issued over time when the issuer needs to raise funds.
+B. A bond issue is registered with securities regulators in its aggregate value with a separate registration for each bond issue.
+C. A bond issue is registered with securities regulators only for private placement sales.
+
+MEDIUM
+8. What determines the dealer spread for bond issues?
+A. The credit rating of the bond issue.
+B. The liquidity of the bond issue.
+C. The currency denomination of the bond issue.
+
+EASY
+9. What is the risk associated with sovereign bonds?
+A. Sovereign bonds are considered to be essentially free of default risk.
+B. Sovereign bonds are considered to have a high default risk.
+C. Sovereign bonds are considered to have a moderate default risk.
+
+HARD
+10. What is the purpose of a bond trustee?
+A. To structure the debt security.
+B. To create the bond indenture.
+C. To ensure that the bond issuer complies with the terms of the bond indenture.
+
+************
+
+EASY
+1. Why do local currency bonds issued by a sovereign government typically trade at a higher yield than its euro or U.S. dollar-denominated bonds?
+A. Because the national government can print developed market currency.
+B. Because the value of local currency tax collections is dependent on the exchange rate.
+C. Because local currency bonds are typically of lower credit quality.
+
+MEDIUM
+2. Non-sovereign government bonds are typically of high credit quality, but sovereign bonds typically trade with lower yields because:
+A. their credit risk is perceived to be less than that of non-sovereign bonds.
+B. their maturities are typically longer than those of non-sovereign bonds.
+C. they are typically issued by larger governments than non-sovereign bonds.
+
+HARD
+3. Which of the following entities is most likely to issue supranational bonds?
+A. A state government.
+B. A government-sponsored enterprise.
+C. The World Bank.
+
+************
+
+EASY
+1. Which of the following is a common classification for issuers in the global fixed-income market?
+A. Households
+B. Nonfinancial institutions
+C. Both A and B
+
+MEDIUM
+2. What is the highest bond rating provided by Moody's that is considered investment grade?
+A. A
+B. BBB
+C. Baa3
+
+HARD
+3. Which reference rate is most widely used for floating-rate bonds?
+A. Euribor
+B. Prime rate
+C. LIBOR
+
+************
+
+EASY
+1. What is the basic relation between forward rates and spot rates for two periods?
+A. (1 + S1) = (1 + S0)(1 + 1y1y)
+B. (1 + S2) = (1 + S1)(1 + 1y1y)
+C. (1 + S3) = (1 + S2)(1 + 2y1y)
+
+MEDIUM
+2. If the 2-period spot rate is 8% and the 1-period spot rate is 4%, what is the 1-year forward rate one year from now?
+A. 12.154%
+B. 10.04%
+C. 20.45%
+
+HARD
+3. Given spot rates of 1-year = 5%, 2-year = 6%, 3-year = 7%, and 4-year = 8%, what is the implied forward rate on a 2-year loan two years from now?
+A. 9.5%
+B. 10.04%
+C. 10.5%
+
+EASY
+4. What is the formula for computing a bond value using forward rates?
+A. Bond Value = Coupon Payment / (1 + S1) + Coupon Payment / (1 + S1)(1 + 1y1y) + (Par Value + Coupon Payment) / (1 + S1)(1 + 1y1y)(1 + 2y1y)
+B. Bond Value = Coupon Payment / (1 + S0) + Coupon Payment / (1 + S1)(1 + 1y1y) + (Par Value + Coupon Payment) / (1 + S1)(1 + 1y1y)(1 + 2y1y)
+C. Bond Value = Coupon Payment / (1 + S2) + Coupon Payment / (1 + S1)(1 + 1y1y) + (Par Value + Coupon Payment) / (1 + S1)(1 + 1y1y)(1 + 2y1y)
+
+MEDIUM
+5. What is the relation between the 2-year spot rate and the 1-year spot rate and forward rate?
+A. (1 + S2) = (1 + S1)(1 + 1y1y)
+B. (1 + S3) = (1 + S2)(1 + 2y1y)
+C. (1 + S3) = (1 + S1)(1 + 1y1y)(1 + 2y1y)
+
+HARD
+6. If the current 1-year spot rate is 4%, the current 2-year spot rate is 8%, and the current 3-year spot rate is 12%, what is the 1-year forward rate two years from now?
+A. 12.154%
+B. 10.04%
+C. 20.45%
+
+EASY
+7. What is the formula for calculating implied forward rates for loans for more than one period?
+A. 2y2y = 1/2 (1 + S4)4 / [(1 + S2)2]
+B. 1y1y = (1 + S3)3 / [(1 + S1)(1 + 1y1y)]
+C. 3y1y = (1 + S4)4 / [(1 + S1)(1 + 1y1y)(1 + 2y1y)]
+
+MEDIUM
+8. What is the approximation formula for calculating forward rates from spot rates?
+A. (4 x 1-year spot rate) - (2 x 2-year spot rate)
+B. (2 x 2-year spot rate) - (1-year spot rate)
+C. (3 x 3-year spot rate) - (2 x 2-year spot rate)
+
+HARD
+9. If the current 1-year rate is 4%, the 1-year forward rate for lending from time = to time = is 5%, and the 1-year forward rate for lending from time = to time = is 6%, what is the value of a 3-year annual-pay bond with a 5% coupon and a par value of $1,000?
+A. $1,000.98
+B. $1,050.00
+C. $950.00
+
+MEDIUM
+10. What is the formula for calculating the forward rate for one period, one period from now, 1y1y, given the current implied Treasury effective annual spot rates of 1-year = 2%, 2-year = 3%, 3-year = 3.5%, and 4-year = 4.5%?
+A. 1y1y = [(1 + S2)2 / (1 + S1)] - 1
+B. 1y1y = [(1 + S3)3 / (1 + S1)(1 + 2y1y)] - 1
+C. 1y1y = [(1 + S1)(1 + 2y1y) / (1 + S2)] - 1
+
+************
+
+EASY
+1. What is the discount factor for a 1-year zero-coupon bond with a yield of 4%?
+A. 0.9615
+B. 0.9612
+C. 0.9608
+
+MEDIUM
+2. A 5-year bond with a face value of $1,000 pays a semiannual coupon of 4%. If the yield is 6%, what is the bond's price?
+A. $1,054.53
+B. $1,080.23
+C. $1,018.80
+
+HARD
+3. A 10-year bond with a face value of $1,000 pays a semiannual coupon of 5%. The bond has a yield of 8%. What is the bond's modified duration?
+A. 6.19
+B. 7.23
+C. 8.42
+
+************
+
+EASY
+1. What does a yield curve show?
+A. The spot rates for single payments to be made in the future.
+B. The YTM for coupon bonds at various maturities.
+C. The borrowing/lending rate for a loan to be made at some future date.
+
+MEDIUM
+2. What is a par curve?
+A. A curve constructed from yields on actual bonds.
+B. A curve constructed from spot rates that reflects the coupon rate that a hypothetical bond at each maturity would need to have to be priced at par.
+C. A curve that shows the future rates for bonds or money market securities for the same maturities for annual periods in the future.
+
+HARD
+3. Which of the following formulas can be used to calculate the coupon rate necessary for a bond to be trading at par?
+A. PMT + PMT/(1+S) + PMT/(1+S)^2 + 100/(1+S)^2 = 100
+B. PMT/(1+S) + PMT/(1+S)^2 + PMT/(1+S)^3 + 100/(1+S)^3 = 100
+C. PMT + PMT/(1+S)^2 + PMT/(1+S)^3 + 100/(1+S)^3 = 100
+
+************
+
+EASY
+1. What is the current yield of a bond with a par value of $1,000, a stated coupon rate of 6%, and trading at $802.07?
+A. 6%
+B. 7.48%
+C. 8%
+
+MEDIUM
+2. How is the simple yield of a bond with a discount or premium calculated?
+A. By assuming the discount or premium declines evenly over the remaining years to maturity.
+B. By dividing the sum of the annual coupon payment and the straight-line amortization of a discount (premium) by the flat price.
+C. By adding the value of the call option to the bond's current flat price.
+
+HARD
+3. A 10-year, semiannual-pay 5% bond is currently trading at $980. It is callable according to the following schedule: Callable at on or after January 1, 2023. Callable at on or after January 1, 2026. Calculate the bond's yield-to-maturity, yield-to-first call, yield-to-first par call, and yield-to-worst.
+A. YTM = 5.10%, yield-to-first call = 5.20%, yield-to-first par call = 4.90%, yield-to-worst = 4.90%
+B. YTM = 4.90%, yield-to-first call = 5.20%, yield-to-first par call = 5.10%, yield-to-worst = 4.90%
+C. YTM = 4.90%, yield-to-first call = 4.90%, yield-to-first par call = 5.10%, yield-to-worst = 4.90%
+
+************
+
+EASY
+1. How is the market value of a floating-rate note calculated on a reset date?
+A. By using the current reference rate plus the quoted margin to estimate future cash flows and discounting them at the reference rate plus the required margin.
+B. By using the current reference rate plus the quoted margin to estimate future cash flows and discounting them at the required margin.
+C. By using the current reference rate plus the required margin to estimate future cash flows and discounting them at the quoted margin.
+
+MEDIUM
+2. Which of the following is true regarding money market security yields?
+A. They can be stated as a discount from face value or as add-on yields.
+B. They are always stated as a discount from face value.
+C. They are always stated as add-on yields.
+
+HARD
+3. If a $1 million negotiable CD with 120 days to maturity is quoted with an add-on yield of 1.4% based on a 365-day year, what is the payment at maturity for this CD and its bond equivalent yield?
+A. $1,004,603 and 1.4%.
+B. $1,046,030 and 1.2%.
+C. $1,004,603 and 1.2%.
+
+MEDIUM
+4. Which periodicity is used to calculate yields on U.S. Treasury bills?
+A. 360-day year.
+B. 365-day year.
+C. Both 360-day and 365-day year. 
+
+HARD
+5. A bank deposit for 180 days is quoted with an add-on yield of 1.5% based on a 360-day year. What is the bond equivalent yield and the yield on a semiannual bond basis?
+A. 1.5208% and 1.5236%.
+B. 1.5208% and 1.5294%.
+C. 1.5294% and 1.5236%.
+
+EASY
+6. What is a market rate of discount for a single payment to be made in the future?
+A. A spot rate. 
+B. A simple yield. 
+C. A forward rate.
+
+MEDIUM
+7. What is the yield-to-maturity (YTM) of a 15-year, zero-coupon, $1,000 par value bond that’s currently trading at $331.40 based on semiannual compounding?
+A. 3.750%. 
+B. 5.151%. 
+C. 7.500%.
+
+HARD
+8. How is the yield on a money market security compared to the YTM of a semi-annual pay bond?
+A. Convert the money market security's holding period return to an effective semiannual yield, and then double it.
+B. Convert the money market security's holding period return to an effective annual yield, and then double it.
+C. Convert the money market security's holding period return to an effective annual yield, and divide it by two.
+
+EASY
+9. What is the equivalent add-on yield for a 90-day T-bill priced with an annualized discount of 1.2%?
+A. 0.3009%. 
+B. 0.5009%. 
+C. 1.2203%.
+
+MEDIUM
+10. What is the required return in the market (discount margin) as an effective 180-day discount rate for a floating-rate note with a quoted margin of +50 basis points and a required margin of +75 basis points?
+A. 3.75%. 
+B. 4.75%. 
+C. 5.75%.
+
+************
+
+EASY
+1. What is the YTM of a 5-year, semiannual pay 8% coupon bond that is priced at $1,050?
+A. 7.50%
+B. 7.75%
+C. 8.00%
+
+MEDIUM
+2. What is the annual yield for a bond with a stated YTM of 6%, when the periodicity of the bond is quarterly?
+A. 6.14%
+B. 6.02%
+C. 6.12%
+
+HARD
+3. A 10-year bond pays semiannual coupons at a rate of 5%. The bond is currently priced at $1,100. What is the bond's current yield?
+A. 4.55%
+B. 4.95%
+C. 5.00%
+
+MEDIUM
+4. What is the YTM of a 3-year, annual pay 6% coupon bond that is priced at $950?
+A. 6.32%
+B. 6.50%
+C. 6.68%
+
+EASY
+5. What is the annual yield for a bond with a stated YTM of 8%, when the periodicity of the bond is monthly?
+A. 8.33%
+B. 8.75%
+C. 8.00%
+
+HARD
+6. A 5-year bond pays semiannual coupons at a rate of 4%. The bond is currently priced at $1,050. What is the bond's YTM, expressed as an annual yield?
+A. 3.33%
+B. 3.50%
+C. 3.78%
+
+EASY
+7. What is the current yield of a 10-year, semiannual pay 7% coupon bond that is priced at $1,100?
+A. 6.36%
+B. 6.36%
+C. 7.00%
+
+MEDIUM
+8. What is the YTM of a 7-year, annual pay 5% coupon bond that is priced at $975?
+A. 5.15%
+B. 5.25%
+C. 5.50%
+
+HARD
+9. A 15-year bond pays semiannual coupons at a rate of 6%. The bond is currently priced at $1,200. What is the bond's YTM, expressed as an annual yield?
+A. 4.69%
+B. 5.00%
+C. 5.31%
+
+MEDIUM
+10. What is the annual yield for a bond with a stated YTM of 9%, when the periodicity of the bond is monthly?
+A. 9.38%
+B. 9.00%
+C. 9.25%
+
+************
+
+EASY
+1. A company's financial statements show that it has $500,000 of current assets and $200,000 of current liabilities. What is its current ratio?
+A. 0.4
+B. 1.5
+C. 2.5
+
+MEDIUM
+2. A mutual fund purchases a stock with a price of $50 and a dividend yield of 3%. If the stock price rises to $60 and the dividend yield remains constant, what is the fund's total return?
+A. 10%
+B. 13%
+C. 23%
+
+HARD
+3. An investor purchases a bond with a face value of $1,000, a coupon rate of 6%, and 5 years to maturity. If interest rates rise by 1%, what is the approximate percentage change in the bond's price?
+A. -0.2%
+B. -4.8%
+C. -5.7% 
+
+MEDIUM
+4. A note has a coupon rate of 5% and a par value of $1,000. At its next reset date, the prevailing market interest rate is 4%. What is the price of the note?
+A. $1,000
+B. Less than $1,000
+C. Greater than $1,000
+
+EASY
+5. Which of the following money market yields is a bond-equivalent yield?
+A. Add-on yield based on a 365-day year.
+B. Discount yield based on a 360-day year.
+C. Discount yield based on a 365-day year.
+
+************
+
+EASY
+1. What is matrix pricing?
+A. A method of estimating the required yield-to-maturity of bonds that are currently not traded or infrequently traded.
+B. A method of pricing bonds based on their credit rating.
+C. A method of pricing bonds based on their coupon rate.
+
+MEDIUM
+2. How is the required yield-to-maturity for a nontraded bond estimated using matrix pricing?
+A. By using the YTMs of traded bonds that have credit quality very close to that of the nontraded bond and are similar in maturity and coupon.
+B. By using the coupon rate of the nontraded bond and adjusting it for market conditions.
+C. By using the average yield of all traded bonds in the market.
+
+HARD
+3. What is the formula for estimating the required yield on a newly issued bond using matrix pricing and a benchmark bond of similar maturity?
+A. Average spread + YTM of the benchmark bond.
+B. Average spread - YTM of the benchmark bond.
+C. YTM of the benchmark bond - Average spread.
+
+************
+
+EASY
+1. What are spot rates?
+A. The market discount rates for a single payment to be received in the future.
+B. The market interest rates for a single payment to be received in the future.
+C. The market discount rates for multiple payments to be received in the future.
+
+MEDIUM
+2. How do we value a bond using spot rates?
+A. We sum the present values of the bond's payments, each discounted at the same fixed rate.
+B. We sum the present values of the bond's payments, each discounted at the spot rate for the number of periods before it will be paid.
+C. We sum the future values of the bond's payments, each discounted at the spot rate for the number of periods before it will be paid.
+
+HARD
+3. What is the flat price of a bond?
+A. The present value of the bond on its last coupon payment date.
+B. The full price of the bond minus the accrued interest.
+C. The full price of the bond plus the accrued interest.
+
+************
+
+EASY
+1. What is the relationship between bond price and yield-to-maturity?
+A. They have a positive relationship.
+B. They have a negative relationship.
+C. They have no relationship.
+
+MEDIUM
+2. What is the formula for the price of an annual-coupon bond with N years to maturity?
+A. coupon/(1+YTM) + coupon/(1+YTM)^2 + ... + (coupon+principal)/(1+YTM)^N
+B. coupon*(1+YTM) + coupon*(1+YTM)^2 + ... + (coupon+principal)*(1+YTM)^N
+C. coupon/(1-YTM) + coupon/(1-YTM)^2 + ... + (coupon+principal)/(1-YTM)^N
+
+HARD
+3. What is the difference between a bond's Z-spread and OAS?
+A. Z-spread is the option value minus the OAS.
+B. OAS is the Z-spread minus the option value.
+C. Z-spread and OAS are the same thing.
+
+************
+
+EASY
+1. Which yield curve displays the coupon rates for bonds of various maturities that would result in bond prices equal to their par values?
+A. Spot curve.
+B. Par curve.
+C. Forward curve.
+
+MEDIUM
+2. What is the formula for calculating the price of a bond using forward rates?
+A. Discount the cash flows at times through N by the product of one plus each spot rate for periods to N, and sum them.
+B. Discount the cash flows at times through N by the product of one plus each forward rate for periods to N, and sum them.
+C. Add the present value of each cash flow to get the total price.
+
+HARD
+3. What is a zero-volatility spread or Z-spread?
+A. The difference between a bond's yield and a benchmark yield or yield curve.
+B. The percent spread that must be added to each spot rate on the benchmark yield curve to make the present value of a bond equal to its price.
+C. The spread that must be added to a bond's yield to compensate for the embedded option.
+
+************
+
+EASY
+1. What is a yield spread?
+A. The difference between the yields of two different bonds
+B. The difference between the yields of two bonds with the same maturity
+C. The difference between the yields of two bonds with the same credit rating
+
+MEDIUM
+2. What is a benchmark spread?
+A. A yield spread relative to a benchmark bond
+B. A yield spread relative to an interpolated government bond yield
+C. A yield spread relative to interest rate swaps in the same currency and with the same tenor as a bond
+
+HARD
+3. What is the difference between a G-spread and an I-spread?
+A. A G-spread is a yield spread over a government bond, while an I-spread is a yield spread relative to a benchmark bond
+B. A G-spread is a yield spread relative to a benchmark bond, while an I-spread is a yield spread over a government bond
+C. A G-spread is a yield spread over a government bond, while an I-spread is a yield spread relative to swap rates in the same currency and with the same tenor as a bond
+
+MEDIUM
+4. When is an interpolated government bond yield used as a benchmark for yield spreads?
+A. When the on-the-run government bond yields do not match the bond's tenor
+B. When the bond has a credit rating of AA or above
+C. When the bond is denominated in euros
+
+EASY
+5. What does an increase in a bond's yield spread suggest?
+A. The increase in the bond's yield was caused by microeconomic factors
+B. The increase in the bond's yield was caused by macroeconomic factors
+C. The yield on its benchmark must have also increased
+
+HARD
+6. What is a zero-volatility spread (Z-spread)?
+A. A yield spread that accounts for the shape of the yield curve
+B. A yield spread relative to a benchmark bond
+C. A yield spread over a government bond
+
+MEDIUM
+7. How is a zero-volatility spread (Z-spread) calculated?
+A. By adding an equal amount to each benchmark spot rate and valuing the bond with those rates
+B. By taking the option yield component out of the Z-spread measure
+C. By calculating the difference between the yields of two different bonds
+
+HARD
+8. What is an option-adjusted spread (OAS)?
+A. A spread to the government spot rate curve that the bond would have if it were option-free
+B. A spread over a government bond
+C. A spread relative to a benchmark bond
+
+EASY
+9. What is the disadvantage of using G-spreads and I-spreads?
+A. They are theoretically correct only if the spot yield curve is flat
+B. They do not take into account the shape of the yield curve
+C. They only work for fixed-coupon bonds
+
+MEDIUM
+10. What is the difference between macroeconomic factors and microeconomic factors that affect a bond's yield?
+A. Macroeconomic factors affect the real risk-free rate and expected inflation, while microeconomic factors affect the credit and liquidity risk premium
+B. Macroeconomic factors affect the credit and liquidity risk premium, while microeconomic factors affect the real risk-free rate and expected inflation
+C. Macroeconomic factors affect the bond's credit rating, while microeconomic factors affect its liquidity.
+
+************
+
+EASY
+1. According to the convexity relationship between a bond's price and yield-to-maturity, which of the following bonds is more sensitive to a change in yield?
+A. A bond with a higher coupon rate.
+B. A bond with a lower coupon rate.
+C. Both are equally sensitive.
+
+MEDIUM
+2. Which of the following factors would most likely cause a difference in issue credit rating for a corporation's bonds compared to its issuer credit rating?
+A. The use of senior subordinate debt.
+B. Restricted subsidiary status.
+C. Additional covenants to protect bond holders.
+
+HARD
+3. If the yield curve shifts down by 50 basis points at all maturities, which of the following bonds would appreciate the most?
+A. 4-year, 8% coupon rate, 8% yield-to-maturity.
+B. 5-year, 8% coupon rate, 7.5% yield-to-maturity.
+C. 5-year, 8.5% coupon rate, 8% yield-to-maturity.
+
+************
+
+EASY
+1. What is the market discount rate used to calculate a bond's present value?
+A. Yield-to-call
+B. Yield-to-worst
+C. Yield-to-maturity
+
+MEDIUM
+2. A newly issued bond with a 10% coupon rate, annual payments, and $1,000 par value will sell at a premium if:
+A. The market discount rate is less than 10%.
+B. The market discount rate is greater than 10%.
+C. The market discount rate is equal to 10%.
+
+HARD
+3. What happens to the market value of a bond when the yield-to-maturity increases?
+A. The market value increases.
+B. The market value decreases.
+C. The market value remains the same.
+
+************
+
+EASY
+1. What is the advantage of using the IRR method over the NPV method?
+A. It provides information on the margin of safety.
+B. It is a direct measure of the expected increase in the value of the firm.
+C. It takes into consideration the size of the project.
+
+MEDIUM
+2. What is the crossover rate?
+A. The discount rate at which the NPVs of two projects are equal.
+B. The discount rate that results in an NPV of zero.
+C. The rate at which the IRR of a project is equal to the required rate of return.
+
+HARD
+3. Which method is the only acceptable criterion when ranking projects?
+A. NPV method.
+B. IRR method.
+C. Payback period method.
+
+************
+
+EASY
+1. Which of the following is a benefit of using project cash flows to reduce a firm's capital requirements?
+A. It allows the firm to earn its cost of capital on those funds.
+B. It increases the firm's equity capital and debt.
+C. It results in a lower discount rate for the project.
+
+MEDIUM
+2. A project with unconventional cash flows may have:
+A. More than one IRR.
+B. A lower NPV than a project with normal cash flows.
+C. A higher payback period than a project with normal cash flows.
+
+HARD
+3. A company's stock price is most closely related to:
+A. The present value of its expected future earnings stream.
+B. The NPV of its capital projects.
+C. The IRR of its capital projects.
+
+************
+
+EASY
+1. What is the payback period?
+A. The number of years it takes to recover the initial cost of an investment.
+B. The present value of a project’s future cash flows divided by the initial cash outlay.
+C. The difference between the present value of future cash flows and the initial cash outlay.
+
+MEDIUM
+2. What is the main benefit of the payback period?
+A. It is a good measure of project profitability.
+B. It takes into account the time value of money and cash flows beyond the payback period.
+C. It is a good measure of project liquidity.
+
+HARD
+3. What is the discounted payback period?
+A. The number of years it takes a project to recover its initial investment in present value terms.
+B. The ratio of the present value of future cash flows to the initial cash outlay.
+C. The difference between the present value of future cash flows and the initial cash outlay.
+
+************
+
+EASY
+1. Fullen Corporation is considering an expansion project. Which of the following is not a category of capital projects?
+A. Replacement projects for maintaining the business or for cost reduction.
+B. Expansion projects.
+C. Research and development projects.
+
+MEDIUM
+2. Which of the following is not considered in the calculation of incremental after-tax cash flows for a capital project?
+A. Sunk costs.
+B. Cash opportunity costs.
+C. Accounting net income.
+
+HARD
+3. A company has two mutually exclusive projects with the following cash flows. Project A: Year 1 cash flow = $10,000; Year 2 cash flow = $25,000; Year 3 cash flow = $20,000. Project B: Year 1 cash flow = $15,000; Year 2 cash flow = $20,000; Year 3 cash flow = $15,000. If the discount rate is 10%, which project should the company choose?
+A. Project A.
+B. Project B.
+C. Both projects have the same NPV.
+
+************
+
+EASY
+1. What is the discounted payback period of a project with the following cash flows: Year 0 = -$5,000, Year 1 = $3,000, Year 2 = $2,000, Year 3 = $2,000? The discount rate is 10%.
+A. 1.4 years.
+B. 2.0 years.
+C. 3.0 years.
+
+MEDIUM
+2. What is the profitability index (PI) of a project with the following cash flows: Year 0 = -$5,000, Year 1 = $3,000, Year 2 = $2,000, Year 3 = $2,000? The discount rate is 10%.
+A. 0.84.
+B. 1.18.
+C. 1.45.
+
+HARD
+3. Two projects have the following cash flows: Project A: Year 0 = -$1,000, Year 1 = $300, Year 2 = $600, Year 3 = $800. Project B: Year 0 = -$1,500, Year 1 = $400, Year 2 = $500, Year 3 = $700, Year 4 = $1,000. What is the crossover rate for these two projects?
+A. 2.70%.
+B. 4.80%.
+C. 8.20%.
+
+************
+
+EASY
+1. What is an externality in relation to a capital project?
+A. A positive effect on sales of a firm's other product lines.
+B. A negative effect on sales of an existing product.
+C. The timing of cash flows.
+
+MEDIUM
+2. What is an example of cannibalization in a capital project?
+A. Introducing a new flavor of an existing product.
+B. Introducing a product that complements an existing product.
+C. Introducing a diet version of an existing beverage.
+
+HARD
+3. Which of the following is an example of an unconventional cash flow pattern?
+A. An initial investment outflow followed by a series of cash inflows.
+B. A series of cash outflows followed by a cash inflow.
+C. An initial investment outflow followed by a series of cash inflows and a cash outflow for asset retirement costs at the end of the project’s life.
+
+MEDIUM
+4. Why should opportunity costs be included in project costs?
+A. To calculate the timing of cash flows.
+B. To account for the time value of money.
+C. To account for cash flows generated by an asset the firm already owns that would be forgone if the project is undertaken.
+
+EASY
+5. Why should cash flows be analyzed on an after-tax basis?
+A. To reflect financing costs in the project's required rate of return.
+B. To account for externalities in the project.
+C. To consider the impact of taxes when analyzing all capital budgeting projects.
+
+HARD
+6. What is the difference between independent and mutually exclusive projects?
+A. Independent projects allow for each project to be evaluated based on its own profitability, while only one project in a set of possible projects can be accepted in mutually exclusive projects.
+B. Independent projects must be undertaken in a certain order, or sequence, while mutually exclusive projects are unrelated to each other.
+C. Independent projects compete with each other, while mutually exclusive projects can be accepted together.
+
+MEDIUM
+7. What is project sequencing in capital budgeting?
+A. When only one project in a set of possible projects can be accepted.
+B. When some projects must be undertaken in a certain order, or sequence, so that investing in a project today creates the opportunity to invest in other projects in the future.
+C. When a firm has constraints on the amount of capital they can raise and must use capital rationing.
+
+EASY
+8. What is capital rationing in capital budgeting?
+A. When a firm has unlimited access to capital.
+B. When a firm must prioritize its capital expenditures with the goal of achieving the maximum increase in value for shareholders given its available capital.
+C. When a project has a conventional cash flow pattern.
+
+MEDIUM
+9. What is the net present value (NPV) in capital budgeting?
+A. The sum of the present values of all the expected incremental cash flows if a project is undertaken.
+B. The difference between the initial investment and the present value of all expected cash inflows.
+C. The rate at which the project's cash inflows equal its cash outflows.
+
+HARD
+10. What is the profitability index (PI) in capital budgeting?
+A. The ratio of the present value of the project's expected cash inflows to the initial investment.
+B. The rate at which the project's cash inflows equal its cash outflows.
+C. The difference between the initial investment and the present value of all expected cash inflows.
+
+************
+
+EASY
+1. What is the formula for calculating the net present value (NPV) of a project?
+A. NPV = required rate of return - initial cost of the project
+B. NPV = present value of expected inflows - initial cost of the project
+C. NPV = future value of expected inflows - initial cost of the project
+
+MEDIUM
+2. What is the NPV of a project with an initial investment of $50,000 and expected after-tax cash inflows of $20,000, $30,000, and $40,000 for the next three years, respectively, assuming a discount rate of 8%?
+A. $21,540
+B. $10,000
+C. $5,000
+
+HARD
+3. Which of the following is not an internal rate of return (IRR) decision rule?
+A. If IRR > required rate of return, accept the project.
+B. If IRR < required rate of return, reject the project.
+C. If IRR > hurdle rate, accept the project.
+
+************
+
+EASY
+1. What is the capital budgeting process?
+A. The process of evaluating a company's current budget.
+B. The process of making decisions about long-term investments.
+C. The process of analyzing a company's working capital.
+
+MEDIUM
+2. What is the most important step in the capital budgeting process?
+A. Analyzing project proposals.
+B. Generating good project ideas.
+C. Creating the firm-wide capital budget.
+
+HARD
+3. Which of the following principles is key to the capital budgeting process?
+A. Decisions are based on accounting income.
+B. Sunk costs should be included in the cash flow forecast.
+C. Decisions are based on incremental cash flows.
+
+************
+
+EASY
+1. What is the required rate of return for Project Y and Project Z?
+A. 10%
+B. 11%
+C. 12%
+
+MEDIUM
+2. What is the NPV of Project Z?
+A. -$2,500
+B. +$500
+C. +$1,000
+
+HARD
+3. If the copier project’s cash inflows for Year 2 and Year 3 were $3,000 each, what would be the project’s IRR?
+A. 20%
+B. 30%
+C. 40%
+
+************
+
+EASY
+1. When analyzing the cash flows for introducing a new product line, which of the following is least likely included?
+A. Expected depreciation on new facility and equipment for tax purposes.
+B. Costs of market research conducted to decide whether to introduce the new product.
+C. Reduced sales of the existing product resulting from the introduction of the new product.
+
+MEDIUM
+2. Which of the following statements is true about secondary sources of liquidity?
+A. They are a normal part of daily business for a company.
+B. They signal that a company's financial position is deteriorating.
+C. They provide a higher-cost source of short-term financing compared to primary sources of liquidity.
+
+HARD
+3. Balfour Corp. is evaluating entry into the fast-casual restaurant industry. To calculate the cost of equity capital, which of the following betas should they use?
+A. 1.15
+B. 1.30
+C. 1.45
+
+MEDIUM
+4. Which of the following statements about the internal rate of return (IRR) is most accurate?
+A. The IRR is the discount rate that maximizes a project's net present value.
+B. A proper decision rule is to accept the project if IRR is less than the required rate of return.
+C. IRR is the discount rate at which the present value of expected future after-tax cash flows is equal to the investment outlay.
+
+EASY
+5. A company changed its customer credit terms from 2/10, net to 2/10, net 40. Comparing accounts receivable aging schedules at the end of two different years, which of the following trends is indicated?
+A. Improved collections on credit accounts.
+B. Slower payments from credit customers.
+C. A higher receivables turnover ratio.
+
+HARD
+6. Isaac Segovia, CFA, is using the net present value (NPV) and internal rate of return (IRR) methods to analyze a project. The project will generate several years of cash inflows and require a net cash outflow in the final year. Which of the following problems is Segovia most likely to encounter when using the NPV or IRR methods for this analysis?
+A. Multiple IRRs.
+B. Negative NPV.
+C. Conflicting NPV and IRR project rankings. 
+
+MEDIUM
+7. A company is trying to determine the appropriate discount rate to use for a project. Which of the following is not a factor to consider when selecting a discount rate?
+A. The company's cost of capital.
+B. The risk of the project.
+C. The expected cash flows of the project.
+
+EASY
+8. Which of the following is a measure of the percentage change in operating income (EBIT) resulting from a 1% change in sales?
+A. Degree of financial leverage (DFL).
+B. Degree of operating leverage (DOL).
+C. Degree of total leverage (DTL).
+
+MEDIUM
+9. A company is considering two projects. Project A has an NPV of $10,000 and an IRR of 15%. Project B has an NPV of $8,000 and an IRR of 18%. Which of the following statements is true?
+A. Project A has a higher NPV and lower IRR than Project B.
+B. Project B has a higher NPV and lower IRR than Project A.
+C. Project B has a higher NPV and higher IRR than Project A.
+
+HARD
+10. A company is trying to determine the optimal capital structure for maximizing shareholder value. Which of the following factors should be considered when determining the target debt-to-equity ratio?
+A. The company's cost of capital.
+B. The tax benefits of debt.
+C. The company's operating income.
+
+************
+
+EASY
+1. Why should flotation costs be considered when computing a project's NPV?
+A. Flotation costs are an ongoing expense.
+B. Flotation costs are a sunk cost.
+C. Flotation costs are a one-time expense.
+
+MEDIUM
+2. In a two-tier board structure, which board includes only external (non-executive) directors?
+A. The management board.
+B. The supervisory board.
+C. Both boards include both executive and external directors.
+
+HARD
+3. Which of the following should not be considered when calculating a project's NPV?
+A. Sunk costs.
+B. Taxes.
+C. Flotation costs.
+D. Cannibalization of sales.
+
+************
+
+EASY
+1. What is the inventory turnover ratio?
+A. Cost of goods sold divided by sales.
+B. Sales divided by cost of goods sold.
+C. Cost of goods sold divided by average inventory.
+
+MEDIUM
+2. What is the purpose of managing a firm's daily cash position?
+A. To have excess cash on hand to invest in long-term securities.
+B. To avoid short-term borrowing and invest in long-term securities.
+C. To have sufficient cash on hand and avoid excess cash.
+
+HARD
+3. A company has an inventory processing period of 50 days, a receivables collection period of 30 days, and a payables payment period of 20 days. What is the cash conversion cycle?
+A. 60 days.
+B. 70 days.
+C. 80 days.
+
+************
+
+EASY
+1. What is the formula for calculating the discount-basis yield (bank discount yield or BDY)?
+A. (face value - price) / 360
+B. (face value - price) / % discount
+C. (price - face value) / 360
+
+MEDIUM
+2. Which of the following is typically the objective of cash management?
+A. To earn high returns by taking on high risk.
+B. To earn a market return without taking on much risk.
+C. To invest in securities of low credit quality and long maturities.
+
+HARD
+3. What is the weighted average collection period?
+A. The average days to collect accounts within each aging category.
+B. The average days outstanding per dollar of receivables.
+C. The percentage of total receivables in each aging category.
+
+************
+
+EASY
+1. What are a company's primary sources of liquidity?
+A. Liquidating long-term assets and filing for bankruptcy
+B. Trade credit from vendors and lines of credit from banks
+C. Renegotiating debt agreements
+
+MEDIUM
+2. Which of the following is an example of a drag on liquidity?
+A. Paying vendors sooner than is optimal
+B. Changes in credit terms that require repayment of outstanding balances
+C. Uncollected receivables and bad debts
+
+HARD
+3. A company with a current ratio of less than one:
+A. Has positive working capital
+B. Is probably facing a liquidity crisis
+C. Has a higher likelihood of being able to pay its short-term bills
+
+************
+
+EASY
+1. What is the trade-off involved in inventory management?
+A. Lost sales due to stock-outs.
+B. Carrying costs due to large inventory.
+C. Both A and B.
+
+MEDIUM
+2. What does a decreasing inventory turnover ratio indicate?
+A. Inventory is too large.
+B. Inventory is too low.
+C. Inventory is efficiently managed.
+
+HARD
+3. What does the annualized cost of trade credit depend on?
+A. The amount of the discount.
+B. The number of days past the end of the discount period.
+C. Both A and B.
+
+************
+
+EASY
+1. Which of the following is a more reliable source of short-term funding than an uncommitted line of credit?
+A. Committed line of credit.
+B. Revolving line of credit.
+C. Non-bank finance companies.
+
+MEDIUM
+2. What is the purpose of collateralizing loans with fixed assets, inventory, or accounts receivable?
+A. To reduce the interest rate on the loan.
+B. To provide additional sources of liquidity.
+C. To secure the loan and compensate for the credit risk.
+
+HARD
+3. What is the difference between factoring and banker's acceptances?
+A. Banker's acceptances guarantee payment upon receipt of goods, while factoring refers to the sale of receivables at a discount.
+B. Factoring guarantees payment upon receipt of goods, while banker's acceptances refer to the sale of receivables at a discount.
+C. Both factoring and banker's acceptances refer to the sale of receivables at a discount, but factoring involves the sale of all receivables while banker's acceptances only involve specific transactions.
+
+MEDIUM
+4. Which of the following is a characteristic of commercial paper?
+A. It is a long-term debt security.
+B. It is only available to smaller firms and firms with poor credit.
+C. It is typically issued by large, creditworthy companies for short-term financing. 
+
+EASY
+5. What should a firm focus on when managing its short-term financing?
+A. Having sufficient sources of funding for current and future cash needs.
+B. Maximizing profits through short-term financing.
+C. Reducing the cost of short-term financing as much as possible. 
+
+HARD
+6. Which of the following is a key aspect of managing a firm's net daily cash position?
+A. Analyzing cash inflows and outflows to forecast future needs.
+B. Increasing the firm's inventory turnover.
+C. Negotiating favorable debt contracts with lenders. 
+
+MEDIUM
+7. What is the purpose of a committed line of credit?
+A. To provide a more reliable source of short-term funding than an uncommitted line of credit.
+B. To secure loans with collateral such as fixed assets, inventory, or accounts receivable.
+C. To extend a bank's offer of credit that it "commits to" for some period of time. 
+
+EASY
+8. What is the difference between a revolving line of credit and a committed line of credit?
+A. Revolving lines of credit are typically for shorter terms than committed lines of credit.
+B. Committed lines of credit are typically for longer terms than revolving lines of credit.
+C. Revolving lines of credit are typically for longer terms than committed lines of credit. 
+
+HARD
+9. What is the difference between a direct placement and dealer-placed commercial paper?
+A. Direct placement is when a firm sells commercial paper to investors, while dealer-placed paper is sold through dealers.
+B. Dealer-placed paper is when a firm sells commercial paper to investors, while direct placement is sold through dealers.
+C. Both direct placement and dealer-placed paper refer to the process of selling commercial paper, but direct placement is typically more expensive. 
+
+MEDIUM
+10. What is the purpose of having alternative sources of short-term funding and lenders for a particular type of financing?
+A. To reduce the overall cost of short-term financing.
+B. To increase the flexibility and redundancy of short-term financing.
+C. To provide additional collateral for loans.
+
+************
+
+EASY
+1. What is the purpose of managing a firm's net daily cash position?
+A. To minimize uninvested cash balances.
+B. To ensure that adequate cash is available to prevent the firm from having to arrange financing on short notice.
+C. To maximize the firm's cash balances by investing in long-term securities.
+
+MEDIUM
+2. Which of the following sources of funds is typically used by large firms with good credit to obtain lower financing costs?
+A. Factoring of receivables.
+B. Commercial paper.
+C. Bankers' acceptances.
+
+HARD
+3. Which of the following is the correct formula for the holding period yield?
+A. (Sale price - Purchase price) / Purchase price.
+B. (Sale price - Purchase price) / Face value.
+C. (Sale price - Purchase price) / Average price.
+
+************
+
+EASY
+1. What are primary sources of liquidity for a company?
+A. Negotiating debt contracts
+B. Selling assets
+C. Ready cash balances and short-term funds
+
+MEDIUM
+2. Which of the following is a measure of a company's short-term liquidity?
+A. Receivables turnover
+B. Return on investment
+C. Debt-to-equity ratio
+
+HARD
+3. What is the cash conversion cycle?
+A. Days of inventory + days of receivables - days of payables
+B. Current assets / current liabilities
+C. Cost of goods sold / average inventory
+
+MEDIUM
+4. What is the overall objective of short-term cash management?
+A. Maximize credit and liquidity risk
+B. Maximize the firm's cash inflows and minimize its cash outflows
+C. Minimize uninvested cash balances because they earn a return of zero
+
+HARD
+5. What are the discount-basis yield and bond equivalent yield for a banker's acceptance that was purchased for $25,400 and will mature in days for $26,500?
+A. 18.7% and 18.7%
+B. 18.7% and 19.8%
+C. 4.2% and 19.8%
+
+EASY
+6. What is an aging schedule used to evaluate in a company?
+A. Inventories
+B. Accounts payable
+C. Accounts receivable
+
+MEDIUM
+7. What is the source of short-term financing that a large domestic services firm with a good credit rating would most likely use?
+A. Factoring of receivables
+B. Issuing commercial paper
+C. Issuing bankers' acceptances
+
+HARD
+8. What is the formula for bond-equivalent yields for short-term pure discount securities?
+A. Discount-basis yields = % discount from face value × (360 / days)
+B. Money market yields = HPY × (360 / days)
+C. Bond-equivalent yields = HPY × (365 / days)
+
+EASY
+9. What is the primary objective of a company's cash management program?
+A. Maximize credit risk
+B. Minimize liquidity risk
+C. Earn a reasonable return while taking on limited credit and liquidity risk
+
+MEDIUM
+10. How can a company evaluate its inventory, receivables, and payables management?
+A. By comparing return on investment to industry averages
+B. By comparing debt-to-equity ratio to peer companies
+C. By comparing days of inventory, days of receivables, and days of payables to industry averages or peer companies
+
+************
+
+EASY
+1. What are sector indexes used for?
+A. To measure returns to market capitalization and value or growth strategies.
+B. To evaluate portfolio managers and construct index portfolios.
+C. To identify value and growth stocks.
+
+MEDIUM
+2. Which of the following is an issue with the construction of fixed-income indexes?
+A. Turnover is low in fixed-income indexes.
+B. The security universe is much broader than the universe of stocks.
+C. Fixed-income securities are primarily traded on exchanges.
+
+HARD
+3. What is an issue with commodity indexes relevant for investors?
+A. They are based on the prices of commodity futures contracts, not the spot prices of commodities.
+B. Different indexes have significantly different commodity exposures and risk and return characteristics.
+C. Commodity futures contracts reflect the risk-free rate of return, changes in futures prices, and the roll yield.
+
+************
+
+EASY
+1. An REIT index is:
+A. a family of indexes produced by FTSE International.
+B. a type of index that includes real properties.
+C. a type of index that is illiquid.
+
+MEDIUM
+2. Hedge funds are:
+A. largely unregulated and not required to report their performance to index providers.
+B. regulated and required to report their performance to index providers.
+C. regulated but not required to report their performance to index providers.
+
+HARD
+3. Which of the following is a characteristic of the TOPIX index?
+A. It is price weighted and adjusted for high-priced shares.
+B. It contains a large number of small illiquid stocks.
+C. It has a large number of constituents that can vary.
+
+************
+
+EASY
+1. What is rebalancing of an index?
+A. Adding and deleting securities that do not meet the index criteria
+B. Adjusting the weights of securities in a portfolio to their target weights after price changes have affected the weights
+C. Reflecting the market sentiment and providing a representative market return
+
+MEDIUM
+2. Which type of index provides a measure of a market's overall performance and usually contains more than 90% of the market's total value?
+A. Multi-market index
+B. Sector index
+C. Broad market index
+
+HARD
+3. Which of the following is NOT a use of security market indexes?
+A. Reflection of market sentiment
+B. Benchmark of manager performance
+C. Estimating the expected return of a single stock
+
+************
+
+EASY
+1. Which type of index uses only the prices of the constituent securities in the return calculation?
+A. Price-weighted index
+B. Total return index
+C. Market capitalization-weighted index
+
+MEDIUM
+2. What is the main difference between a price-weighted index and a market capitalization-weighted index?
+A. The divisor used in the calculation
+B. The weighting method used
+C. The securities included in the index
+
+HARD
+3. Which type of index uses weights that are independent of security prices, such as company earnings, revenue, assets, or cash flow?
+A. Market capitalization-weighted index
+B. Fundamental-weighted index
+C. Equal-weighted index
+
+************
+
+EASY
+1. What must a security market index have to be useful?
+A. A numerical value
+B. A descriptive name
+C. A high return rate
+
+MEDIUM
+2. What is the best description of a mid-cap growth stock index?
+A. A sector index
+B. A style index
+C. A geographic index
+
+HARD
+3. Which type of security is difficult to obtain data for due to infrequent trading?
+A. Equities
+B. Commodities
+C. Fixed-income securities
+
+************
+
+EASY
+1. What is the primary disadvantage of value-weighted indexes?
+A. They do not accurately represent changes in aggregate investor wealth.
+B. They give disproportionately high weights to overvalued stocks.
+C. They create high transaction costs when rebalancing.
+
+MEDIUM
+2. Which type of index is constructed based on firm fundamentals, such as earnings or dividends?
+A. Market capitalization-weighted index.
+B. Value-weighted index.
+C. Fundamental-weighted index.
+
+HARD
+3. Which of the following is a concern with an equal-weighted index?
+A. The weights on the returns of large capitalization firms in the index are greater than their proportions of the overall market value of the index stocks.
+B. The weights placed on the returns of the securities of smaller capitalization firms are greater than their proportions of the overall market value of the index stocks.
+C. The relative impact of a stock's return on the index increases as its price rises and decreases as its price falls.
+
+************
+
+EASY
+1. What is a price-weighted index?
+A. An index where each stock's weight is proportional to its market capitalization.
+B. An index where each stock's weight is proportional to its price.
+C. An index where each stock's weight is proportional to its dividend yield.
+
+MEDIUM
+2. How is the divisor adjusted in a price-weighted index?
+A. It is adjusted for changes in the index portfolio to maintain the continuity of the series over time.
+B. It is adjusted for changes in the market value of each stock in the index.
+C. It is adjusted for changes in the number of shares outstanding for each stock in the index.
+
+HARD
+3. Which type of index places an equal weight on the returns of all index stocks?
+A. Price-weighted index.
+B. Market capitalization-weighted index.
+C. Equal-weighted index.
+
+************
+
+EASY
+1. What is a security market index?
+A. A portfolio of individual securities.
+B. The percentage change in the value of a portfolio of individual securities over a period of time.
+C. The price of a single security.
+
+MEDIUM
+2. What is the difference between a price return and a total return?
+A. A price return includes both prices and income from the constituent securities.
+B. A total return uses only the prices of the constituent securities.
+C. A price return is the percentage change in the index’s value over a period of time.
+
+HARD
+3. Which of the following is a disadvantage of a price-weighted index?
+A. Its computation is simple.
+B. It is unaffected by stock splits or changes in the composition of the index.
+C. Higher priced stocks have more weight in the index's calculation.
+
+************
+
+EASY
+1. Which of the following is NOT a choice that must be made when constructing a security market index?
+A. Using a nominal or interval scale.
+B. Measuring the performance of an entire market or market segment.
+C. Determining the maturity of the securities included in the index.
+
+MEDIUM
+2. What is the 1-year return on a price-weighted index of three stocks, given the following data?
+Stock A: January price = $22, December price = $28, outstanding shares = 1,500
+Stock B: January price = $40, December price = $50, outstanding shares = 10,000
+Stock C: January price = $34, December price = $30, outstanding shares = 3,000
+A. 12.5%
+B. 13.5%
+C. 18.0%
+
+MEDIUM
+3. What is the 1-year return on an equal-weighted index of three stocks, given the following data?
+Stock A: January price = $22, December price = $28, outstanding shares = 1,500
+Stock B: January price = $40, December price = $50, outstanding shares = 10,000
+Stock C: January price = $34, December price = $30, outstanding shares = 3,000
+A. 12.0%
+B. 12.5%
+C. 13.5%
+
+HARD
+4. What is the 1-year return on a market capitalization-weighted index of three stocks, given the following data?
+Stock A: January price = $22, December price = $28, outstanding shares = 1,500
+Stock B: January price = $40, December price = $50, outstanding shares = 10,000
+Stock C: January price = $34, December price = $30, outstanding shares = 3,000
+A. 12.5%
+B. 13.5%
+C. 18.0%
+
+EASY
+5. What is market float of a stock?
+A. The total outstanding shares.
+B. The shares that are available to domestic investors.
+C. The outstanding shares, excluding those held by controlling shareholders.
+
+MEDIUM
+6. Among price-weighted, equal-weighted, and market capitalization-weighted indexes, which one requires the most frequent rebalancing?
+A. Price-weighted index.
+B. Equal-weighted index.
+C. Market capitalization-weighted index.
+
+************
+
+EASY
+1. What is the primary benefit of equity securities for a company?
+A. Providing liquidity.
+B. Providing a fixed dividend payment.
+C. Providing a lower average return than common stock.
+
+MEDIUM
+2. Which type of preferred shares are less risky and have the right to receive any missed dividends before any common stock dividends can be paid?
+A. Cumulative preferred shares.
+B. Non-cumulative preferred shares.
+C. Callable shares.
+
+HARD
+3. Which type of shares are the most risky because if the market price rises, the firm can call the shares, limiting the upside potential of the shares?
+A. Putable shares.
+B. Common shares.
+C. Callable shares.
+
+************
+
+EASY
+1. Which of the following best describes the book value of equity?
+A. It reflects investors' perceptions of the firm's future.
+B. It decreases when retained earnings increase.
+C. It reflects a firm's financial decisions and operating results since its inception.
+
+MEDIUM
+2. A firm's cost of equity is:
+A. the expected equilibrium total return on its shares in the market.
+B. the minimum rate of return required by investors to compensate them for the risk of the firm's equity shares.
+C. estimated using a dividend discount model or the capital asset pricing model.
+
+HARD
+3. Which of the following will increase a firm's intrinsic value?
+A. An increase in share price.
+B. A decrease in required return used to discount future cash flows.
+C. A decrease in expected market returns on equity shares.
+
+MEDIUM
+4. Which of the following types of preferred shares has the most risk for investors?
+A. Non-putable, non-callable shares.
+B. Callable shares.
+C. Putable shares.
+
+EASY
+5. The DuPont formula is used to:
+A. determine the reasons for changes in ROE.
+B. estimate a firm's cost of equity.
+C. calculate the intrinsic value of a firm's shares.
+
+HARD
+6. Which of the following is true about the price-to-book ratio?
+A. Firms with high price-to-book ratios are considered value stocks.
+B. The price-to-book ratio is used as a measure of absolute value.
+C. The more optimistic investors are about the firm's future growth, the greater its price-to-book ratio.
+
+MEDIUM
+7. A decrease in share price will:
+A. increase the expected return on the shares.
+B. decrease the expected return on the shares.
+C. have no effect on the expected return on the shares.
+
+EASY
+8. Which of the following is true about global depository receipts?
+A. They are most often denominated in the currency of the country where they trade and issued outside the United States.
+B. They are denominated in U.S. dollars and issued in the United States.
+C. They are denominated in U.S. dollars and issued outside the United States.
+
+HARD
+9. Which of the following causes of an increase in ROE is most likely a negative sign for a firm's equity investors?
+A. Net income is increasing at a faster rate than book value of equity.
+B. A firm issues debt to repurchase equity.
+C. Net income is decreasing at a slower rate than book value of equity.
+
+MEDIUM
+10. Which of the following is true about a firm's cost of equity?
+A. It can be interpreted as the maximum rate of return required by investors to compensate them for the risk of the firm's equity shares.
+B. It is usually estimated using the dividend discount model and the capital asset pricing model.
+C. It is the expected equilibrium total return (including dividends) on its shares in the market.
+
+************
+
+EASY
+1. What is a depository receipt (DR)?
+A. A receipt for a deposit made in a bank.
+B. A receipt representing ownership in a foreign firm traded in the markets of other countries in local market currencies.
+C. A receipt for a stock split event.
+
+MEDIUM
+2. Which of the following is an advantage of listing a firm's stocks on foreign stock exchanges?
+A. Reduced publicity for the firm's products.
+B. Reduced liquidity of the firm's shares.
+C. Increased transparency due to stricter disclosure requirements in many foreign markets.
+
+HARD
+3. Which of the following types of equity securities involves denominated in a foreign currency?
+A. American Depository Receipts (ADRs).
+B. Global Depository Receipts (GDRs).
+C. Global Registered Shares (GRSs).
+
+************
+
+EASY
+1. Which of the following is a characteristic of preferred stock?
+A. Pays a fixed dividend to investors
+B. Has voting rights equal to common stock
+C. Offers the potential for high capital gains
+
+MEDIUM
+2. Which type of voting structure allows minority shareholders to gain representation on the board?
+A. Straight voting
+B. Cumulative voting
+C. Supermajority voting
+
+HARD
+3. What is the primary disadvantage of investing in private equity?
+A. Lower reporting costs
+B. Greater ability to focus on long-term prospects
+C. Illiquidity
+
+************
+
+EASY
+1. What does the market value of equity reflect?
+A. The historical performance of the company.
+B. The current book value of equity.
+C. The collective expectations of investors about the firm’s future performance.
+
+MEDIUM
+2. Which of the following scenarios would be considered a positive sign for a company?
+A. Net income decreasing at a faster rate than book value of equity.
+B. Net income increasing at a slower rate than book value of equity.
+C. Net income increasing at a faster rate than book value of equity.
+
+HARD
+3. If a company issues debt to repurchase equity, what happens to the book value of equity and the ROE?
+A. Book value of equity decreases and ROE increases.
+B. Book value of equity increases and ROE decreases.
+C. Book value of equity and ROE remain the same.
+
+MEDIUM
+4. Why is decreasing net income not a positive sign for a company?
+A. It decreases the book value of equity.
+B. It increases the company's risk.
+C. It decreases the ROE.
+
+************
+
+EASY
+1. What is the main reason for private equity securities to have less liquidity compared to public equity?
+A. The share price is negotiated between the firm and its investors.
+B. There is no government or exchange requirement for financial disclosure.
+C. Investors often have to commit funds for several years before they can cash out.
+
+MEDIUM
+2. In a leveraged buyout (LBO), investors buy all of a firm's equity using:
+A. equity financing.
+B. cash reserves.
+C. debt financing.
+
+HARD
+3. Which of the following private equity investments provides financing to firms early in their life cycles to fund their development and growth?
+A. Leveraged buyouts.
+B. Private investments in public equity.
+C. Venture capital.
+
+************
+
+EASY
+1. What is the main characteristic of common shares?
+A. They have a contractual obligation to pay dividends.
+B. They represent a debt interest in the firm.
+C. They provide an ownership interest in the firm.
+
+MEDIUM
+2. How do common stockholders govern the corporation?
+A. Through fixed periodic payments to investors.
+B. Through voting rights on key decision-making processes.
+C. Through the issuance of new shares.
+
+HARD
+3. What is the main difference between cumulative and statutory voting systems?
+A. Statutory voting allows shareholders to allocate their votes to one or more candidates as they choose.
+B. Cumulative voting assigns one vote in the election of each member of the board of directors for each share held.
+C. Cumulative voting allows a minority shareholder to have more proportional representation on the board.
+
+************
+
+EASY
+1. In the context of equity investments, what is a price-to-book ratio?
+A. A measure of a company's market value relative to its earnings
+B. A measure of a company's share price relative to its book value
+C. A measure of a company's dividend yield relative to its stock price
+
+MEDIUM
+2. What is the most likely reason for a company to have an issue credit rating lower than its issuer credit rating?
+A. The newly issued bonds have been affected by restricted subsidiary status.
+B. The newly issued bonds are senior subordinate debt.
+C. The newly issued bonds have additional covenants that protect the bond holders.
+
+HARD
+3. A portfolio manager is considering investing in one of the following stocks. Which stock is likely to earn the highest return according to the dividend discount model and the CAPM?
+A. A stock with a current dividend yield of 2%, a beta of 1.2, and expected dividend growth rate of 5%.
+B. A stock with a current dividend yield of 3%, a beta of 0.8, and expected dividend growth rate of 7%.
+C. A stock with a current dividend yield of 4%, a beta of 1.5, and expected dividend growth rate of 3%. 
+
+EASY
+4. What is a possible barrier to entry in an industry?
+A. Economies of scale
+B. Low demand for the product
+C. High level of competition
+
+MEDIUM
+5. What is the difference between the price return and the total return of an index?
+A. The price return includes dividends, while the total return does not.
+B. There is no difference because the stocks in the index do not pay dividends.
+C. The total return includes dividends, while the price return does not.
+
+HARD
+6. What is the primary difference between a dealer and a broker in the securities market?
+A. Dealers buy and sell securities directly with clients, while brokers find buyers and sellers to execute customer orders.
+B. Brokers maintain inventories of securities, while dealers do not.
+C. Investment banks are primarily involved in assisting with the issuance of new securities.
+
+EASY
+7. In the context of organized markets, how are asset-backed securities best characterized?
+A. Real assets
+B. Equity securities
+C. Pooled investment vehicles
+
+MEDIUM
+8. Which of the following market indexes is likely to be rebalanced most frequently?
+A. Price weighted.
+B. Value weighted.
+C. Equal weighted.
+
+HARD
+9. Which of the following is least likely to increase the estimated value of a stock according to the dividend discount model and the CAPM?
+A. An increase in the next period's expected dividend.
+B. A decrease in the stock's systematic risk.
+C. A decrease in the expected growth rate of dividends.
+
+HARD
+10. A portfolio manager is considering investing in Aceler, Inc. using the dividend discount model and the CAPM. If the risk-free rate is 4.5%, the expected market risk premium is 7.5%, and Aceler's beta is 0.9, what is the estimated current value of Aceler shares?
+A. $37.
+B. $39.
+C. $47.
+
+MEDIUM
+11. Which of the following industries is classified as the more cyclical sector under a commercial industry classification scheme?
+A. Personal care products.
+B. Food.
+C. Apparel.
+
+HARD
+12. Compared to a passive investment strategy, how does active management, on average, perform in efficient markets?
+A. Cannot outperform if markets are weak-form efficient.
+B. Can outperform if markets are weak-form efficient but not semistrong-form efficient.
+C. Can outperform if markets are semistrong-form efficient but not strong-form efficient.
+
+EASY
+13. In a typical industry classification system from a commercial index provider, in which sectors are Malley, Inc. (a manufacturer of sports apparel) and Pruett, Inc. (a producer of cardboard boxes for packaging) most likely to be classified?
+A. Malley, Inc.: Consumer staples; Pruett, Inc.: Basic materials and processing.
+B. Malley, Inc.: Consumer discretionary; Pruett, Inc.: Basic materials and processing.
+C. Malley, Inc.: Consumer staples; Pruett, Inc.: Industrial and producer durables.
+
+HARD
+14. Assume the value effect persists over time. Which of the following strategies is most likely to earn positive abnormal returns?
+A. Purchase stocks with low dividend yields.
+B. Purchase stocks with high market-to-book ratios.
+C. Purchase stocks with low price-to-earnings ratios.
+
+************
+
+EASY
+1. According to the dividend discount model, what is the formula to calculate the value of a stock based on its expected dividend and required rate of return?
+A. DDM value = dividend / required rate of return
+B. DDM value = dividend x required rate of return
+C. DDM value = required rate of return / dividend
+
+MEDIUM
+2. What is the implied market risk premium if the expected return is 10% and the risk-free rate is 2%?
+A. 8%
+B. 10%
+C. 12%
+
+HARD
+3. Which of the following is a characteristic of value stocks?
+A. High price-to-earnings ratio
+B. Low dividend yield
+C. Low market-to-book ratio
+
+************
+
+EASY
+1. According to the dividend displacement of earnings relationship, what is the effect of increasing a firm's dividend payout ratio?
+A. It always increases the firm's market value.
+B. It always decreases the firm's market value.
+C. The effect on the firm's market value is ambiguous.
+
+MEDIUM
+2. Which of the following is a disadvantage of using price multiples based on comparables in valuation?
+A. The multiples may not be comparable if firms are in different industries.
+B. The multiples may not be comparable due to different accounting methods.
+C. Price multiples may not be reliable for cyclical firms.
+
+HARD
+3. A firm's P/E ratio is calculated by dividing the stock price by which of the following?
+A. Net revenue per share.
+B. Net income per share.
+C. Stockholder's equity per share.
+
+************
+
+EASY
+1. What is enterprise value (EV)?
+A. Total market value of equity and debt.
+B. Total market value of equity minus cash and short-term investments.
+C. Total market value of equity and debt minus cash and short-term investments.
+
+MEDIUM
+2. Which of the following is an advantage of using EBITDA as a denominator for EV multiples?
+A. It includes non-cash revenues and expenses.
+B. It is usually negative even when earnings are not.
+C. It can be compared to earnings of both debt and equity owners.
+
+HARD
+3. According to the passage, why might book value not be a good estimate of market value when using EV multiples?
+A. Market conditions may have changed significantly since bonds were issued.
+B. Market values of debt instruments approach their face values as they get close to maturity.
+C. Analysts often use the market values of similar bonds instead.
+
+************
+
+EASY
+1. What is the rationale for using price multiples to value equity?
+A. They are very sensitive to inputs.
+B. They reflect only the past.
+C. They are easily calculated and can be used in time series and cross-sectional comparisons.
+
+MEDIUM
+2. Which of the following price multiples is calculated as a firm's stock price divided by earnings per share?
+A. Price-to-sales ratio.
+B. Price-to-cash flow ratio.
+C. Price-to-earnings ratio.
+
+HARD
+3. A firm has an expected dividend payout ratio of 40%, a required rate of return of 10%, and an expected dividend growth rate of 5%. Calculate the firm's fundamental (justified) leading P/E ratio.
+A. 4.00
+B. 5.00
+C. 6.00
+
+EASY
+4. Which of the following ratios is used to compare a firm's stock price to its sales per share?
+A. Price-to-book value ratio.
+B. Price-to-cash flow ratio.
+C. Price-to-sales ratio.
+
+MEDIUM
+5. What is the main critique of price multiples?
+A. They are easily calculated.
+B. They are based on projected values.
+C. They reflect only the past.
+
+HARD
+6. A firm has an expected dividend payout ratio of 50%, a required rate of return of 12%, and an expected dividend growth rate of 8%. Calculate the firm's fundamental (justified) leading P/E ratio.
+A. 6.67
+B. 7.14
+C. 7.69
+
+EASY
+7. What is the use of multiples based on comparables?
+A. To tell us what a multiple should be based on some valuation model.
+B. To establish value based on current market prices of other companies.
+C. To compare a firm's price multiple to a benchmark value based on an index, industry group of firms, or a peer group of firms within an industry.
+
+MEDIUM
+8. Which of the following is not a commonly used price multiple for valuation?
+A. Price-to-earnings ratio.
+B. Price-to-cash flow ratio.
+C. Price-to-dividend ratio.
+
+HARD
+9. A firm has an expected dividend payout ratio of 60%, a required rate of return of 15%, and an expected dividend growth rate of 7%. Calculate the firm's fundamental (justified) leading P/E ratio.
+A. 4.33
+B. 5.71
+C. 6.67
+
+EASY
+10. Which of the following ratios is used to compare a firm's stock price to its book value of equity per share?
+A. Price-to-sales ratio.
+B. Price-to-cash flow ratio.
+C. Price-to-book value ratio.
+
+************
+
+EASY
+1. When is an asset-based valuation model most reliable?
+A. When the firm has a high proportion of intangible assets.
+B. When the firm is being liquidated.
+C. When the firm has primarily tangible short-term assets.
+
+MEDIUM
+2. What is the disadvantage of using price multiples for cyclical firms?
+A. They are difficult to calculate.
+B. They may not be comparable across firms.
+C. They may be greatly affected by economic conditions at a given point in time.
+
+HARD
+3. What is the adjusted equity value per share for Williams Optical, given the following information:
+- Market value of net fixed assets is 120% of book value
+- Liability and short-term asset market values are equal to book values
+- Cash: $10,000
+- Accounts receivable: $20,000
+- Inventories: $50,000
+- Net fixed assets: $120,000
+- Accounts payable: $5,000
+- Notes payable: $30,000
+- Term loans: $45,000
+- Common stockholder equity: $120,000
+- Total assets: $200,000
+- Total liabilities and equity: $200,000
+A. $64
+B. $72
+C. $80
+
+EASY
+4. Which of the following is an advantage of discounted cash flow models?
+A. Their inputs are easily estimated.
+B. They are based on the past performance of the company.
+C. They are widely accepted in the analyst community.
+
+MEDIUM
+5. When is an asset-based valuation model especially problematic?
+A. When the firm has a large amount of intangible assets.
+B. When the firm has primarily tangible long-term assets.
+C. When the firm is being liquidated.
+
+HARD
+6. Which of the following is a disadvantage of using price multiples based on fundamentals?
+A. They are based on theoretically sound valuation models.
+B. They correspond to widely accepted value metrics.
+C. They are very sensitive to the inputs.
+
+EASY
+7. Which of the following is an advantage of using asset-based models?
+A. They can provide floor values.
+B. They are most reliable when the firm has a high proportion of intangible assets.
+C. They are inaccurate when a firm has primarily tangible short-term assets.
+
+MEDIUM
+8. Which of the following is a disadvantage of using discounted cash flow models?
+A. They are based on the past performance of the company.
+B. They are not widely accepted in the analyst community.
+C. Value estimates are very sensitive to input values.
+
+HARD
+9. Which of the following is a disadvantage of using price multiples for valuation?
+A. They are easily calculated.
+B. They may not be comparable across firms.
+C. They are based on the fundamental concept of discounted present value.
+
+MEDIUM
+10. When is an analyst likely to consider asset-based model values as floor or minimum values?
+A. When the firm has a large amount of intangible assets.
+B. When the firm has primarily tangible long-term assets.
+C. When significant intangibles, such as business reputation, are involved.
+
+************
+
+EASY
+1. Which of the following describes a stock that is undervalued?
+A. The market price is greater than the estimated intrinsic value.
+B. The market price is less than the estimated intrinsic value.
+C. The market price is equal to the estimated intrinsic value.
+
+MEDIUM
+2. A firm has a required rate of return of 12% and an expected dividend payout ratio of 40%. If the expected future growth rate is 6%, what should the firm's fundamental price-to-earnings (P/E) ratio be?
+A. 8.0x.
+B. 10.0x.
+C. 12.5x.
+
+HARD
+3. Which of the following is NOT a step in the dividend payment chronology?
+A. Declaration date.
+B. Ex-dividend date.
+C. Record date.
+D. Payment date. 
+
+MEDIUM
+4. Which of the following is a disadvantage of using price multiple models for valuation?
+A. They are difficult to apply to firms with negative earnings.
+B. They produce results that may not be comparable across firms.
+C. They do not incorporate the future prospects of the firm.
+
+EASY
+5. How is preferred stock typically valued?
+A. As the present value of its future cash dividends.
+B. As a multiple of its earnings per share.
+C. As the present value of its future capital gains. 
+
+MEDIUM
+6. A firm has net income of $50 million, a dividend payout ratio of 40%, and 10 million shares outstanding. If the firm's required rate of return is 15%, what is the intrinsic value of the stock using the dividend discount model?
+A. $20.00 per share.
+B. $22.50 per share.
+C. $25.00 per share.
+
+HARD
+7. Which of the following is a characteristic of a multistage dividend discount model?
+A. It assumes a constant growth rate in dividends.
+B. It is only applicable to firms with high growth rates.
+C. It values a stock based on its free cash flow to equity. 
+
+MEDIUM
+8. Which of the following statements regarding enterprise value is true?
+A. It is the market value of equity minus cash and short-term investments.
+B. It is the market value of debt minus cash and short-term investments.
+C. It is the market value of equity plus the market value of debt minus cash and short-term investments.
+
+HARD
+9. Which of the following is NOT a factor in determining the sustainable growth rate of a company?
+A. Return on equity.
+B. Dividend payout rate.
+C. Debt-to-equity ratio.
+D. Earnings retention rate.
+
+EASY
+10. Which of the following is a characteristic of a special dividend?
+A. It is a one-time cash payment to shareholders.
+B. It is additional shares of stock.
+C. It divides each existing share into multiple shares.
+
+************
+
+EASY
+1. An investor purchased shares of a company for $50. The company pays a quarterly dividend of $0.50 per share. What is the dividend yield of the investment?
+A. 1%
+B. 2%
+C. 4%
+
+MEDIUM
+2. Which of the following statements about the Gordon growth model is true?
+A. It assumes that the dividend growth rate is constant forever.
+B. It is only applicable for companies that pay dividends.
+C. It assumes that the required rate of return is equal to the dividend growth rate.
+
+HARD
+3. Which of the following statements about the dividend payout ratio is true?
+A. A high payout ratio indicates that the company is reinvesting most of its earnings.
+B. A low payout ratio indicates that the company is retaining most of its earnings.
+C. The payout ratio can be higher than 100% if the company is using debt to finance its dividend payments.
+
+EASY
+4. Which of the following statements about the CAPM is true?
+A. It estimates the required rate of return for an asset based on its systematic risk.
+B. It estimates the expected return for an asset based on its total risk.
+C. It assumes that the market risk premium is constant over time.
+
+MEDIUM
+5. Which of the following statements about the efficient market hypothesis (EMH) is true?
+A. The weak form of the EMH states that all historical prices and volume data are already reflected in current stock prices.
+B. The semi-strong form of the EMH states that all publicly available information is already reflected in current stock prices.
+C. The strong form of the EMH states that all information, including inside information, is already reflected in current stock prices.
+
+HARD
+6. A portfolio has a beta of 1.2 and an expected return of 10%. If the risk-free rate is 3% and the market risk premium is 8%, what is the expected return of the market?
+A. 7%
+B. 8%
+C. 9%
+
+EASY
+7. Which of the following statements about stock buybacks is true?
+A. They reduce the number of shares outstanding, which increases earnings per share.
+B. They increase the number of shares outstanding, which decreases earnings per share.
+C. They have no impact on the number of shares outstanding or earnings per share.
+
+MEDIUM
+8. Which of the following statements about the dividend discount model (DDM) is true?
+A. It assumes that dividends grow at a constant rate forever.
+B. It is only applicable for companies that pay dividends.
+C. It assumes that the required rate of return is equal to the dividend yield.
+
+HARD
+9. Which of the following statements about the price-to-sales (P/S) ratio is true?
+A. It is more appropriate for valuing companies with high profit margins.
+B. It is less sensitive to accounting differences than the price-to-earnings (P/E) ratio.
+C. It is not affected by changes in the number of shares outstanding.
+
+EASY
+10. Which of the following statements about beta is true?
+A. It measures the sensitivity of an asset's returns to changes in the market portfolio.
+B. It measures the total risk of an asset relative to the market portfolio.
+C. It is a measure of the absolute level of risk of an asset.
+
+************
+
+EASY
+1. Which type of firm is most appropriate for the constant growth model?
+A. Young firms with high growth phase
+B. Stable and mature firms
+C. Cyclical firms such as retailers
+
+MEDIUM
+2. What is the formula for the price-earnings (P/E) ratio based on fundamentals?
+A. P0/E1 = E/k-g
+B. P0/D1/E1 = E/k-g
+C. P0/E1 = k-g/D1
+
+HARD
+3. What is the formula for enterprise value (EV)?
+A. Market value of common and preferred stock + market value of debt
+B. Market value of common stock + book value of debt
+C. Market value of common and preferred stock + market value of debt - cash and short-term investments
+
+************
+
+EASY
+1. How is the required return on equity for a firm with publicly traded debt typically estimated?
+A. By adding a risk premium to the firm's current bond yield.
+B. By adding a larger risk premium to a government bond yield.
+C. By using the Gordon growth model.
+
+MEDIUM
+2. What is the value of a non-callable, non-convertible preferred stock that pays a $6.00 annual dividend and has a required return of 10%?
+A. $60.00
+B. $66.00
+C. $72.00
+
+HARD
+3. A stock paid a $2.00 dividend last year and is expected to have a constant annual dividend growth rate of 5%. If the required return on equity is 12%, what is the value of the stock using the Gordon growth model?
+A. $20.00
+B. $25.00
+C. $33.33
+
+************
+
+EASY
+1. What is the sustainable growth rate?
+A. The rate at which equity, earnings, and dividends can continue to grow indefinitely assuming that ROE is constant, the dividend payout ratio is constant, and no new equity is sold.
+B. The rate at which equity, earnings, and dividends can only grow for a limited time period.
+C. The rate at which equity, earnings, and dividends cannot grow at all.
+
+MEDIUM
+2. What is the formula for the sustainable growth rate?
+A. (1 - dividend payout ratio) + ROE
+B. (1 - dividend payout ratio) ÷ ROE
+C. (1 - dividend payout ratio) × ROE
+
+HARD
+3. When using the multistage dividend growth model, what is the first step?
+A. Determine the discount rate.
+B. Estimate the first dividend that will grow at the constant rate.
+C. Project the size and duration of the high initial dividend growth rate.
+
+************
+
+EASY
+1. What is the rationale behind using present value models to value equity?
+A. To calculate the intrinsic value of stock based on its past performance.
+B. To predict the future performance of a stock.
+C. To calculate the present value of future cash flows from dividends or free cash flows to equity.
+
+MEDIUM
+2. The dividend discount model (DDM) is based on the assumption that:
+A. The intrinsic value of a stock is the present value of its future earnings.
+B. The intrinsic value of a stock is the present value of its future dividends.
+C. The intrinsic value of a stock is its current market price.
+
+HARD
+3. Which formula is used to calculate free cash flow to equity (FCFE)?
+A. FCFE = net income + depreciation + increase in working capital - fixed capital investment (FCInv) - debt principal repayments + new debt issues
+B. FCFE = cash flow from operations - FCInv + net borrowing
+C. FCFE = net income + depreciation - increase in working capital + fixed capital investment (FCInv) + debt principal repayments - new debt issues
+
+************
+
+EASY
+1. Which type of firms are most suitable for valuation using the constant growth dividend discount model?
+A. Stable and mature, non-cyclical, dividend-paying firms.
+B. Firms with rapidly growing dividends.
+C. Firms with unpredictable dividend payments.
+
+MEDIUM
+2. What is the required rate of return if the intrinsic value of a stock with a $2 dividend and a 10% growth rate is $50?
+A. 5%.
+B. 10%.
+C. 15%.
+
+HARD
+3. A company has an initial high growth rate, followed by a lower growth rate during a second, transitional period, followed by a constant growth rate in the long run. Which variant of the multistage growth model is most suitable for this company?
+A. 2-stage model.
+B. 3-stage model.
+C. Gordon growth model.
+
+************
+
+EASY
+1. Which of the following is a sign of a company's financial stability?
+A. Regularly scheduled dividends
+B. Special dividends
+C. Stock splits
+
+MEDIUM
+2. What is the ex-dividend date?
+A. The date the board of directors approves payment of a dividend
+B. The date on which all owners of shares will receive the dividend payment
+C. The first day on which a share purchaser will not receive the next dividend
+
+HARD
+3. Which of the following is true about share repurchases?
+A. They have the same effect on shareholders' wealth as cash dividends of the same size.
+B. They are less common than stock dividends.
+C. They are primarily used to offset an increase in outstanding shares from the exercise of employee stock options.
+
+************
+
+EASY
+1. What is a stock dividend?
+A. A dividend paid in cash to stockholders.
+B. A dividend paid in property or assets instead of cash.
+C. A dividend paid in additional shares of stock.
+
+MEDIUM
+2. When a company declares a stock dividend, which of the following accounts will decrease?
+A. Cash.
+B. Retained earnings.
+C. Common stock.
+
+HARD
+3. A company has declared a stock dividend. How will this affect the market price of the stock?
+A. The market price will increase because shareholders will receive more shares.
+B. The market price will decrease because the company's assets are being divided among more shares.
+C. The market price will remain unchanged because the stock dividend has no effect on the company's value.
+
+************
+
+EASY
+1. What is intrinsic value?
+A. The rational value investors would place on an asset if they had full knowledge of its characteristics.
+B. The market price of an asset.
+C. The value that is determined by supply and demand.
+
+MEDIUM
+2. What is the discounted cash flow model used for?
+A. To estimate the present value of cash distributed to shareholders.
+B. To estimate the present value of cash available to shareholders after the firm meets its necessary capital expenditures and working capital expenses.
+C. To estimate the present value of the market capitalization of a company.
+
+HARD
+3. What is enterprise value?
+A. The market value of all a firm’s outstanding securities minus cash and short-term investments.
+B. The total value of a firm's assets minus liabilities and preferred stock.
+C. The value of common stock after subtracting the value of liabilities and preferred stock from enterprise value.
+
+************
+
+EASY
+1. What are the two components of a bond's spread to the benchmark curve?
+A. Credit risk and inflation premium
+B. Credit risk and liquidity premium
+C. Inflation premium and liquidity premium
+
+MEDIUM
+2. What is the difference between market price risk and reinvestment risk?
+A. Market price risk is the risk of a bond losing value due to changes in interest rates, while reinvestment risk is the risk of earning a lower rate upon reinvestment of coupon payments.
+B. Market price risk is the risk of a bond gaining value due to changes in interest rates, while reinvestment risk is the risk of earning a higher rate upon reinvestment of coupon payments.
+C. Market price risk and reinvestment risk are the same thing.
+
+HARD
+3. How does a positive duration gap affect an investor in terms of interest rate risk?
+A. A positive duration gap exposes the investor to market price risk from increasing interest rates.
+B. A positive duration gap exposes the investor to reinvestment risk from decreasing interest rates.
+C. A positive duration gap does not affect the investor's interest rate risk.
+
+************
+
+EASY
+1. What is a source of return from a bond investment?
+A. Changes in credit rating
+B. Changes in market volatility
+C. Coupon and principal payments
+
+MEDIUM
+2. Which of the following is a linear estimate of the percentage change in a bond's price that would result from a 1% change in its YTM?
+A. Macaulay duration
+B. Effective duration
+C. Key rate duration
+
+HARD
+3. Which of the following bonds would have the highest money duration per units of par value?
+A. 10-year bond with a modified duration of 8
+B. 5-year bond with a modified duration of 5
+C. 1-year bond with a modified duration of 1.5
+
+************
+
+EASY
+1. What is convexity?
+A. A measure of the curvature of the price-yield relation
+B. A linear approximation of the relationship between yield and price
+C. A measure of the sensitivity of a bond's price to changes in yield
+
+MEDIUM
+2. Which of the following bond characteristics will increase convexity?
+A. Longer maturity
+B. Higher coupon rate
+C. Higher yield to maturity
+
+HARD
+3. What is the difference between approximate and effective convexity?
+A. Approximate convexity is used for bonds with embedded options, while effective convexity is used for option-free bonds.
+B. Approximate convexity is based on a change in the bond's YTM, while effective convexity is based on a change in the yield curve.
+C. Approximate convexity takes into account second-order effects, while effective convexity only considers first-order effects.
+
+************
+
+EASY
+1. What is the term used to describe the curvature of a bond's price-yield relationship?
+A. Modified duration
+B. Convexity
+C. Yield spread
+
+MEDIUM
+2. Which of the following is a true statement regarding the relationship between yield volatility and maturity?
+A. Long-term yields are more volatile than short-term yields.
+B. Short-term yields may be more volatile than long-term yields.
+C. Yield volatility is not related to maturity.
+
+HARD
+3. If a bond's duration gap is negative, what does that imply about the bond's price risk and reinvestment risk?
+A. The bond is exposed to more price risk than reinvestment risk.
+B. The bond is exposed to more reinvestment risk than price risk.
+C. The bond is not exposed to any price or reinvestment risk.
+
+************
+
+EASY
+1. Which of the following bonds is likely to have more interest rate risk if short-term yields are more volatile than long-term yields?
+A. A longer-maturity bond.
+B. A bond with a lower coupon rate.
+C. A shorter-maturity bond.
+
+MEDIUM
+2. What is the duration gap of a bond with a Macaulay duration of 7 years and a yield to maturity of 5% if the investment horizon is 1 year?
+A. 0.35 years.
+B. 1.35 years.
+C. 6 years.
+
+HARD
+3. Which of the following bonds is likely to have the highest yield spread relative to its benchmark if it has low liquidity?
+A. A corporate bond with a high credit rating.
+B. A government bond with a long-term maturity.
+C. A high-yield bond with a long-term maturity.
+
+************
+
+EASY
+1. What is the money duration of a bond position?
+A. The change in bond value for a given change in YTM
+B. The average of the decrease and increase in the full value of a bond when its YTM changes by one basis point
+C. The annual modified duration multiplied by the full price of the bond position
+
+MEDIUM
+2. What is the price value of a basis point (PVBP) for a newly issued, 10-year, 5% annual-pay straight bond priced at 101.20, assuming it has a par value of $500,000?
+A. $5.06
+B. $10.12
+C. $15.18
+
+HARD
+3. A portfolio manager wants to estimate the sensitivity of their portfolio's value to changes in the 7-year spot rate. Which duration measure should they use?
+A. A key rate duration
+B. A Macaulay duration
+C. An effective duration
+
+************
+
+EASY
+1. What is key rate duration?
+A. The sensitivity of a bond's value to changes in the spot rate for a specific maturity, holding other spot rates constant.
+B. The sensitivity of a bond's value to parallel shifts in the yield curve.
+C. The sensitivity of a bond's value to nonparallel shifts in the yield curve.
+
+MEDIUM
+2. Which of the following would decrease a bond's interest rate risk?
+A. An increase in coupon rate.
+B. A decrease in yield to maturity.
+C. An increase in maturity.
+
+HARD
+3. What is the formula for calculating portfolio duration using the durations of individual bonds?
+A. portfolio duration = W1D1 + W2D2 + ... + WnDn
+B. portfolio duration = (1+YTM)/YTM
+C. portfolio duration = (1/1+YTM)^n * n/(1+YTM)
+
+************
+
+EASY
+1. What is the carrying value of a bond?
+A. The price at which the bond was originally purchased.
+B. The price at which the bond is sold.
+C. The price of the bond at any point in time between purchase and sale.
+
+MEDIUM
+2. What happens to an investor's rate of return if the yield to maturity (YTM) of a bond increases after purchase?
+A. The rate of return increases.
+B. The rate of return decreases.
+C. The rate of return remains the same.
+
+HARD
+3. An investor purchases a 10-year bond with a 6% coupon rate and a yield to maturity of 5%. If interest rates increase to 7% after purchase, what is the investor's annual compound holding period return?
+A. 5.24%
+B. 5.76%
+C. 6.06%
+
+************
+
+EASY
+1. What is Macaulay duration?
+A. A measure of a bond's interest rate risk.
+B. The weighted average of the number of years until each promised cash flow is to be paid.
+C. The difference between a bond's yield to maturity and its coupon rate.
+
+MEDIUM
+2. An investor purchases a 5-year bond with a yield to maturity of 6%. If the YTM increases to 7% after purchase but before the first coupon date, and the investor holds the bond to maturity, what will happen to the investor's rate of return?
+A. It will be greater than the YTM at purchase.
+B. It will be less than the YTM at purchase.
+C. It will be equal to the YTM at purchase.
+
+HARD
+3. A bond has a modified duration of 6.5 years and a yield to maturity of 8%. If interest rates decrease by 50 basis points, what is the approximate percentage change in the bond's price?
+A. -3.25%
+B. -4.25%
+C. -5.25%
+
+************
+
+EASY
+1. What are the three sources of returns from investing in a fixed-rate bond?
+A. Coupon payments, principal payments, and capital gain/loss.
+B. Interest earned on reinvested coupon payments, capital gain/loss, and dividends.
+C. Coupon payments, principal payments, and dividends.
+
+MEDIUM
+2. What is the annualized rate of return earned by an investor who holds a fixed-rate bond to maturity?
+A. Coupon rate.
+B. Yield to maturity (YTM) at purchase.
+C. YTM at maturity.
+
+HARD
+3. What happens to a bond investor's rate of return if the market YTM for the bond increases after purchase but before the first coupon date?
+A. It will be higher than the YTM at bond purchase if the bond is held for a short period.
+B. It will be lower than the YTM at bond purchase if the bond is held for a long period.
+C. It depends on whether the bond is sold prior to maturity or held to maturity.
+
+************
+
+EASY
+1. What is Macaulay duration?
+A. The approximate percentage change in a bond's price for a 1% change in yield to maturity.
+B. The weighted-average time to the receipt of principal and interest payments.
+C. The linear estimate of the relation between a bond's price and yield to maturity.
+
+MEDIUM
+2. How is modified duration calculated for an annual-pay bond?
+A. ModDur = MacDur / (1 + YTM)
+B. ModDur = MacDur / (1 + YTM / 2)
+C. ModDur = (MacDur - 1) / YTM
+
+HARD
+3. What is the formula for calculating approximate modified duration?
+A. (V + V') / (2 x V0 x ΔYTM)
+B. (V - V') / (2 x V0 x ΔYTM)
+C. (V - V') / (2 x V0 x ΔYTM) x 100
+
+************
+
+EASY
+1. Which measure of interest rate risk does not distinguish between changes in the benchmark yield and changes in the spread?
+A. Modified duration.
+B. Effective duration.
+C. Credit duration.
+
+MEDIUM
+2. Which measure is used to estimate the interest rate risk of bonds with embedded options?
+A. Modified duration.
+B. Effective duration.
+C. Credit duration.
+
+HARD
+3. Which measure of duration is lowest for a callable bond?
+A. Macaulay duration.
+B. Effective duration.
+C. Modified duration.
+
+************
+
+EASY
+1. What is arbitrage?
+A. Buying and selling assets until prices in two markets are equal. 
+B. Selling assets until prices in two markets are equal. 
+C. Buying assets until prices in two markets are equal.
+
+MEDIUM
+2. According to the semi-strong form of the efficient markets hypothesis, security prices reflect:
+A. All past market information only.
+B. All publicly available information.
+C. All public and private information.
+
+HARD
+3. Which form of the efficient markets hypothesis states that security prices fully reflect all information from both public and private sources?
+A. Weak-form market efficiency.
+B. Semi-strong-form market efficiency.
+C. Strong-form market efficiency.
+
+************
+
+EASY
+1. What is the semi-strong form of market efficiency?
+A. All public information is reflected in stock prices.
+B. Only market information is reflected in stock prices.
+C. No information is reflected in stock prices.
+
+MEDIUM
+2. What is an event study used for?
+A. To examine abnormal returns before and after the release of new information that affects a firm's intrinsic value.
+B. To examine abnormal returns before and after the release of new information that affects the overall market.
+C. To examine abnormal returns before and after the release of new information that affects interest rates.
+
+HARD
+3. What is a market anomaly?
+A. Something that deviates from the common rule in the efficient markets literature.
+B. A type of investment strategy used by portfolio managers.
+C. A situation where markets are inefficient due to data-mining bias.
+
+************
+
+EASY
+1. What is an informationally efficient capital market?
+A. A market where prices fully and rationally reflect all available information about a security.
+B. A market where prices are determined by a small group of informed traders.
+C. A market where prices are based on rumors and speculation.
+
+MEDIUM
+2. In a perfectly efficient market, what investment strategy should investors use?
+A. Active investment strategy.
+B. Passive investment strategy.
+C. Speculative investment strategy.
+
+HARD
+3. Which of the following factors affects the degree of market efficiency?
+A. Number of market participants.
+B. Availability of information.
+C. Impediments to trading.
+D. All of the above.
+
+************
+
+EASY
+1. Which of the following is an example of a calendar anomaly?
+A. Overreaction effect
+B. Momentum effect
+C. Weekend effect
+
+MEDIUM
+2. Which anomaly violates the weak form of market efficiency?
+A. Size effect
+B. Value effect
+C. Overreaction effect
+
+HARD
+3. What is the implication for investors of the majority of reported anomalies being explained by methodologies used in tests of market efficiency?
+A. Investors should not attempt to exploit any reported anomalies.
+B. Investors should only attempt to exploit anomalies that have been confirmed by multiple studies.
+C. Investors should be cautious when interpreting studies that report anomalies.
+
+************
+
+EASY
+1. According to behavioral finance, what bias do investors exhibit in their decision-making process?
+A. Overconfidence
+B. Loss aversion
+C. Herding
+
+MEDIUM
+2. What is the difference between weak-form and semi-strong form market efficiency?
+A. Weak-form efficiency assumes that investors cannot earn positive abnormal returns using public information, while semi-strong form efficiency assumes they cannot earn positive abnormal returns using both public and private information.
+B. Weak-form efficiency assumes that investors cannot earn positive abnormal returns using private information, while semi-strong form efficiency assumes they cannot earn positive abnormal returns using public information.
+C. Weak-form efficiency assumes that investors can earn positive abnormal returns using public information, while semi-strong form efficiency assumes they cannot earn positive abnormal returns using private information.
+
+HARD
+3. What is the potential effect of short selling on market efficiency, according to the efficient market hypothesis?
+A. Short selling leads to excess volatility, which reduces market efficiency.
+B. Short selling promotes market efficiency by making assets less likely to become overvalued.
+C. Short selling has little effect on market efficiency because short sellers face the risk of unlimited losses.
+
+************
+
+EASY
+1. Which of the following is true regarding portfolio management based on anomalies?
+A. It is likely to be profitable after considering transaction costs.
+B. It is not affected by research methodologies.
+C. It is likely to be unprofitable after considering transaction costs.
+
+MEDIUM
+2. Loss aversion refers to:
+A. The tendency of investors to be more risk averse when faced with potential gains.
+B. The tendency of investors to be less risk averse when faced with potential losses.
+C. The tendency of investors to have symmetric risk preferences.
+
+HARD
+3. Which of the following is an example of loss aversion?
+A. An investor is willing to take on more risk for a potential gain of $1,000.
+B. An investor is willing to take on less risk to avoid a potential loss of $1,000.
+C. An investor has no preference between a potential gain of $1,000 and a potential loss of $1,000.
+
+************
+
+EASY
+1. According to the efficient market hypothesis, what kind of information is reflected in security prices?
+A. All available information
+B. Only unexpected information
+C. Only public information
+
+MEDIUM
+2. What is the difference between an asset's market value and its intrinsic value?
+A. Market value is the price that investors with full knowledge of the asset's characteristics would place on the asset, while intrinsic value is the price at which it can currently be bought or sold.
+B. Intrinsic value is the price that investors with full knowledge of the asset's characteristics would place on the asset, while market value is the price at which it can currently be bought or sold.
+C. There is no difference between an asset's market value and its intrinsic value.
+
+HARD
+3. Which of the following is an example of a market anomaly?
+A. A stock's price increases after the release of positive earnings information.
+B. Small-cap stocks outperform large-cap stocks over a period of time.
+C. Investors behave rationally and make rational investment decisions.
+
+************
+
+EASY
+1. What is a validity instruction for an order?
+A. It specifies when an order should be executed.
+B. It specifies the quantity of shares to be traded.
+C. It specifies the type of security to be traded.
+
+MEDIUM
+2. What is a stop-buy order used for?
+A. To limit losses from a decreasing stock price.
+B. To sell shares at the end of the trading day.
+C. To buy shares when the market is rising.
+
+HARD
+3. Which of the following is an example of a primary market transaction?
+A. Placing a buy order on the New York Stock Exchange.
+B. Purchasing shares of a publicly traded company from another investor.
+C. Investing in a company's initial public offering (IPO).
+
+************
+
+EASY
+1. In an underwritten offering, the investment bank agrees to:
+A. purchase the entire issue at a negotiated price.
+B. assist with the issuance of securities to qualified investors.
+C. make a market in the stock for a period after the issuance.
+
+MEDIUM
+2. A hot issue is an IPO that is:
+A. undersubscribed and trades below the IPO price.
+B. oversubscribed and trades significantly above the IPO price.
+C. distributed on a best efforts basis.
+
+HARD
+3. In a private placement, securities are sold:
+A. directly to the public.
+B. to existing shareholders at a discount to the current market price.
+C. directly to qualified investors, typically with the assistance of an investment bank.
+
+************
+
+EASY
+1. What is the bid-ask spread?
+A. The difference between the highest and lowest bid prices.
+B. The difference between the highest and lowest ask prices.
+C. The difference between the bid and ask prices.
+
+MEDIUM
+2. What is the difference between a market order and a limit order?
+A. A market order is executed immediately at the best possible price, while a limit order has a specified minimum or maximum execution price.
+B. A market order has a specified minimum or maximum execution price, while a limit order is executed immediately at the best possible price.
+C. A market order and a limit order are the same thing.
+
+HARD
+3. Which of the following is true regarding a limit order that is not filled?
+A. The trader will receive the security at the best possible price.
+B. The trader will not receive the security, even if the market price reaches the limit price.
+C. The trader will receive the security at the limit price if the market price reaches or exceeds it.
+
+************
+
+EASY
+1. In which type of market do traders transact with dealers who post bid and ask prices?
+A. Quote-driven markets
+B. Order-driven markets
+C. Brokered markets
+
+MEDIUM
+2. Which of the following is a benefit of transparency in financial markets?
+A. Lower transaction costs
+B. Larger bid-ask spreads
+C. An informational advantage for dealers
+
+HARD
+3. Under the uniform pricing rule in order-driven markets, at what price do all orders trade?
+A. The price that results in the highest volume of trading
+B. The limit price of the order that arrived first
+C. The average of the bid and ask quotes from the security's main market.
+
+************
+
+EASY
+1. What is the main objective of market regulation?
+A. To protect unsophisticated investors.
+B. To increase the cost of obtaining information.
+C. To reduce the minimum levels of capital required for market participants.
+
+MEDIUM
+2. What is the difference between financial assets and real assets?
+A. Financial assets are tangible assets, while real assets are intangible assets.
+B. Financial assets include securities and derivatives, while real assets include real estate and equipment.
+C. Financial assets are used for borrowing, while real assets are used for saving.
+
+HARD
+3. Which of the following is a potential problem in financial markets that can be addressed by market regulation?
+A. A decrease in the number of buyers and sellers in the market.
+B. An increase in the accuracy and timeliness of supply and demand information.
+C. An increase in the potential for theft and fraud by investment managers and others.
+
+************
+
+EASY
+1. Which of the following securities markets involves brokers who locate a counterparty to take the other side of a buy or sell order?
+A. Quote-driven markets
+B. Order-driven markets
+C. Brokered markets
+
+MEDIUM
+2. Which of the following best describes the primary market?
+A. The market for trading previously issued securities
+B. The market where securities are traded at specific times
+C. The market for newly issued securities
+
+HARD
+3. Which of the following characteristics is not a characteristic of a well-functioning financial system?
+A. Complete markets
+B. Operational efficiency
+C. High volatility in prices
+
+EASY
+4. Which of the following objectives of market regulation helps prevent insiders from exploiting other investors?
+A. Establishing minimum standards of competency
+B. Promoting common financial reporting requirements
+C. Protecting unsophisticated investors
+
+MEDIUM
+5. Which of the following orders is least likely to be executed in the market?
+A. A marketable buy order
+B. A behind-the-market limit order
+C. An order making a new market or inside the market
+
+HARD
+6. Which of the following is a characteristic of informational efficiency in a financial system?
+A. Prices reflect fundamental information quickly
+B. Trading costs are low
+C. Capital is directed to its highest valued use
+
+************
+
+EASY
+1. What is the difference between primary and secondary markets?
+A. Primary markets are where securities trade after their initial issuance, while secondary markets are where new issues of securities are sold.
+B. Primary markets are where new issues of securities are sold, while secondary markets are where securities trade after their initial issuance.
+C. Primary markets are where securities trade on a daily basis, while secondary markets are where securities trade infrequently.
+
+MEDIUM
+2. Which of the following is NOT a type of financial intermediary?
+A. Broker
+B. Dealer
+C. Arbitrageur
+
+HARD
+3. Which of the following execution instructions is appropriate for a trader who wants to execute a transaction quickly?
+A. Market order
+B. Limit order
+C. Stop order
+
+************
+
+EASY
+1. What is the leverage ratio of an investor who satisfies an initial margin requirement of 30%?
+A. 3-to-1
+B. 2-to-1
+C. 1.5-to-1
+
+MEDIUM
+2. What is the return on equity for an investor who purchases 500 shares of a stock at $50 per share with an initial margin requirement of 50% and sells the shares at $70 per share after one year, receiving $1 per share in dividends and paying 5% interest on the margin loan?
+A. 40%
+B. 50%
+C. 60%
+
+HARD
+3. An investor purchases 1,500 shares of a stock at $80 per share with an initial margin requirement of 40%. What is the price at which the investor will receive a margin call if the maintenance margin requirement is 30%?
+A. $48
+B. $64
+C. $72
+
+************
+
+EASY
+1. What is the initial margin requirement for the investor in this scenario?
+A. 20%
+B. 30%
+C. 40%
+
+MEDIUM
+2. What is the total commission paid by the investor on the purchase and sale of the 1,000 shares?
+A. $20
+B. $30
+C. $40
+
+HARD
+3. What is the total amount of dividends received by the investor over the one-year holding period?
+A. $300
+B. $400
+C. $500
+
+************
+
+EASY
+1. What is a long position in an asset?
+A. Owning the asset
+B. Borrowing and selling the asset
+C. Neither owning nor borrowing the asset
+
+MEDIUM
+2. Why do hedgers use short positions?
+A. To profit from a decrease in the price of an asset
+B. To offset the risk from a long position in a correlated asset
+C. To earn interest on the proceeds from the short sale
+
+HARD
+3. What is the short rebate rate?
+A. The interest rate paid on borrowed funds for leveraged positions
+B. The rate at which a short seller must return the borrowed security
+C. The interest rate earned on the proceeds from a short sale, minus the short rebate paid.
+
+************
+
+EASY
+1. What is the primary difference between fixed-income securities and equity securities?
+A. Fixed-income securities represent ownership positions.
+B. Equity securities are promises to repay borrowed money in the future.
+C. Fixed-income securities are debt securities, while equity securities represent ownership in a firm.
+
+MEDIUM
+2. Which of the following securities typically have scheduled dividends that do not change over the security's life?
+A. Common stock
+B. Bonds
+C. Preferred stock
+
+HARD
+3. Which of the following is NOT a pooled investment vehicle?
+A. Hedge funds
+B. Mutual funds
+C. Commercial paper
+
+************
+
+EASY
+1. Which of the following is true about asset-backed securities?
+A. They represent ownership in a company.
+B. They are backed by financial assets such as mortgages or car loans.
+C. They are restricted to investors of substantial wealth and investment knowledge.
+
+MEDIUM
+2. What is the main difference between a forward contract and a futures contract?
+A. Forward contracts are traded on an exchange, while futures contracts are not.
+B. Futures contracts are standardized, while forward contracts are not.
+C. Forward contracts are more liquid than futures contracts.
+
+HARD
+3. Which of the following is a reserve currency?
+A. Canadian dollar
+B. Japanese yen
+C. Australian dollar
+
+************
+
+EASY
+1. What are the three main functions of the financial system?
+A. Raise equity capital, manage risks, and allocate capital.
+B. Determine returns, invest in real estate, and save money.
+C. Allow entities to save and borrow money, determine returns, and allocate capital.
+
+MEDIUM
+2. What is the equilibrium interest rate?
+A. The rate at which individuals want to borrow, but businesses want to lend.
+B. The rate at which businesses want to borrow, but individuals want to lend.
+C. The rate at which the amount individuals, businesses, and governments desire to borrow is equal to the amount that individuals, businesses, and governments desire to lend.
+
+HARD
+3. Which of the following is an example of a real asset?
+A. A bond.
+B. A stock.
+C. Real estate.
+
+************
+
+EASY
+1. Which of the following is a reason why an investor may choose to buy real assets indirectly through an investment such as a REIT or MLP?
+A. Indirect ownership interests are typically more liquid than ownership of the assets themselves.
+B. Indirect ownership interests offer greater specialization than ownership of the assets themselves.
+C. Indirect ownership interests offer higher returns than ownership of the assets themselves.
+
+MEDIUM
+2. Which of the following financial intermediaries helps corporations sell common stock, preferred stock, and debt securities to investors?
+A. Brokers
+B. Dealers
+C. Investment banks
+
+HARD
+3. Why do securitizers pool large amounts of securities or other assets and then sell interests in the pool to other investors?
+A. To increase the funding costs for the assets in the pool.
+B. To create a diversified pool of assets with more predictable cash flows than the individual assets in the pool.
+C. To decrease the liquidity of the assets in the pool.
+
+************
+
+EASY
+1. Which of the following is NOT an example of an intermediary in the financial market?
+A. Insurance companies
+B. Payday lenders
+C. Retail investors
+
+MEDIUM
+2. What is the benefit of insurance companies providing protection to a diversified pool of policyholders?
+A. It increases the likelihood of correlated losses.
+B. It provides more predictable losses and cash flows.
+C. It increases the risk of moral hazard.
+
+HARD
+3. Which of the following is NOT a service provided by clearinghouses in financial markets?
+A. Escrow services
+B. Assurance of margin trading profits
+C. Limits on aggregate net order quantity of members.
+
+************
+
+EASY
+1. What is the primary risk associated with poor compliance procedures in corporate governance?
+A. Decreased company value.
+B. Legal and reputational risks.
+C. Stakeholder lawsuits.
+
+MEDIUM
+2. Why do companies sometimes use a dual-class share structure?
+A. To ensure founding shareholders can maintain control of the board.
+B. To increase the value of shares.
+C. To attract more investors.
+
+HARD
+3. What should analysts consider when evaluating the composition of a company's board of directors?
+A. Whether directors are related to the company's management.
+B. Whether directors have diverse expertise to suit the company's strategy and challenges.
+C. Whether directors receive equity-based incentives.
+
+************
+
+EASY
+1. What is ESG investing?
+A. Investing in companies with strong environmental practices
+B. Investing in companies with strong social practices
+C. Investing in companies with strong environmental, social, and governance practices
+
+MEDIUM
+2. What is negative screening in ESG investing?
+A. Identifying companies with positive ESG practices
+B. Excluding specific companies or industries based on poor ESG practices
+C. Investing in companies with the best ESG practices in each industry group
+
+HARD
+3. What is the potential conflict when integrating ESG considerations into portfolio construction?
+A. Violation of the manager's fiduciary duty to act in the best financial interests of the account owner or beneficiaries
+B. Conflict of interest between the manager and the companies with strong ESG practices
+C. Conflict of interest between the manager and activist shareholders trying to effect change in the company.
+
+************
+
+EASY
+1. What is the main advantage of companies having more communication and contact with shareholders?
+A. Improved relations with creditors.
+B. Improved relations with employees.
+C. Improved relations with shareholders.
+
+MEDIUM
+2. Which of the following is a tactic used by activist shareholders to pressure companies for change?
+A. Issuing new shares to dilute the stake of activist shareholders.
+B. Proposing a merger with a competitor.
+C. Initiating shareholder lawsuits or seeking representation on the board of directors.
+
+HARD
+3. Which of the following is a potential risk of poor corporate governance?
+A. Improved relations with shareholders.
+B. Accounting fraud or poor recordkeeping.
+C. Increased market values of firms.
+
+************
+
+EASY
+1. What is corporate governance?
+A. The internal controls and procedures of a company that delineate the rights and responsibilities of various groups and how conflicts of interest among the various groups are to be resolved.
+B. The management of stakeholder relationships.
+C. The selection of senior management, setting their compensation, and evaluating their performance.
+
+MEDIUM
+2. Which of the following is not a primary stakeholder of a corporation?
+A. Shareholders.
+B. Board of directors.
+C. Customers.
+
+HARD
+3. Which of the following ESG integration methods excludes the worst-performing companies in terms of ESG practices from the investment universe?
+A. Thematic investing.
+B. Negative screening.
+C. Positive screening.
+
+************
+
+EASY
+1. Which of the following is not a risk of poor corporate governance?
+A. Weak control systems
+B. Reputational risk
+C. Lower cost of debt
+
+MEDIUM
+2. Which of the following is an example of an anti-takeover measure?
+A. Tender offer
+B. Shareholder activism
+C. Staggered board elections
+
+HARD
+3. Which of the following is an element of corporate governance that analysts have found to be relevant?
+A. Short-term profit maximization
+B. Management of long-term risks
+C. High executive compensation
+
+************
+
+EASY
+
+1. What is impact investing?
+A. Investment in a company to maximize profits.
+B. Investment in a company to advance social or environmental goals.
+C. Investment in a company to improve corporate governance.
+
+MEDIUM
+
+2. What is the main objective of impact investing?
+A. To maximize profits.
+B. To advance social or environmental goals.
+C. To increase market share.
+
+HARD
+
+3. Which of the following is a key consideration for investors in impact investing?
+A. Maximizing profits at any cost.
+B. Balancing financial returns with social and environmental impact.
+C. Ignoring the impact of investments on society and the environment.
+
+************
+
+EASY
+1. Which of the following is a way for insurance companies to mitigate the conflict between the desire to issue policies and the risk of losing money?
+A. Imposing underwriting standards
+B. Working only with agents who consistently act in the company's best interest
+C. Both A and B
+
+MEDIUM
+2. In the context of a corporation, conflicts of interest can arise between:
+A. Shareholders and managers or directors
+B. Managers and directors
+C. Shareholders and other stakeholders
+
+HARD
+3. Which type of infrastructure refers to a company's internal systems and practices that address how it manages its stakeholder relationships?
+A. Legal infrastructure
+B. Contractual infrastructure
+C. Organizational infrastructure
+
+************
+
+EASY
+1. What is a proxy in relation to shareholder voting?
+A. When a shareholder casts their own vote at a meeting.
+B. When a shareholder assigns their right to vote to someone else.
+C. When a shareholder files a complaint about the voting process.
+
+MEDIUM
+2. What is a special resolution in shareholder voting?
+A. A resolution that requires a simple majority of the votes cast.
+B. A resolution that requires a supermajority vote for passage.
+C. A resolution that is only addressed at extraordinary general meetings.
+
+HARD
+3. What is the difference between a one-tier and a two-tier board structure?
+A. In a one-tier structure, there are separate supervisory and management boards, while in a two-tier structure, there is only one board.
+B. In a one-tier structure, there are only internal directors, while in a two-tier structure, there are only external directors.
+C. In a one-tier structure, there is a single board with both internal and external directors, while in a two-tier structure, there is a supervisory board and a management board.
+
+************
+
+EASY
+1. According to shareholder theory, what is the primary focus of corporate governance?
+A. The interests of the firm's managers.
+B. The interests of the firm's creditors.
+C. The maximization of the market value of the firm's common equity.
+
+MEDIUM
+2. What is the primary responsibility of a company's board of directors?
+A. To protect the interests of employees.
+B. To set the strategic direction of the firm.
+C. To maximize the total value of executive compensation.
+
+HARD
+3. Which stakeholder group typically receives compensation in the form of a salary, a performance-based bonus, and perquisites?
+A. Shareholders.
+B. Employees.
+C. Senior managers.
+
+************
+
+EASY
+1. Which of the following committees is responsible for proposing qualified candidates for election to the board?
+A. Governance committee
+B. Compensation committee
+C. Nominations committee
+
+MEDIUM
+2. Which committee informs the board about appropriate risk policy and oversees enterprise-wide risk management processes?
+A. Investment committee
+B. Risk committee
+C. Audit committee
+
+HARD
+3. Which type of voting is most likely to allow minority stockholders a greater representation on the board of directors?
+A. Majority voting
+B. Staggered voting
+C. Cumulative voting
+
+************
+
+EASY
+1. Which equation can be used to approximate the return impact of a bond investment due to changes in spread?
+A. Modified duration × Δspread
+B. Convexity × (Δspread)2
+C. Duration gap × Δspread
+
+MEDIUM
+2. Which of the following factors is NOT included in the calculation of a bond's duration?
+A. Coupon rate
+B. Yield to maturity
+C. Credit rating
+
+HARD
+3. A bond has a Macaulay duration of 5.5 years and annual convexity of 80. If the yield to maturity of the bond increases by 50 basis points, what is the approximate percentage change in the bond's price?
+A. -2.75%
+B. -3.20%
+C. -4.00%
+
+************
+
+EASY
+1. What is the periodicity of a bond that pays a coupon of $25 twice each year?
+A. 1
+B. 2
+C. 4
+
+MEDIUM
+2. What is the effective annual rate for a bank CD with a stated annual rate of 6% and quarterly compounding?
+A. 6.00%
+B. 6.09%
+C. 6.14%
+
+HARD
+3. Which bond has the highest duration?
+A. 5-year, 5% coupon, 6% yield
+B. 10-year, 4% coupon, 5% yield
+C. 20-year, 3% coupon, 4% yield
+
+EASY
+4. What is the difference between a bond's corporate family rating (CFR) and its corporate credit rating (CCR)?
+A. CFR is based on senior unsecured debt, while CCR is based on the bond's priority of claims.
+B. CFR is based on the bond's priority of claims, while CCR is based on senior unsecured debt.
+C. CFR and CCR are the same thing.
+
+MEDIUM
+5. What is the forward rate for a 3-year loan to be made one year from now, given current implied Treasury effective annual spot rates of 1-year = 2%, 2-year = 3%, 3-year = 3.5%, and 4-year = 4.5%?
+A. 4.5%
+B. 5.0%
+C. 5.5%
+
+HARD
+6. Which of the following bonds is trading at a premium?
+A. 5-year, 5% coupon, 6% yield
+B. 10-year, 4% coupon, 5% yield
+C. 20-year, 3% coupon, 2% yield
+
+EASY
+7. What is the difference between a holding period return (HPR) and an effective annual yield?
+A. HPR is the percentage increase in value over a period of any length, while effective annual yield is the HPR for a one-year investment.
+B. HPR is the HPR for a one-year investment, while effective annual yield is the percentage increase in value over a period of any length.
+C. HPR and effective annual yield are the same thing.
+
+MEDIUM
+8. Which of the following is true about high yield bonds?
+A. They are classified as noninvestment grade.
+B. They are restricted from investment by some institutions.
+C. They are considered less risky than investment grade bonds.
+
+HARD
+9. Which of the following is an example of continuous compounding?
+A. A bank CD with an annual stated rate of 6% and quarterly compounding.
+B. A bond with a face value of $1,000 that pays a coupon of $50 once each year.
+C. A bank CD with an annual stated rate of 6% and continuous compounding.
+
+EASY
+10. What is the stated (coupon) rate on a bond that pays a coupon of $50 once each year and has a face value of $1,000?
+A. 5%
+B. 4%
+C. 6%
+
+************
+
+EASY
+1. What is the current yield of a bond with a face value of $1,000, a stated coupon rate of 4%, and selling for $950?
+A. 3.79%
+B. 4.21%
+C. 5.26%
+
+MEDIUM
+2. Which of the following formulas is used to calculate the yield to maturity (YTM) of an annual-pay bond on a coupon date with N years remaining until maturity?
+A. PV = CF1 / (1 + YTM) + CF2 / (1 + YTM)2 + ... + CFN / (1 + YTM)N
+B. Coupon payment / Bond price
+C. (Coupon payment / 2) / ((1 + YTM) / 2) + (Face value / ((1 + YTM) / 2)N)
+
+HARD
+3. A bond with a face value of $1,000, a coupon rate of 6%, and 10 years remaining until maturity is currently trading at a yield to maturity of 7%. What is the bond's current market price?
+A. $843.51
+B. $862.13
+C. $1,149.85
+
+************
+
+EASY
+1. What is the formula for calculating the cost of common equity with a country risk premium?
+A. k = R + β[E(R) - R]
+B. k = R + β[E(R) - R + country risk premium]
+C. k = R + β[E(R) - R - country risk premium]
+
+MEDIUM
+2. What is the formula for calculating the current ratio?
+A. current assets/current liabilities
+B. cash + short-term marketable securities + receivables/current liabilities
+C. credit sales/receivables turnover
+
+HARD
+3. What is the formula for calculating the expected growth rate using the retention rate and ROE?
+A. g = (retention rate)(ROE)
+B. g = (1 - retention rate)(ROE)
+C. g = (1 + retention rate)(ROE)
+
+************
+
+EASY
+1. Which of the following factors affects yield spreads on corporate bonds?
+A. Credit cycle
+B. Maturity premium
+C. Real risk-free interest rate
+
+MEDIUM
+2. What is the primary reason why high yield issuers default?
+A. Low confidence in management
+B. Large off-balance-sheet liabilities
+C. Running out of cash with no access to external financing
+
+HARD
+3. Which of the following is a special consideration when evaluating the credit of sovereign debt issuers?
+A. Debt structure
+B. Financial projections
+C. Economic conditions
+
+************
+
+EASY
+1. Which of the following debt structures is least likely to result in high default rates for unsecured debt issues?
+A. Top-heavy capital structure with high proportion of secured bank debt.
+B. Capital structure with multiple layers of debt with varying expected recovery rates.
+C. Capital structure with low proportion of secured debt and diverse cash flows from subsidiaries.
+
+MEDIUM
+2. Which of the following covenants limits the amount of secured debt that a borrower can carry?
+A. Change of control put.
+B. Restricted payments.
+C. Limitations on liens.
+
+HARD
+3. Which of the following is true about the dividend payments of a high-yield company with a holding company structure?
+A. Subsidiaries' dividends are superior to interest payments of the parent company.
+B. Subsidiaries' dividends paid upstream are subordinate to interest payments of the parent company.
+C. Parent company's credit rating is typically lower than its subsidiaries' ratings.
+
+************
+
+EASY
+1. What are the two primary categories of ratios used in credit analysis?
+A. Leverage ratios and liquidity ratios
+B. Leverage ratios and coverage ratios
+C. Liquidity ratios and coverage ratios
+
+MEDIUM
+2. Which of the following ratios is commonly used but has a drawback for credit analysis because it does not adjust for capital expenditures and changes in working capital?
+A. Debt-to-capital ratio
+B. FFO-to-debt ratio
+C. EBITDA
+
+HARD
+3. Which ratio would a credit analyst use to assess a company's ability to generate cash flows to meet interest payments?
+A. Debt-to-capital ratio
+B. FFO-to-debt ratio
+C. EBITDA-to-interest expense ratio
+
+************
+
+EASY
+1. When assigning credit ratings to sovereign debt, credit rating agencies assign separate ratings for local currency debt and foreign currency debt because:
+A. defaults on foreign currency debt have historically exceeded those on local currency debt.
+B. local currency debt typically has a higher default rate and a lower credit rating.
+C. foreign currency debt can be repaid by raising taxes, controlling domestic spending, or printing more money.
+
+MEDIUM
+2. Municipal bonds can be classified as either general obligation bonds or revenue bonds. What is the main difference between the two?
+A. General obligation bonds are unsecured bonds backed by the full faith credit of the issuing governmental entity, while revenue bonds are issued to finance specific projects.
+B. Revenue bonds are unsecured bonds backed by the full faith credit of the issuing governmental entity, while general obligation bonds are issued to finance specific projects.
+C. General obligation bonds and revenue bonds are both secured bonds backed by the issuing governmental entity, but with different levels of priority for repayment.
+
+HARD
+3. Which of the following economic factors is NOT typically assessed when evaluating the creditworthiness of municipal general obligation bonds?
+A. Employment.
+B. Demographics.
+C. Project-specific revenue variability.
+
+************
+
+EASY
+1. What is credit risk?
+A. The possibility of a borrower failing to make scheduled payments or return principal.
+B. The possibility of a bond losing value due to credit spread widening.
+C. The possibility of a bond losing value due to market liquidity risk.
+
+MEDIUM
+2. Which of the following is a component of traditional credit analysis?
+A. Credit spread.
+B. Market liquidity.
+C. Covenants.
+
+HARD
+3. What factors affect yield spreads?
+A. Credit and business cycles, performance of financial markets, supply and demand for debt issues.
+B. Availability of capital from broker-dealers, maturity premium, liquidity premium.
+C. Expected inflation rate, real risk-free rate, credit spread.
+
+************
+
+EASY
+1. An investor is considering two bonds with the same credit rating and time to maturity. Bond A has a 5% coupon rate, while Bond B has a 3% coupon rate. Which bond is likely to have a higher duration?
+A. Bond A
+B. Bond B
+C. Both have the same duration.
+
+MEDIUM
+2. A company has issued a bond with a put option. What effect will this have on the bond's yield to maturity?
+A. Increase
+B. Decrease
+C. No effect
+
+HARD
+3. Which of the following statements about callable bonds is true?
+A. Callable bonds have a higher yield to maturity than non-callable bonds.
+B. Callable bonds increase in value when interest rates decrease.
+C. Callable bonds are less risky than non-callable bonds.
+
+************
+
+EASY
+1. What is credit risk composed of?
+A. Default risk only.
+B. Default risk and loss severity.
+C. Loss severity only.
+
+MEDIUM
+2. What is the difference between a sovereign entity and a municipal borrower in terms of repayment of debt?
+A. Only sovereign entities have taxing powers.
+B. Municipal borrowers cannot print money to repay debt.
+C. Both sovereign entities and municipal borrowers have the same repayment options.
+
+HARD
+3. Which ratio is an indicator of low leverage?
+A. Debt/EBITDA.
+B. Debt/capital.
+C. EBIT/interest.
+
+MEDIUM
+4. What is the least likely form of external credit enhancement?
+A. Overcollateralization.
+B. A corporate guarantee.
+C. A letter of credit from an individual.
+
+HARD
+5. What is the difference between a convertible bond and a bond with warrants?
+A. A bondholder who exercises warrants does not pay cash for the common stock.
+B. A bondholder who exercises warrants obtains common stock at a lower price per share.
+C. A bondholder who exercises warrants continues to hold the bond after exercising the warrants.
+
+EASY
+6. What is the main factor that affects a country's willingness to repay its debts?
+A. Ability to pay.
+B. Local economy.
+C. Political factors.
+
+MEDIUM
+7. Which provision would increase the required yield to maturity on a debt security?
+A. Call option.
+B. Put option.
+C. Floor on a floating-rate security.
+
+HARD
+8. Which bond would appreciate the most if the yield curve shifts down by basis points at all maturities?
+A. 4-year 8%, 8% YTM.
+B. 5-year 8%, 7.5% YTM.
+C. 5-year 8.5%, 8% YTM.
+
+EASY
+9. Which analysis is used to assess a corporate borrower's capacity to repay its debt obligations on time?
+A. Ratio analysis.
+B. Trend analysis.
+C. Regression analysis.
+
+MEDIUM
+10. What is the main difference between analysis of non-sovereign government debt and analysis of municipal revenue bonds?
+A. Analysis of non-sovereign government debt focuses on the strength of the local economy, while analysis of municipal revenue bonds focuses on tax revenues.
+B. Analysis of non-sovereign government debt focuses on tax revenues, while analysis of municipal revenue bonds focuses on the strength of the local economy.
+C. Analysis of non-sovereign government debt and analysis of municipal revenue bonds are identical.
+
+************
+
+EASY
+1. What is the primary determinant of differences between an issuer's rating and the ratings of its individual bond issues?
+A. The seniority and covenants of an individual bond issue.
+B. The overall creditworthiness of the company.
+C. The expected recovery rates among a firm's individual bonds.
+
+MEDIUM
+2. Which of the following is a risk associated with relying on credit ratings from rating agencies?
+A. Credit ratings are dynamic and change over time.
+B. Credit ratings are always perfect and accurate.
+C. Credit ratings accurately reflect event risk.
+
+HARD
+3. What is the practice of notching in credit rating agencies?
+A. The assignment of individual issue ratings that are higher than that of the issuer.
+B. The assignment of individual issue ratings that are lower than that of the issuer.
+C. The practice of changing credit ratings frequently and unpredictably.
+
+MEDIUM
+4. What is the highest rating for a bond according to Standard & Poor's, Moody's, and Fitch?
+A. AAA/Aaa
+B. Aa1/AA+
+C. Ba1/BB+
+
+EASY
+5. Which of the following is a factor that rating agencies consider when notching an issue credit rating?
+A. Structural subordination
+B. Overall creditworthiness of the company
+C. Expected recovery rates among a firm's individual bonds
+
+HARD
+6. Which of the following is a risk that is difficult to assess and incorporate into credit ratings?
+A. Credit ratings lag market pricing.
+B. Credit ratings are dynamic.
+C. Event risk.
+
+MEDIUM
+7. What are the four Cs of traditional credit analysis?
+A. Capacity, collateral, covenants, and character.
+B. Creditworthiness, collateral, covenants, and confidence.
+C. Capacity, compliance, covenants, and character.
+
+EASY
+8. What are corporate family ratings?
+A. Issuer credit ratings
+B. Issue-specific ratings
+C. Ratings assigned to categories of bonds with similar credit risk.
+
+MEDIUM
+9. Which of the following is a risk associated with notching?
+A. Notching is more likely for issues with higher creditworthiness in general.
+B. Notching can result in unexpected changes in credit ratings.
+C. Notching is less common for highly-rated issuers than for lower-rated issuers.
+
+HARD
+10. Which of the following bonds is most likely to be considered noninvestment grade or high yield?
+A. A bond with a rating of Aa3/AA-
+B. A bond with a rating of Ba2/BB
+C. A bond with a rating of Baa2/BBB+
+
+************
+
+EASY
+1. Which of the following is NOT one of the four Cs of credit analysis?
+A. Capacity
+B. Collateral
+C. Cash flow
+ 
+
+MEDIUM
+2. What is the purpose of negative covenants in a bond issue?
+A. To protect lenders while leaving operating flexibility to the borrowers.
+B. To require the borrower to take certain actions.
+C. To restrict the borrower from taking certain actions that may reduce the value of the bondholders' claims.
+
+HARD
+3. Which of the following is an example of a negative covenant?
+A. Requiring the borrower to use the proceeds for the stated purpose.
+B. Restricting distributions to shareholders to a certain percentage of net income.
+C. Carrying insurance on pledged assets. 
+
+MEDIUM
+4. When assessing a corporate borrower's ability to repay its debt obligations on time, which of the following is evaluated at the first level of assessment?
+A. Industry fundamentals
+B. Industry structure
+C. Company fundamentals
+
+HARD
+5. Which of the following statements about industry cyclicality is true?
+A. Cyclical industries are less risky than noncyclical industries.
+B. Cyclical industries have more volatile earnings, revenues, and cash flows.
+C. Creditworthiness is most questionable for the weaker companies in a fast-growing industry. 
+
+EASY
+6. Which of the following is considered a high-quality intangible asset?
+A. Goodwill
+B. Patents
+C. Depreciation
+
+HARD
+7. What is the purpose of collateral analysis in credit analysis?
+A. To evaluate a company's operating history.
+B. To assess the company's competitive position.
+C. To determine the value of a company's assets that can be used as collateral. 
+
+MEDIUM
+8. Which of the following is an example of an affirmative covenant?
+A. Restricting distributions to shareholders to a certain percentage of net income.
+B. Setting a maximum debt-to-equity ratio or minimum interest coverage ratio.
+C. Following relevant laws and regulations.
+
+EASY
+9. Which of the following is NOT one of the levels of assessment in capacity analysis?
+A. Industry structure
+B. Industry fundamentals
+C. Company structure 
+
+MEDIUM
+10. Which of the following ratios is an important tool for credit analysis?
+A. Price-to-earnings ratio
+B. Debt-to-equity ratio
+C. Return on equity ratio
+
+************
+
+EASY
+1. Credit risk has two components: default risk and _____.
+A. Market risk
+B. Spread risk
+C. Loss severity
+
+MEDIUM
+2. Which of the following debt types has higher priority of claims in the event of a default?
+A. Senior unsecured
+B. Senior subordinated
+C. Second lien/secured
+
+HARD
+3. What is the recovery rate for a bond with a loss severity of 60%?
+A. 40%
+B. 50%
+C. 60%
+
+************
+
+EASY
+1. What is the purpose of covenants in bond agreements?
+A. To reduce uncertainty for debt holders.
+B. To provide flexibility for borrowers.
+C. To limit the ability of debt holders to receive repayment.
+
+MEDIUM
+2. What is character analysis in credit risk assessment?
+A. An assessment of management's integrity and commitment to repay the loan.
+B. An assessment of the company's financial ratios.
+C. An assessment of the company's market position.
+
+HARD
+3. In a bankruptcy, what is a possible reason for the absolute priority of claims to be violated?
+A. Creditors negotiate a different outcome.
+B. Available funds must be distributed equally among creditors.
+C. The pari passu principle is not followed.
+
+************
+
+EASY
+1. Which of the following factors may contribute to overcapacity in a specialized physical capacity industry?
+A. Rapid market growth
+B. Low barriers to entry
+C. Expansion beyond business cycle capacity
+
+MEDIUM
+2. What is the impact of high switching costs on market share stability and pricing power?
+A. High switching costs result in unstable market shares and reduced pricing power.
+B. High switching costs result in stable market shares and reduced pricing power.
+C. High switching costs have no impact on market share stability or pricing power.
+
+HARD
+3. In which stage of the industry life cycle is there typically an oligopoly market structure?
+A. Embryonic stage
+B. Growth stage
+C. Mature stage
+
+************
+
+EASY
+1. Which of the following is a characteristic of the candy/confections industry according to the given analysis?
+A. High barriers to entry and success.
+B. Rapidly changing market share.
+C. Pricing determined by production capacity.
+
+MEDIUM
+2. Which of the following is an example of a demographic factor that can influence industry growth?
+A. Interest rates.
+B. Inflation.
+C. Aging of the population.
+
+HARD
+3. Which industry has undergone dramatic transformation due to improvements in circuitry, as well as changes in other industries such as software and telecommunications?
+A. Photography.
+B. Computer hardware.
+C. Health care.
+
+************
+
+EASY
+1. What is the effect of high barriers to entry on existing industry firms?
+A. It benefits them by preventing new competitors from entering the market.
+B. It reduces their return on capital.
+C. It increases competition and pricing pressure.
+
+MEDIUM
+2. How can an analyst determine the ease of entry into an industry?
+A. By examining the industry's current capacity.
+B. By looking at the industry's level of product differentiation.
+C. By assessing how easily a new entrant could obtain capital, intellectual property, and customer base.
+
+HARD
+3. Which of the following industries is likely to have higher pricing power?
+A. An industry with low product differentiation and overcapacity.
+B. An industry with high industry concentration and intense price competition.
+C. An industry with high barriers to entry and strong competition among existing firms.
+
+************
+
+EASY
+1. What is the purpose of a company analysis?
+A. To analyze the firm's financial condition, products and services, and competitive strategy.
+B. To analyze the industry's external environment.
+C. To determine the appropriate debt levels and credit risk for the firm.
+
+MEDIUM
+2. According to Porter, what are the two important competitive strategies that can be employed by firms within an industry?
+A. A low-cost strategy and a market share strategy.
+B. A cost leadership strategy and a product or service differentiation strategy.
+C. A defensive strategy and an offensive strategy.
+
+HARD
+3. When employing a low-cost strategy, what is the firm seeking to achieve?
+A. The highest costs of production in its industry.
+B. The lowest prices and the highest volume to make a superior return.
+C. The highest prices and the lowest volume to make a superior return.
+
+************
+
+EASY
+1. Which of the following industry classification systems is developed by government agencies?
+A. Global Industry Classification Standard
+B. Russell Global Sectors
+C. North American Industry Classification System
+
+MEDIUM
+2. Which of the following industry classifications describes a firm or industry that has earnings that are less dependent on the business cycle?
+A. Cyclical
+B. Defensive
+C. Growth
+
+HARD
+3. Which of the following is NOT one of Porter's five forces that determine industry competition?
+A. Rivalry among existing competitors
+B. Threat of entry
+C. Power of employees
+
+
+************
+
+EASY
+1. According to Michael Porter's Five Forces model, which of the following is NOT one of the forces that shape industry competition?
+A. Bargaining power of suppliers.
+B. Threat of new entrants.
+C. Demographics of the target market.
+
+MEDIUM
+2. Which of the following is a characteristic of a fragmented industry?
+A. High barriers to entry.
+B. Few large firms dominate the industry.
+C. Many small firms compete in the industry.
+
+HARD
+3. Which of the following is an example of a strategic group within an industry?
+A. Firms that produce similar products at different price points.
+B. Firms that are vertically integrated and produce their own raw materials.
+C. Firms that are geographically dispersed and have different target markets.
+
+************
+
+EASY
+1. Which of the following is NOT part of industry analysis?
+A. Government influence
+B. Financial ratios of the company
+C. Social influence
+
+MEDIUM
+2. What is the difference between cyclical and non-cyclical firms?
+A. Cyclical firms produce goods and non-cyclical firms produce services.
+B. Non-cyclical firms have earnings that are highly dependent on the business cycle, while cyclical firms have earnings that are relatively less sensitive to the business cycle.
+C. There is no difference between cyclical and non-cyclical firms.
+
+HARD
+3. Which of the following factors would increase pricing power in an industry?
+A. Greater unused capacity
+B. Greater ease of entry
+C. Greater concentration of firms in the industry
+
+************
+
+EASY
+1. What is a non-cyclical industry?
+A. An industry whose earnings are highly dependent on the stage of the business cycle.
+B. An industry that produces goods and services for which demand is relatively stable over the business cycle.
+C. An industry that is affected by severe recessions.
+
+MEDIUM
+2. Which of the following is an example of a cyclical sector?
+A. Utilities.
+B. Health care.
+C. Energy.
+
+HARD
+3. Which of the following descriptors should be used with caution when analyzing industry classifications?
+A. Growth.
+B. Defensive.
+C. Non-profit.
+
+************
+
+EASY
+1. What is a peer group in equity valuation?
+A. A group of companies with similar business activities, demand drivers, cost structure drivers, and availability of capital.
+B. A group of companies with different business activities but similar financial performance.
+C. A group of companies with different business activities but similar industry classification.
+
+MEDIUM
+2. Which of the following is not a step an analyst would use to form a peer group?
+A. Use commercial classification providers to determine which firms are in the same industry.
+B. Examine firms’ annual reports to see if they identify key competitors.
+C. Compose a list of companies from different industries.
+
+HARD
+3. According to Michael Porter's analysis framework, which of the following is one of the five forces that determine industry competition?
+A. The level of diversification within an industry.
+B. The degree of government intervention in an industry.
+C. The threat of entry by new competitors.
+
+************
+
+EASY
+1. Why is industry analysis important for company analysis?
+A. It provides insight about the firm’s potential growth, competition, and risks.
+B. It determines the firm’s performance relative to a benchmark.
+C. It helps identify undervalued or overvalued stocks.
+
+MEDIUM
+2. What is industry rotation?
+A. Overweighting or underweighting industries based on the current phase of the business cycle.
+B. Grouping firms that historically have had highly correlated returns.
+C. Classifying firms by their sensitivity to business cycles.
+
+HARD
+3. Which of the following is a commercial industry classification system?
+A. Cluster analysis.
+B. Cyclical and non-cyclical firms.
+C. Global Industry Classification Standard.
+
+************
+
+EASY
+1. How do large barriers to entry in an industry affect competition?
+A. They increase competition.
+B. They have no effect on competition.
+C. They reduce competition.
+
+MEDIUM
+2. Which of the following factors limit the profit potential of an industry?
+A. Threat of new entrants and power of suppliers.
+B. Power of buyers and threat of substitutes.
+C. Power of suppliers and threat of new entrants.
+
+HARD
+3. According to the Porter framework, which of the following is likely to reduce competition in an industry?
+A. Greater concentration.
+B. Market fragmentation.
+C. Unused capacity.
+
+************
+

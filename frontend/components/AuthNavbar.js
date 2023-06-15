@@ -4,10 +4,9 @@ import { useRouter } from 'next/router';
 import useAuth from '../hooks/useAuth';
 import { signOut } from 'firebase/auth';
 import MenuIcon from '@mui/icons-material/Menu';
+import BarChartIcon from '@mui/icons-material/BarChart';
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-
 import React, { forwardRef } from 'react';
 import {
     AppBar,
@@ -31,7 +30,7 @@ const AuthNavbar = ({ onDrawerToggle }) => {
     const { user, auth } = useAuth();
     const router = useRouter();
     const [anchorMenu, setAnchorMenu] = React.useState(null);
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
 
 
     const handleLogout = async () => {
@@ -64,23 +63,28 @@ const AuthNavbar = ({ onDrawerToggle }) => {
             icon: <AccountCircle />,
         },
         {
-            text: 'Study Plan',
-            href: '#/dashboard/study-plan',
+            text: 'Forecasting',
+            href: '/dashboard/forecasting/overview',
+            icon: <BarChartIcon />,
+            subItems: [
+                { text: 'Overview', href: '/dashboard/forecasting/overview' },
+                // { text: 'How-to', href: '/dashboard/forecasting/how-to' },
+                { text: 'Generate Forecast', href: '/dashboard/forecasting/generate' },
+            ],
+        },
+        {
+            text: 'Schedule Optimization',
+            href: '/dashboard/schedule-optimization/overview',
             icon: <ScheduleIcon />,
-            // subItems: [
-            //     { text: 'Overview', href: '/dashboard/schedule-optimization/overview' },
-            //     // { text: 'How-To', href: '/dashboard/schedule-optimization/how-to' },
-            //     { text: 'Run Optimization', href: '/dashboard/schedule-optimization/run' },
-            // ],
+            subItems: [
+                { text: 'Overview', href: '/dashboard/schedule-optimization/overview' },
+                // { text: 'How-To', href: '/dashboard/schedule-optimization/how-to' },
+                { text: 'Run Optimization', href: '/dashboard/schedule-optimization/run' },
+            ],
         },
         {
-            text: 'Practice Problems',
-            href: '/dashboard/practice-problems',
-            icon: <AssignmentIcon />,
-        },
-        {
-            text: 'CFA Chat',
-            href: '/qa',
+            text: 'Questions',
+            href: '#hidden',
             icon: <QuestionAnswerIcon />,
         },
         // Add more items as needed
@@ -88,17 +92,15 @@ const AuthNavbar = ({ onDrawerToggle }) => {
 
     const LinkButton = forwardRef(({ onClick, href, children }, ref) => {
         return (
-            <a href={href} onClick={onClick} ref={ref}>
-                <Button
-                    sx={{
-                        textTransform: 'none',
-                        textDecoration: 'none',
-                        // color: (theme) => theme.palette.primary.main,
-                    }}
-                >
-                    {children}
-                </Button>
-            </a>
+            <Button
+                component="a"
+                href={href}
+                onClick={onClick}
+                ref={ref}
+                sx={{ textTransform: 'none', textDecoration: 'none', color: 'black' }}
+            >
+                {children}
+            </Button>
         );
     });
     LinkButton.displayName = 'LinkButton';
@@ -107,11 +109,11 @@ const AuthNavbar = ({ onDrawerToggle }) => {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed">
                 <Toolbar>
-                    <IconButton edge="start" aria-label="menu" onClick={toggleDrawer} sx={{ color: 'white' }} >
+                    <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer}>
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                        CFA Chat
+                        DiY.AI
                     </Typography>
                     <Tooltip title={`Account: ${user?.displayName} (${user?.email})`} arrow>
                         <IconButton color="inherit" onClick={handleMenu}>
@@ -128,7 +130,7 @@ const AuthNavbar = ({ onDrawerToggle }) => {
                         <MenuItem onClick={handleLogout}>Logout</MenuItem>
                     </Menu>
                 </Toolbar>
-            </AppBar >
+            </AppBar>
             <Toolbar />
             <Slide direction="right" in={open} mountOnEnter unmountOnExit>
                 <Paper
@@ -144,28 +146,40 @@ const AuthNavbar = ({ onDrawerToggle }) => {
                     <List>
                         {drawerItems.map((item) => (
                             <React.Fragment key={item.text}>
-                                <ListItem component={Link} href={item.href}>
-                                    <ListItemIcon sx={{ marginRight: 0 }}>{item.icon}</ListItemIcon>
-                                    <ListItemText sx={{ marginLeft: -2, color: "primary.main" }} primary={item.text} />
-                                </ListItem>
-                                {item.subItems &&
-                                    item.subItems.map((subItem) => (
-                                        <ListItem
-                                            key={subItem.text}
-                                            sx={{ paddingLeft: 8 }}
-                                            component={Link}
-                                            href={subItem.href}
-                                        >
-                                            <ListItemText primary={subItem.text} />
+                                <Link href={item.href} passHref>
+                                    <ListItem component="div">
+                                        <ListItemIcon sx={{ marginRight: 0 }}>{item.icon}</ListItemIcon>
+                                        <ListItemText
+                                            sx={{ marginLeft: -4 }}
+                                            primary={
+                                                <LinkButton>
+                                                    {item.text}
+                                                </LinkButton>
+                                            }
+                                        />
+                                    </ListItem>
+                                </Link>
+                                {item.subItems && item.subItems.map((subItem) => (
+                                    <Link href={subItem.href} key={subItem.text} passHref>
+                                        <ListItem component="div" sx={{ paddingLeft: 8 }}>
+                                            <ListItemText
+                                                primary={
+                                                    <LinkButton>
+                                                        {subItem.text}
+                                                    </LinkButton>
+                                                }
+                                            />
                                         </ListItem>
-                                    ))}
+                                    </Link>
+                                ))}
                             </React.Fragment>
                         ))}
                     </List>
+
                     <Divider />
                 </Paper>
             </Slide>
-        </Box >
+        </Box>
     );
 };
 
