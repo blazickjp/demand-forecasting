@@ -3,13 +3,13 @@ import json
 import time
 import psycopg2
 from uuid import uuid4
-
+import tiktoken
 
 class MemoryManager:
     def __init__(self, model, max_tokens=2048):
         self.model = model
         self.max_tokens = max_tokens
-        self.messages = [{"role": "system", "content": "You are a helpful AI assistant."}]
+        self.messages = [{"role": "system", "content": "You are a helpful AI assistant.", "interaction_index": time.time()*1000}]
         self.id = str(uuid4())
         # Connect to the PostgreSQL database
         self.conn = psycopg2.connect(
@@ -30,17 +30,24 @@ class MemoryManager:
         self.cur.execute("TRUNCATE memory")
         self.conn.commit()
 
-    def add_message(self, role, content):
+    def add_message(self, role, content, override_truncate=False):
         timestamp = int(time.time() * 1000)  # Current timestamp in milliseconds
         self.messages.append({"role": role, "content": content, "interaction_index": timestamp})
-        self.truncate_history()
+        
+        if not override_truncate:
+            self.truncate_history()
         
     def truncate_history(self):
         total_tokens = sum(len(item["content"]) for item in self.messages)
         while total_tokens > self.max_tokens:
-            removed_item = self.messages.pop(0)
-            total_tokens -= len(removed_item["content"])
-            self.archive_memory_item(removed_item)
+            # Check if the message to be removed is the first message and is a system message
+            if len(self.messages) > 1:
+                removed_item = self.messages.pop(1)  # Pop the second message instead of the first
+                total_tokens -= len(removed_item["content"])
+                self.archive_memory_item(removed_item)
+            else:
+                # If there is only the system message, do nothing.
+                break
 
     def archive_memory_item(self, memory_item):
         interaction_index = memory_item.get("interaction_index")
@@ -69,9 +76,6 @@ class MemoryManager:
                 interaction_index += 1
                 self.conn.rollback()
 
-
-
-            
     def summarize_history(self):
         # Combine the content of all messages into a single string
         full_history = "\n".join([f"{item['role'].capitalize()}: {item['content']}" for item in self.messages])
@@ -100,6 +104,16 @@ class MemoryManager:
             return result[0]  # Convert the JSON string back to a dictionary
         else:
             return None
+    
+    def get_total_tokens(self):
+        """Returns the number of tokens in a text string."""
+        total_tokens = 0
+        for item in self.messages:
+            encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
+            num_tokens = len(encoding.encode(item["content"]))
+            total_tokens += num_tokens
+        return total_tokens
+
     
 if __name__ == "__main__":
     # Example usage:
