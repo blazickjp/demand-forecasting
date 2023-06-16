@@ -47,6 +47,8 @@ class LangChainAgent:
 
 
             # Continue the conversation with the function response
+            print(messages_without_index)
+
             second_response = openai.ChatCompletion.create(
                 model=GPT_MODEL,
                 messages=messages_without_index,
@@ -62,11 +64,8 @@ class LangChainAgent:
 
         return output_text
 
-
-
 memory_manager = MemoryManager(model=GPT_MODEL)
 agent = LangChainAgent(memory_manager, functions=FUNCTIONS)
-
 
 response = agent.query("What's the weather like in Boston?")
 print(response)

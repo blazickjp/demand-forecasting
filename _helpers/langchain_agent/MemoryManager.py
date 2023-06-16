@@ -14,19 +14,20 @@ class MemoryManager:
         # Connect to the PostgreSQL database
         self.conn = psycopg2.connect(
             host="localhost",
-            database="your_database_name",
-            user="your_user",
-            password="your_password"
+            database="memory",
+            user="joe",
+            password="1234"
         )
 
         # Create a cursor object
         self.cur = self.conn.cursor()
 
         # Create the table if it doesn't exist
-        self.cur.execute(f'''CREATE TABLE IF NOT EXISTS {self.id} (
+        self.cur.execute(f'''CREATE TABLE IF NOT EXISTS memory (
             interaction_index BIGINT PRIMARY KEY,
             memory_item JSONB NOT NULL
         )''')
+        self.cur.execute("TRUNCATE memory")
         self.conn.commit()
 
     def add_message(self, role, content):
@@ -42,12 +43,34 @@ class MemoryManager:
             self.archive_memory_item(removed_item)
 
     def archive_memory_item(self, memory_item):
-        # Save the memory item in Redis only if 'interaction_index' key is present
-        if "interaction_index" in memory_item:
-            interaction_index = memory_item["interaction_index"]
-            self.cur.execute(f"INSERT INTO memory (interaction_index, memory_item) VALUES ({interaction_index}, {json.dumps(memory_item)})")
+        interaction_index = memory_item.get("interaction_index")
+        if interaction_index is not None:
+            interaction_index = int(interaction_index)  # Make sure it's an integer
         else:
-            print("Warning: Tried to archive memory item without interaction_index")
+            interaction_index = int(time.time() * 1000)  # Default to current timestamp in milliseconds
+            
+        # Check if the content is already a JSON string
+        if isinstance(memory_item["content"], str):
+            # If it's already a JSON string, escape single quotes
+            memory_item_json = json.dumps(memory_item).replace("'", "''")
+        else:
+            # If it's a dictionary, convert it to a JSON string
+            memory_item_json = json.dumps(memory_item)
+        
+        # Try to insert into the database
+        query = "INSERT INTO memory (interaction_index, memory_item) VALUES (%s, %s)"
+        while True:
+            try:
+                self.cur.execute(query, (interaction_index, memory_item_json))
+                self.conn.commit()
+                break
+            except psycopg2.errors.UniqueViolation as e:
+                # If interaction_index already exists, increment it, rollback the transaction and retry
+                interaction_index += 1
+                self.conn.rollback()
+
+
+
             
     def summarize_history(self):
         # Combine the content of all messages into a single string
@@ -70,9 +93,13 @@ class MemoryManager:
         self.messages = [{"role": "system", "content": summary}]
 
     def get_memory_item(self, interaction_index):
-        # Retrieve memory item by interaction index from Redis
-        memory_item = self.redis.get(f"memory_item:{interaction_index}")
-        return json.loads(memory_item) if memory_item else None
+        # Retrieve memory item by interaction index from PostgreSQL
+        self.cur.execute(f"SELECT memory_item FROM memory WHERE interaction_index = {interaction_index}")
+        result = self.cur.fetchone()
+        if result:
+            return result[0]  # Convert the JSON string back to a dictionary
+        else:
+            return None
     
 if __name__ == "__main__":
     # Example usage:
@@ -83,8 +110,9 @@ if __name__ == "__main__":
     # memory_manager.add_message("assistant", "The weather in Boston is sunny.", interaction_index=2)
     # memory_manager.add_message("user", "Tell me a joke.", interaction_index=3)
     # Archive a memory item manually
-    memory_manager.archive_memory_item({"role": "user", "content": "This is a test message.", "interaction_index": 4})
+    idx = int(time.time() * 1000)  # Convert to integer here as well
+    memory_manager.archive_memory_item({"role": "user", "content": "This is a test message.", "interaction_index": idx})
 
     # Retrieve the manually archived memory item
-    memory_item = memory_manager.get_memory_item(4)
+    memory_item = memory_manager.get_memory_item(idx)
     print(json.dumps(memory_item, indent=2))
