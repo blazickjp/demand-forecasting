@@ -5,7 +5,6 @@ from functions import FUNCTIONS
 from MemoryManager import MemoryManager
 from functions import get_current_weather, class_lookup
 
-
 # git_loader = GitLoader(repo_path="/Users/josephblazick/Documents/langchain", branch="v0.0.196", file_filter=file_filter)
 # package_docs = git_loader.load_and_split()
 
@@ -32,7 +31,6 @@ class LangChainAgent:
         )
 
         message = response["choices"][0]["message"]
-
         # Check if the model wants to call a function
         if message.get("function_call"):
             function_name = message["function_call"]["name"]
@@ -61,7 +59,6 @@ class LangChainAgent:
 
         # Add the output to memory
         self.memory_manager.add_message("assistant", output_text)
-
         return output_text
 
 memory_manager = MemoryManager(model=GPT_MODEL)

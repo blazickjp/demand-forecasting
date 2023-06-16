@@ -3,6 +3,7 @@ import json
 import time
 import psycopg2
 from uuid import uuid4
+from termcolor import colored
 import tiktoken
 
 class MemoryManager:
@@ -23,10 +24,12 @@ class MemoryManager:
         self.cur = self.conn.cursor()
 
         # Create the table if it doesn't exist
-        self.cur.execute(f'''CREATE TABLE IF NOT EXISTS memory (
+        self.cur.execute(f'''
+        CREATE TABLE IF NOT EXISTS memory (
             interaction_index BIGINT PRIMARY KEY,
             memory_item JSONB NOT NULL
-        )''')
+        )
+        ''')
         self.cur.execute("TRUNCATE memory")
         self.conn.commit()
 
@@ -113,6 +116,21 @@ class MemoryManager:
             num_tokens = len(encoding.encode(item["content"]))
             total_tokens += num_tokens
         return total_tokens
+    
+    def display_conversation(self, detailed=False):
+        role_to_color = {
+            "system": "red",
+            "user": "green",
+            "assistant": "blue",
+            "function": "magenta",
+        }
+        for message in self.messages:
+            print(
+                colored(
+                    f"{message['role']}: {message['content']}\n\n",
+                    role_to_color[message["role"]],
+                )
+            )
 
     
 if __name__ == "__main__":
@@ -120,13 +138,13 @@ if __name__ == "__main__":
     memory_manager = MemoryManager(model='gpt-3.5-turbo-0613')
 
     # Add messages with interaction indices
-    # memory_manager.add_message("user", "What's the weather like in Boston?", interaction_index=1)
-    # memory_manager.add_message("assistant", "The weather in Boston is sunny.", interaction_index=2)
-    # memory_manager.add_message("user", "Tell me a joke.", interaction_index=3)
+    memory_manager.add_message("user", "What's the weather like in Boston?")
+    memory_manager.add_message("assistant", "The weather in Boston is sunny.")
+    memory_manager.add_message("user", "Tell me a joke.")
     # Archive a memory item manually
     idx = int(time.time() * 1000)  # Convert to integer here as well
     memory_manager.archive_memory_item({"role": "user", "content": "This is a test message.", "interaction_index": idx})
 
     # Retrieve the manually archived memory item
     memory_item = memory_manager.get_memory_item(idx)
-    print(json.dumps(memory_item, indent=2))
+    memory_manager.display_conversation()

@@ -89,7 +89,6 @@ class PythonClassDirectoryLoader(DirectoryLoader):
     def get_file_data(self, file_path: str) -> List[Document]:
         return [doc for doc in self.docs if doc.metadata["file_path"] == file_path]
 
-
     def get_class(self, class_name: str) -> List[Document]:
         content = [doc.page_content for doc in self.docs if doc.metadata.get("class_name") == class_name]
         return "\n".join(content)
