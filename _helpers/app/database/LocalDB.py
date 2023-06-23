@@ -10,7 +10,6 @@ from tenacity import (
     retry_if_not_exception_type,
 )
 
-
 EMBEDDING_MODEL = "text-embedding-ada-002"
 # let's make sure to not retry on an invalid request, because that is what we want to demonstrate
 
@@ -101,10 +100,15 @@ class LocalRepositoryDB:
         sorted_indices = np.argsort(similarities)[::-1][:k]
 
         # Return sorted file paths and content
-        return [
+        results = [
             (path, self.file_dict[path]["text"])
             for path in np.array(list(self.file_dict.keys()))[sorted_indices]
         ]
+        out = ""
+        for file_name, content in results:
+            out += f"File: {file_name}\nContent: {content}\n\n"
+
+        return out
 
     def file_lookup(self, file_names: List[str]) -> List[str]:
         out = []

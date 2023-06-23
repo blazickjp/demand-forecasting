@@ -7,10 +7,68 @@ import tiktoken
 
 
 class MemoryManager:
+    """
+    A memory manager for managing conversation history and archiving old conversation data.
+
+    Attributes:
+    ----------
+    model : str
+        The model being used for the conversation, such as "gpt-3.5-turbo-0613".
+
+    max_tokens : int
+        The maximum number of tokens that can be used in the conversation history.
+
+    system : str
+        The system message for the conversation.
+
+    messages : list
+        The list of messages in the conversation history. Each message is a dictionary with
+        keys "role", "content", and "interaction_index".
+
+    summary : str
+        A summary of the conversation history.
+
+    conn : psycopg2.extensions.connection
+        The connection to the PostgreSQL database.
+
+    cur : psycopg2.extensions.cursor
+        The cursor for interacting with the PostgreSQL database.
+
+    Methods:
+    -------
+    add_message(role, content, override_truncate=False):
+        Adds a message to the conversation history.
+
+    truncate_history():
+        Truncates the conversation history to fit within the max_tokens limit.
+
+    archive_memory_item(memory_item):
+        Archives a memory item in the PostgreSQL database.
+
+    summarize_history():
+        Summarizes the conversation history and resets the messages to a system message with the summary.
+
+    get_total_tokens_in_message(message):
+        Returns the number of tokens in a message.
+
+    get_total_tokens():
+        Returns the total number of tokens in the conversation history.
+
+    display_conversation(detailed=False):
+        Prints the conversation history to the console.
+
+    display_conversation_html(detailed=False):
+        Returns the conversation history as an HTML string.
+
+    load_memory():
+        Loads memory items from the PostgreSQL database into the conversation history until the total number of tokens
+        in the conversation history reaches the max_tokens limit.
+    """
+
     def __init__(self, model, max_tokens=1000):
         self.model = model
         self.max_tokens = max_tokens
-        self.system = ""
+        self.system = "You are a helpful AI assistant."
         self.messages = [
             {
                 "role": "system",
@@ -122,16 +180,11 @@ class MemoryManager:
         self.system = self.system + f"\n\nSummary of Conversation so far: {summary}"
         self.messages = [{"role": "system", "content": self.system}]
 
-    def get_memory_item(self, interaction_index):
-        # Retrieve memory item by interaction index from PostgreSQL
-        self.cur.execute(
-            f"SELECT memory_item FROM memory WHERE interaction_index = {interaction_index}"
-        )
-        result = self.cur.fetchone()
-        if result:
-            return result[0]  # Convert the JSON string back to a dictionary
-        else:
-            return None
+    def get_total_tokens_in_message(self, message):
+        """Returns the number of tokens in a message."""
+        encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
+        num_tokens = len(encoding.encode(message))
+        return num_tokens
 
     def get_total_tokens(self):
         """Returns the number of tokens in a text string."""
@@ -175,6 +228,25 @@ class MemoryManager:
             """
         return conversation_html
 
+    def load_memory(self):
+        # Retrieve all memory items from the database
+        self.cur.execute(
+            "SELECT memory_item FROM memory ORDER BY interaction_index ASC desc"
+        )
+        results = self.cur.fetchall()
+        memory_items = [json.loads(result[0]) for result in results]
+        items_to_load = ""
+        total_tokens = self.get_total_tokens()
+        for item in memory_items:
+            new_tokens = self.get_total_tokens_in_message(item["content"])
+            if total_tokens + new_tokens < self.max_tokens:
+                items_to_load += item["content"] + "\n"
+            else:
+                break
+
+        self.messages = items_to_load
+        self.conn.commit()
+
 
 if __name__ == "__main__":
     # Example usage:
@@ -191,5 +263,4 @@ if __name__ == "__main__":
     )
 
     # Retrieve the manually archived memory item
-    memory_item = memory_manager.get_memory_item(idx)
     memory_manager.display_conversation()

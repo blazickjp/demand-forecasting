@@ -1,7 +1,7 @@
 import streamlit as st
 from chat_gpt_connector import ChatGPTConnector
 from ui_helpers import setup_ui, get_user_input
-from langchain_agent.MemoryManager import MemoryManager
+from agent.MemoryManager import MemoryManager
 
 
 class ChatInterface:

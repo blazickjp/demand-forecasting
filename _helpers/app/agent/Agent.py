@@ -9,7 +9,7 @@ GPT_MODEL = "gpt-3.5-turbo-0613"  # or any other chat model you want to use
 FUNCTIONS = [class_lookup.openai_schema]
 
 
-class LangChainAgent:
+class CodingAgent:
     def __init__(self, memory_manager, functions=None):
         self.memory_manager = memory_manager
         self.functions = functions
@@ -68,7 +68,7 @@ class LangChainAgent:
 
 
 memory_manager = MemoryManager(model=GPT_MODEL)
-agent = LangChainAgent(memory_manager, functions=FUNCTIONS)
+agent = CodingAgent(memory_manager, functions=FUNCTIONS)
 
 response = agent.query("What's the weather like in Boston?")
 # print(response)
