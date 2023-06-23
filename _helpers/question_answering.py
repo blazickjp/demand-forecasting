@@ -1,16 +1,28 @@
 import os
 from typing import List, Union
 from langchain.prompts import StringPromptTemplate, BaseChatPromptTemplate
-from langchain.agents import Tool, AgentExecutor, BaseSingleActionAgent, ZeroShotAgent, LLMSingleActionAgent
+from langchain.agents import (
+    Tool,
+    AgentExecutor,
+    BaseSingleActionAgent,
+    ZeroShotAgent,
+    LLMSingleActionAgent,
+)
 from langchain.schema import AgentAction, AgentFinish
 from langchain.embeddings import OpenAIEmbeddings
-from langchain import BasePromptTemplate, OpenAI, SerpAPIWrapper, LLMMathChain, PromptTemplate, LLMChain
+from langchain import (
+    BasePromptTemplate,
+    OpenAI,
+    SerpAPIWrapper,
+    LLMMathChain,
+    PromptTemplate,
+    LLMChain,
+)
 from langchain.vectorstores.elastic_vector_search import ElasticVectorSearch
 from langchain.agents.agent import AgentOutputParser, OutputParserException
 from langchain.utilities import PythonREPL
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import AgentAction, AgentFinish, HumanMessage
-
 
 
 import re
@@ -22,15 +34,14 @@ ELASTIC_PW = os.environ.get("ELASTICSEARCH_PASSWORD")
 HOST = f"https://elastic:{ELASTIC_PW}@llm-vectorstore.es.us-east1.gcp.elastic-cloud.com"
 PORT = 9243
 if not ELASTIC_PW:
-    raise ValueError(
-        "Please set the environment variable ELASTICSEARCH_PASSWORD")
+    raise ValueError("Please set the environment variable ELASTICSEARCH_PASSWORD")
 
 INDEX_NAME = "cfa_level_1_latex"
-MODEL = 'gpt-3.5-turbo'
+MODEL = "gpt-3.5-turbo"
 
 embeddings = OpenAIEmbeddings()
 elastic_vector_search = ElasticVectorSearch(
-    elasticsearch_url=f'{HOST}:{PORT}',
+    elasticsearch_url=f"{HOST}:{PORT}",
     index_name=INDEX_NAME,
     embedding=embeddings,
 )
@@ -52,15 +63,16 @@ Response:
 """
 
 # Set up Firebase
-cred = credentials.Certificate('cfa-creds.json')
+cred = credentials.Certificate("cfa-creds.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
-col_ref = db.collection('questions')
+col_ref = db.collection("questions")
 # Stream the documents in the collection
 docs = col_ref.stream()
 
 # Set up LLM Math Chaina
 llm = ChatOpenAI(temperature=0, model=MODEL)
+
 
 def search_and_summarize(query: str) -> str:
     # Search the web for the query
@@ -75,9 +87,12 @@ def search_and_summarize(query: str) -> str:
     # print("******\n\n", ans, "\n\n******")
     return ans
 
+
 # Create a prompt template for text summarization
 # Create an LLMChain for text summarization using the OpenAI language model and the prompt template
-summarize_prompt = PromptTemplate(template=DOC_SUMMARY_PROMPT, input_variables=["document", "question"])
+summarize_prompt = PromptTemplate(
+    template=DOC_SUMMARY_PROMPT, input_variables=["document", "question"]
+)
 summarize_chain = LLMChain(llm=OpenAI(temperature=0.0), prompt=summarize_prompt)
 
 python_repl = PythonREPL()
@@ -93,16 +108,17 @@ tools = [
     Tool(
         name="python_repl",
         description="A Python shell. Use this to do complicated calculations using python. Input should be a valid python command. If you want to see the output of a value, you should print it out with `print(...)`.",
-        func=python_repl.run
-    )
+        func=python_repl.run,
+    ),
 ]
+
 
 class CFAPromptTemplate(BaseChatPromptTemplate):
     # The template to use
     template: str
     # The list of tools available
     tools: List[Tool]
-    
+
     def format_messages(self, **kwargs) -> str:
         # Get the intermediate steps (AgentAction, Observation tuples)
         # Format them in a particular way
@@ -114,11 +130,14 @@ class CFAPromptTemplate(BaseChatPromptTemplate):
         # Set the agent_scratchpad variable to that value
         kwargs["agent_scratchpad"] = thoughts
         # Create a tools variable from the list of tools provided
-        kwargs["tools"] = "\n".join([f"{tool.name}: {tool.description}" for tool in self.tools])
+        kwargs["tools"] = "\n".join(
+            [f"{tool.name}: {tool.description}" for tool in self.tools]
+        )
         # Create a list of tool names for the tools provided
         kwargs["tool_names"] = ", ".join([tool.name for tool in self.tools])
         formatted = self.template.format(**kwargs)
         return [HumanMessage(content=formatted)]
+
 
 class CFAOutputParser(AgentOutputParser):
     def get_format_instructions(self) -> str:
@@ -141,11 +160,14 @@ class CFAOutputParser(AgentOutputParser):
         action = match.group(1).strip()
         action_input = match.group(2)
         # Return the action and action input
-        return AgentAction(tool=action, tool_input=action_input.strip(" ").strip('"'), log=llm_output)
+        return AgentAction(
+            tool=action, tool_input=action_input.strip(" ").strip('"'), log=llm_output
+        )
 
     @property
     def _type(self) -> str:
         return "CFAOutputParser"
+
 
 # class CFAStudyAgent(BaseSingleActionAgent):
 #     @property
@@ -195,27 +217,32 @@ Question: {input}
 tool_names = [tool.name for tool in tools]
 
 AGENT_PROMPT = CFAPromptTemplate(
-    template=AGENT_PREFIX + AGENT_FORMAT_INSTRUCTIONS + AGENT_SUFFIX, 
-    tools=tools, 
+    template=AGENT_PREFIX + AGENT_FORMAT_INSTRUCTIONS + AGENT_SUFFIX,
+    tools=tools,
     input_variables=["input", "intermediate_steps"],
 )
 agent_chain = LLMChain(llm=llm, prompt=AGENT_PROMPT)
 agent = LLMSingleActionAgent(
-    llm_chain=agent_chain, 
-    allowed_tools=tool_names, 
+    llm_chain=agent_chain,
+    allowed_tools=tool_names,
     output_parser=CFAOutputParser(),
     stop=["\nObservation:"],
 )
 agent_executor = AgentExecutor.from_agent_and_tools(
-    agent=agent, tools=tools, verbose=True)
+    agent=agent, tools=tools, verbose=True
+)
 
 # Loop through the questions in the Firebase database
 for doc in docs:
     doc = doc.to_dict()
-    if doc['parsed_question']['id'] != "335bc0e2-f18d-4ca6-8343-06fcc136a57f":
+    if doc["parsed_question"]["id"] != "335bc0e2-f18d-4ca6-8343-06fcc136a57f":
         continue
 
-    input_question = {key: value for key, value in doc["parsed_question"].items() if key in ["question", "options", "data"]}
+    input_question = {
+        key: value
+        for key, value in doc["parsed_question"].items()
+        if key in ["question", "options", "data"]
+    }
     # This all returns the most relevamnt docs from the ElasticSearch index
     # They can then be fed into a custom prompt to answer the question
     print("Question: ", input_question)
