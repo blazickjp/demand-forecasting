@@ -110,7 +110,7 @@ class LocalRepositoryDB:
 
         return out
 
-    def file_lookup(self, file_names: List[str]) -> List[str]:
+    def _file_lookup(self, file_names: List[str]) -> List[str]:
         out = []
         for name in file_names:
             resolved_name = os.path.basename(name)
