@@ -6,11 +6,12 @@ from openai_function_call import openai_function
 
 
 from ClassLoader import PythonClassDirectoryLoader
-from retry import retry
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 
 
-class_loader = PythonClassDirectoryLoader("/Users/josephblazick/Documents/langchain", glob="**/*.py")
+class_loader = PythonClassDirectoryLoader(
+    "/Users/josephblazick/Documents/langchain", glob="**/*.py"
+)
 class_loader.load()
 EMBEDDING_MODEL = "text-embedding-ada-002"
 GPT_MODEL = "gpt-3.5-turbo-0613"
@@ -26,7 +27,7 @@ paper_dir_filepath = "./data/arxiv_library.csv"
 @openai_function
 def class_lookup(item: str):
     """
-    Lookup for class definitions in the langchain codebase. You should use this function when you need to see the 
+    Lookup for class definitions in the langchain codebase. You should use this function when you need to see the
     source code of a particular class.
     """
     return class_loader.get_class(item)

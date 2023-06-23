@@ -1,17 +1,12 @@
-from functools import lru_cache
 import openai
 import enum
-import json
 import asyncio
 
 from pydantic import Field
-from typing import List, Tuple
+from typing import List
 
-from pyparsing import C
 from openai_function_call import OpenAISchema
-from tenacity import retry, stop_after_attempt
 from pprint import pprint
-from collections import deque
 
 
 class QueryType(str, enum.Enum):
@@ -28,6 +23,7 @@ class Model(enum.Enum):
     """
     Enumeration representing the models that can be used to answer questions.
     """
+
     GPT4 = "gpt-4-0613"
     GPT3_5: str = "gpt-3.5-turbo-0613"
 
@@ -41,16 +37,21 @@ class ComputeQuery(OpenAISchema):
     response: str = "..."
 
     @classmethod
-    def from_query(cls, query: str) -> 'ComputeQuery':
-        messages = [{'role': 'system', 'content': 'You are a helpful assistant answering my questions.'}]
-        messages.append({'role': 'user', 'content': query})
+    def from_query(cls, query: str) -> "ComputeQuery":
+        messages = [
+            {
+                "role": "system",
+                "content": "You are a helpful assistant answering my questions.",
+            }
+        ]
+        messages.append({"role": "user", "content": query})
         completion = openai.ChatCompletion.create(
             model=Model.GPT3_5.value,
             temperature=0,
             messages=messages,
             max_tokens=1000,
         )
-        return cls(query=query, response=completion.choices[0].message['content'])
+        return cls(query=query, response=completion.choices[0].message["content"])
 
 
 class MergedResponses(OpenAISchema):
@@ -115,6 +116,7 @@ class QueryPlan(OpenAISchema):
     Container class representing a tree of questions to ask a question answer system.
     Make sure every question is included in the tree and every question is only asked a single time.
     """
+
     query_graph: List[Query] = Field(
         ..., description="The original question we are asking"
     )
@@ -150,10 +152,10 @@ def query_planner(question: str) -> QueryPlan:
         {
             "role": "system",
             "content": "You are a world class query planning algorithm capable of breaking questions up in to its"
-                       " dependent sub-queries such that the answers can be used to inform the parent question. Do"
-                       " not answer the questions, simply provide correct compute graph with good specific"
-                       " questions to ask and relevant dependencies. Before you call the function, think step by"
-                       " step to get a better understanding the problem.",
+            " dependent sub-queries such that the answers can be used to inform the parent question. Do"
+            " not answer the questions, simply provide correct compute graph with good specific"
+            " questions to ask and relevant dependencies. Before you call the function, think step by"
+            " step to get a better understanding the problem.",
         },
         {
             "role": "user",
