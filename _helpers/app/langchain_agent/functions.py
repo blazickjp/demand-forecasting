@@ -1,14 +1,13 @@
 import os
 import arxiv
 import openai
-import pandas as pd
 from csv import writer
+from openai_function_call import openai_function
 
 
 from ClassLoader import PythonClassDirectoryLoader
 from retry import retry
 from tenacity import retry, wait_random_exponential, stop_after_attempt
-
 
 
 class_loader = PythonClassDirectoryLoader("/Users/josephblazick/Documents/langchain", glob="**/*.py")
@@ -20,57 +19,24 @@ data_dir = os.path.join(os.curdir, "data", "papers")
 paper_dir_filepath = "./data/arxiv_library.csv"
 
 # Generate a blank dataframe where we can store downloaded files
-df = pd.DataFrame(list())
-df.to_csv(paper_dir_filepath)
-
-FUNCTIONS = [
-    {
-        "name": "get_current_weather",
-        "description": "Get the current weather in a given location",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "location": {"type": "string", "description": "The city and state, e.g. San Francisco, CA"},
-                "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]}
-            },   
-            "required": ["location"]
-        }
-    },
-    {
-        "name": "class_lookup",
-        "description": "Lookup for class definitions in the langchain codebase. You should use this function when you need to see the source code related to a particular class from the langchain python package.",
-        "parameters": {
-            "type": "object",
-            "properties": {
-                "item": {"type": "string", "description": "The name of the class you want to lookup"}
-            },
-            "required": ["item"]
-        }
-    }
-]
+# df = pd.DataFrame(list())
+# df.to_csv(paper_dir_filepath)
 
 
-def get_current_weather(location, unit="fahrenheit"):
-    """Dummy function to get the current weather in a given location"""
-    weather_info = {
-        "location": location,
-        "temperature": "72",
-        "unit": unit,
-        "forecast": ["sunny", "windy"]
-    }
-    return weather_info # Return dictionary, not JSON string
-
+@openai_function
 def class_lookup(item: str):
     """
-    Lookup for class definitions in the langchain codebase. You should use this function when you need to see the source code
-    related to a particular class.
+    Lookup for class definitions in the langchain codebase. You should use this function when you need to see the 
+    source code of a particular class.
     """
     return class_loader.get_class(item)
+
 
 @retry(wait=wait_random_exponential(min=1, max=40), stop=stop_after_attempt(3))
 def embedding_request(text):
     response = openai.Embedding.create(input=text, model=EMBEDDING_MODEL)
     return response
+
 
 def get_articles(query, library=paper_dir_filepath, top_k=5):
     """This function gets the top_k articles based on a user's query, sorted by relevance.

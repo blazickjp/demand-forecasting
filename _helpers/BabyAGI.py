@@ -1,24 +1,17 @@
-from langchain import OpenAI, GoogleSearchAPIWrapper, LLMChain
-from langchain.agents import ZeroShotAgent, Tool, AgentExecutor
-import faiss
 import json
 import os
-from collections import deque
-from typing import Dict, List, Optional, Any
+from typing import Any, Dict, List, Optional
 
-from langchain import LLMChain, OpenAI, PromptTemplate
+import faiss
+from langchain import GoogleSearchAPIWrapper, LLMChain, OpenAI, PromptTemplate
+from langchain.agents import AgentExecutor, Tool, ZeroShotAgent
+from langchain.chains.base import Chain
+from langchain.docstore import InMemoryDocstore
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms import BaseLLM
+from langchain.vectorstores import FAISS
 from langchain.vectorstores.base import VectorStore
 from pydantic import BaseModel, Field
-from langchain.chains.base import Chain
-
-from langchain.vectorstores import FAISS
-from langchain.docstore import InMemoryDocstore
-
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
 
 # Use a service account
 # cred = credentials.Certificate('cfa-creds.json')
@@ -56,7 +49,14 @@ class TaskProgressChain(LLMChain):
 
 
 class TaskCreationChain(LLMChain):
-    """Chain to generates tasks."""
+    """_summary_
+
+    Args:
+        LLMChain (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
 
     @classmethod
     def from_llm(cls, llm: BaseLLM, verbose: bool = True) -> LLMChain:
@@ -77,8 +77,14 @@ class TaskCreationChain(LLMChain):
 
 
 class TaskPrioritizationChain(LLMChain):
-    """Chain to prioritize tasks."""
+    """_summary_
 
+    Args:
+        LLMChain (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     @classmethod
     def from_llm(cls, llm: BaseLLM, verbose: bool = True) -> LLMChain:
         """Get the response parser."""
@@ -156,10 +162,9 @@ tools = [
 ]
 
 
-
 prefix = """
-You are an AI who performs one task keeping in mind that your final objective is: {objective}. 
-Take into account these previously completed tasks: {context} 
+You are an AI who performs one task keeping in mind that your final objective is: {objective}.
+Take into account these previously completed tasks: {context}
 Also take into account a summary of your current progress: {summary}
 """
 FORMAT_INSTRUCTIONS = """Use the following format:
@@ -303,7 +308,6 @@ class BabyAGI(Chain, BaseModel):
                 input("Check Progress and update Status. Press Enter to continue...")
                 self.load_task_list()
                 task = self.get_task(str(self.task_id_counter))[0]
-                iteration = task["iteration"]
                 if task['status'] == "complete":
                     print("Completed task!\t- ", task['task_name'])
                     self.completed_tasks.append(task)
